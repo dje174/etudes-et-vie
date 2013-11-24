@@ -28,11 +28,18 @@ body{
 		border: none;
 		background-color: $rougeLiens;
 		@include border-radius(0.3em);
+		&:hover{
+			background-color: $rougeLiensHover;
+		}
 	}
 	.texte{
 		padding: 0.5em;
 		@include border-radius(0.3em);
 		border: none;
+	}
+	.searchDiv{
+		position: relative;
+		top: -0.1em;
 	}
 	.search{
 		position: relative;
@@ -43,6 +50,22 @@ body{
 		left: -3em;
 		cursor: pointer;
 	}
+	.add{
+		background-image: url('../img/add-26.png');
+		background-repeat: no-repeat;
+	}
+	.disponibility{
+		img{
+			padding: 0.5em 0 0 1em;
+		}
+		input{
+			float: right;
+			text-transform: uppercase;
+			margin: 0.5em 0.5em 0 0;
+			padding: 0.4em 0.6em 0.4em 2em;
+			cursor: pointer;
+		}
+ 	}
 }
 
 /* ESPACE CLIENT */
@@ -129,25 +152,55 @@ nav#menu {
  			border-top: 2px solid $bleuClair;
  			border-bottom: 2px solid $bleuClair;
  		}
- 		.disponibility{
- 			img{
- 				padding: 0.5em 0 0 1em;
- 			}
- 			input{
- 				float: right;
- 				text-transform: uppercase;
- 				margin: 0.5em 1.5em 0 0;
- 				padding: 0.4em 0.6em;
- 				cursor: pointer;
- 				&:hover{
- 					background-color: $rougeLiensHover;
- 				}
- 			}
- 		}
  	}
 	.plus{
 		float: right;
 		width: 10em;
+	}
+
+ 	/* SECTION PRINCIPALE CATEGORIES */
+	.categorie{
+		margin-top: 1em;
+		.links{
+			margin: 1em 1em 0 0;
+			float: left;
+		}
+		.sousCat{
+			font-weight: bold;
+			color: $grisFonce;
+		}
+		.thumbCategorie{
+			border: 1px solid $grisContour;
+			float: left;
+			margin-right: 1em;
+		}
+		.description{
+			min-height: 7em;
+		}
+		.article{
+			.ImgProdCat{
+				float: left;
+				margin: 0.4em 0.5em 0 0;
+				@include border-radius(0.3em);
+				border: 1px solid $grisContour;
+			}
+			float: left;
+			width: 12em;
+			margin: 0.5em 2.5em 1em 0;
+			.cat{
+				display: block;
+			}
+			.disponibility{
+				img{
+					float: left;
+					padding-left: 0;					
+				}
+				.add{
+					float: left;
+					margin-left: 1em;
+				}
+			}
+		}
 	}
  }
 
@@ -178,7 +231,8 @@ nav#menu {
  }
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after{
+
+nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after{
 	content:'';
 	clear: both;
 	display: block;
