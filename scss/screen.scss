@@ -1,0 +1,13 @@
+@import "compass/reset";
+
+body{
+	height: 100%;
+	width: 100%;
+	font: 18px/1.5 "Roboto Regular" sans-serif;
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
