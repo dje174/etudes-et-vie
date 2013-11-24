@@ -34,12 +34,22 @@ body{
 		@include border-radius(0.3em);
 		border: none;
 	}
+	.search{
+		position: relative;
+	}
+	.into{
+		position: absolute;
+		top: 0.075em;
+		left: -3em;
+		cursor: pointer;
+	}
 }
 
 /* ESPACE CLIENT */
 
 div#client{
 	position: relative;
+	left: 55em;
 }
 
 /* MENU */
@@ -64,15 +74,6 @@ nav#menu {
 		background-color: $grisNav;
 		}
 	}
-	.search{
-		position: relative;
-	}
-	.into{
-		position: absolute;
-		top: 0.075em;
-		left: -3em;
-		cursor: pointer;
-	}
 }
 
 /* SECTION PRINCIPALE ACCUEIL */
@@ -92,7 +93,7 @@ nav#menu {
 		}
  	}
  	.produit{
- 		margin: 1.5em 8em 1em 0;
+ 		margin: 1.5em 4em 1em 0;
  		position: relative;
  		float: left;
  		.thumbProduit{
@@ -137,8 +138,34 @@ nav#menu {
 	}
  }
 
+ footer{
+ 	background-color: $bleuPale;
+ 	padding: 3em 5em;
+ 	border-top: 1px solid $bleuClair;
+ 	position: relative;
+ 	.news{
+ 		width: 17em;
+ 	}
+ 	.titreFooter{
+ 		text-transform: uppercase;
+ 		padding-bottom: 1em;
+ 	}
+ 	.infos{
+ 		float: left;
+ 		width: 25%;
+ 		a{
+ 			display: block;
+ 		}
+ 	}
+ 	#logoFooter{
+		position: absolute;
+		top: -1em;
+		left: 40em;
+ 	}
+ }
 
-nav#menu:after, section.main:after, div.titres:after{
+
+nav#menu:after, section.main:after, div.titres:after, footer:after{
 	content:'';
 	clear: both;
 	display: block;
