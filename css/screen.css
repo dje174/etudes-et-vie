@@ -42,14 +42,154 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 3, ../scss/screen.scss */
+/* line 5, ../scss/screen.scss */
 body {
   height: 100%;
   width: 100%;
-  font: 18px/1.5 "Roboto Regular" sans-serif; }
-/* line 7, ../scss/screen.scss */
+  font: 18px/1.5 "Roboto Regular" sans-serif;
+  background-image: url("../img/FondNav.png");
+  background-repeat: repeat-x;
+  background-color: #f3efe3; }
+/* line 12, ../scss/screen.scss */
 body a {
-  text-decoration: none; }
-/* line 9, ../scss/screen.scss */
+  text-decoration: none;
+  color: #e23836; }
+/* line 15, ../scss/screen.scss */
 body a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #f45b5b; }
+/* line 20, ../scss/screen.scss */
+body div#logo img {
+  margin: 2em auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+/* line 25, ../scss/screen.scss */
+body .submit {
+  padding: 0.3em 0.5em;
+  color: white;
+  border: none;
+  background-color: #e23836;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em; }
+/* line 32, ../scss/screen.scss */
+body .texte {
+  padding: 0.5em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: none; }
+
+/* ESPACE CLIENT */
+/* line 41, ../scss/screen.scss */
+div#client {
+  position: relative; }
+
+/* MENU */
+/* line 47, ../scss/screen.scss */
+nav#menu {
+  float: right;
+  left: -50%;
+  position: relative;
+  top: 7.8em;
+  text-transform: uppercase; }
+/* line 53, ../scss/screen.scss */
+nav#menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  left: 50%;
+  position: relative; }
+/* line 59, ../scss/screen.scss */
+nav#menu ul li {
+  display: block;
+  float: left;
+  padding: 0px 1em;
+  margin: 0px 1em;
+  background-color: #e3dfd5; }
+/* line 67, ../scss/screen.scss */
+nav#menu .search {
+  position: relative; }
+/* line 70, ../scss/screen.scss */
+nav#menu .into {
+  position: absolute;
+  top: 0.075em;
+  left: -3em;
+  cursor: pointer; }
+
+/* SECTION PRINCIPALE ACCUEIL */
+/* line 79, ../scss/screen.scss */
+section.main {
+  margin: 12em 10em 3em 10em; }
+/* line 81, ../scss/screen.scss */
+section.main div.titres {
+  margin-top: 2.5em; }
+/* line 83, ../scss/screen.scss */
+section.main div.titres h2 {
+  background-image: url("../img/h2Fond.png");
+  background-repeat: repeat-x;
+  line-height: 2.6em;
+  text-transform: uppercase; }
+/* line 89, ../scss/screen.scss */
+section.main div.titres .titreActu {
+  background-color: #f3efe3;
+  padding-right: 1em; }
+/* line 94, ../scss/screen.scss */
+section.main .produit {
+  margin: 1.5em 8em 1em 0;
+  position: relative;
+  float: left; }
+/* line 98, ../scss/screen.scss */
+section.main .produit .thumbProduit {
+  border: 1px solid #969696; }
+/* line 101, ../scss/screen.scss */
+section.main .produit .prix {
+  background-color: #e23836;
+  color: white;
+  font-weight: bold;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  border-radius: 0.4em;
+  position: absolute;
+  font-size: 20px;
+  padding: 0.3em;
+  top: -1em;
+  left: 6em; }
+/* line 112, ../scss/screen.scss */
+section.main .produit .legend {
+  width: 8.444em;
+  text-align: center;
+  border-top: 2px solid #68cef4;
+  border-bottom: 2px solid #68cef4; }
+/* line 119, ../scss/screen.scss */
+section.main .produit .disponibility img {
+  padding: 0.5em 0 0 1em; }
+/* line 122, ../scss/screen.scss */
+section.main .produit .disponibility input {
+  float: right;
+  text-transform: uppercase;
+  margin: 0.5em 1.5em 0 0;
+  padding: 0.4em 0.6em;
+  cursor: pointer; }
+/* line 128, ../scss/screen.scss */
+section.main .produit .disponibility input:hover {
+  background-color: #f45b5b; }
+/* line 134, ../scss/screen.scss */
+section.main .plus {
+  float: right;
+  width: 10em; }
+
+/* line 141, ../scss/screen.scss */
+nav#menu:after, section.main:after, div.titres:after {
+  content: '';
+  clear: both;
+  display: block; }

@@ -7,35 +7,145 @@
 </head>
 <body>
     <header>
-        <section id="client">
+        <div id="client">
             <div class="client connect">
                 <a href="#">Login</a> | <a href="#">Sign Up</a>
             </div>
             <div class="client panier">
                 <a href="#">Panier</a>
             </div>
-        </section>
+        </div>
         <div id="logo">
-            <img src="../img/logo.png" alt="Études et vie logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="Études et vie logo">
+            </a>
         </div>
     </header>
     <nav id="menu">
         <ul>
-            <li class="onglets"><a href="index.html">Produits</a></li>
-            <li class="onglets"><a href="categories.html">Catégories</a></li>
-            <li class="onglets"><a href="contact.html">Contact</a></li>
-            <li class="onglets"><input type="text" placeholder="Rechercher"><a href="search.html"><input type="submit" class="confirm"></a></li>
+            <li class="onglets"><a href="index.html" title="Produits">Produits</a></li>
+            <li class="onglets"><a href="categories.html" title="Catégories">Catégories</a></li>
+            <li class="onglets"><a href="contact.html" title="Contact">Contact</a></li>
+            <li class="onglets"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search"><input type="submit" value="OK" class="submit into"></a></li>
         </ul>
     </nav>
     <section class="main">
         <div class="actuality">
-            <h2 class="titreActu" role="heading" aria-level="2">Les meilleures ventes</h2>
-        </div>
-        <div class="actuality">
-            <h2 class="titreActu" role="heading" aria-level="2">Les dernières nouveautés</h2>
-        </div>
-        <div class="actuality">
-            <h2 class="titreActu" role="heading" aria-level="2">Les articles en promotions</h2>
+            <div class="titres">
+                <h2 role="heading" aria-level="2"><span class="titreActu">Les meilleures ventes</span></h2>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article1.png" alt="Produit">
+                        <span class="prix">798€</span>
+                        <figcaption class="legend">MK30 Kit de mesure</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article2.png" alt="Produit">
+                        <span class="prix">99€</span>
+                        <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article3.png" alt="Produit">
+                        <span class="prix">99€</span>
+                        <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article4.png" alt="Produit">
+                        <span class="prix">1289€</span>
+                        <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
+                        <span class="disponibility"><img src="../img/disable.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article5.png" alt="Produit">
+                        <span class="prix">349€</span>
+                        <figcaption class="legend">Set de lunettes PRISMA</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="categorie.html" class="plus">Voir plus de produits</a>
+            </div>
+            <div class="titres">
+                <h2 role="heading" aria-level="2"><span class="titreActu">Les dernières nouveautés</span></h2>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article6.png" alt="Produit">
+                        <span class="prix">32€</span>
+                        <figcaption class="legend">Pochette Isophone Large</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article7.png" alt="Produit">
+                        <span class="prix">726€</span>
+                        <figcaption class="legend">Voltmètre de surface Ultrastable</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article8.png" alt="Produit">
+                        <span class="prix">35€</span>
+                        <figcaption class="legend">Pop Phone - Black</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article9.png" alt="Produit">
+                        <span class="prix">254€</span>
+                        <figcaption class="legend">HSF-54 - 5L Peinture</figcaption>
+                        <span class="disponibility"><img src="../img/disable.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article10.png" alt="Produit">
+                        <span class="prix">89€</span>
+                        <figcaption class="legend">Chemise écran pour Homme</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="categorie.html" class="plus">Voir plus de produits</a>
+            </div>
+            <div class="titres">
+                <h2 role="heading" aria-level="2"><span class="titreActu">Les articles en promotions</span></h2>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article11.png" alt="Produit">
+                        <span class="prix">299€</span>
+                        <figcaption class="legend">SLEEP Bracelet Philip Stein</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article12.png" alt="Produit">
+                        <span class="prix">238€</span>
+                        <figcaption class="legend">Détecteur électromagnétique</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+                <a href="pageProduit.html" title="Voir le produit">
+                    <article class="produit">
+                        <img class="thumbProduit" src="../img/article13.png" alt="Produit">
+                        <span class="prix">279€</span>
+                        <figcaption class="legend">Kit PU Merkaba</figcaption>
+                        <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"><input type="submit" value="Ajouter" class="submit"></span>
+                    </article>
+                </a>
+            </div>
         </div>
     </section>
     <footer>
@@ -63,7 +173,8 @@
             <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
             <a href="#" class="linksFooter">Facebook</a>
             <a href="#" class="linksFooter">Twitter</a>
-            <a href="#" class="linksFooter">Youtube</a>        </div>
+            <a href="#" class="linksFooter">Youtube</a>        
+            </div>
     </footer>    
 </body>
 </html>

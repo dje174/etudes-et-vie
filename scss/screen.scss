@@ -1,13 +1,145 @@
+@import "compass";
 @import "compass/reset";
+@import "colors";
 
 body{
 	height: 100%;
 	width: 100%;
 	font: 18px/1.5 "Roboto Regular" sans-serif;
+	background-image: url('../img/FondNav.png');
+	background-repeat: repeat-x;
+ 	background-color: $fondBody;
 	a{
 		text-decoration: none;
+		color: $rougeLiens;
 		&:hover{
 			text-decoration: underline;
+			color: $rougeLiensHover;
 		}
 	}
+	div#logo img{
+		margin: 2em auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	.submit{
+		padding: 0.3em 0.5em;
+		color: white;
+		border: none;
+		background-color: $rougeLiens;
+		@include border-radius(0.3em);
+	}
+	.texte{
+		padding: 0.5em;
+		@include border-radius(0.3em);
+		border: none;
+	}
+}
+
+/* ESPACE CLIENT */
+
+div#client{
+	position: relative;
+}
+
+/* MENU */
+
+nav#menu {
+	float: right;
+    left: -50%;
+    position: relative;
+    top: 7.8em;
+    text-transform: uppercase;
+	ul{
+		list-style-type: none; 
+		padding: 0px; 
+		margin: 0px;
+		left: 50%;
+		position: relative;
+		li {
+		display: block;
+		float: left;
+		padding: 0px 1em;
+		margin: 0px 1em;
+		background-color: $grisNav;
+		}
+	}
+	.search{
+		position: relative;
+	}
+	.into{
+		position: absolute;
+		top: 0.075em;
+		left: -3em;
+		cursor: pointer;
+	}
+}
+
+/* SECTION PRINCIPALE ACCUEIL */
+ section.main{
+ 	margin: 12em 10em 3em 10em;
+ 	div.titres{
+ 		margin-top: 2.5em;
+ 		h2{
+	 		background-image: url('../img/h2Fond.png');
+			background-repeat: repeat-x;
+			line-height: 2.6em;
+			text-transform: uppercase;
+ 		}
+		.titreActu{
+			background-color: $fondBody;
+			padding-right: 1em;
+		}
+ 	}
+ 	.produit{
+ 		margin: 1.5em 8em 1em 0;
+ 		position: relative;
+ 		float: left;
+ 		.thumbProduit{
+ 			border: 1px solid $grisContour;
+ 		}
+ 		.prix{
+ 			background-color: $rougeLiens;
+ 			color: white;
+ 			font-weight: bold;
+ 			@include border-radius(0.4em);
+ 			position: absolute;
+ 			font-size: 20px;
+ 			padding: 0.3em;
+			top: -1em;
+			left: 6em;
+ 		}
+ 		.legend{
+ 			width: 8.444em;
+ 			text-align: center;
+ 			border-top: 2px solid $bleuClair;
+ 			border-bottom: 2px solid $bleuClair;
+ 		}
+ 		.disponibility{
+ 			img{
+ 				padding: 0.5em 0 0 1em;
+ 			}
+ 			input{
+ 				float: right;
+ 				text-transform: uppercase;
+ 				margin: 0.5em 1.5em 0 0;
+ 				padding: 0.4em 0.6em;
+ 				cursor: pointer;
+ 				&:hover{
+ 					background-color: $rougeLiensHover;
+ 				}
+ 			}
+ 		}
+ 	}
+	.plus{
+		float: right;
+		width: 10em;
+	}
+ }
+
+
+nav#menu:after, section.main:after, div.titres:after{
+	content:'';
+	clear: both;
+	display: block;
 }
