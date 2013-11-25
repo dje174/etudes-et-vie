@@ -27,6 +27,7 @@ body{
 		color: white;
 		border: none;
 		background-color: $rougeLiens;
+		cursor: pointer;
 		@include border-radius(0.3em);
 		&:hover{
 			background-color: $rougeLiensHover;
@@ -115,19 +116,31 @@ nav#menu {
 /* SECTION PRINCIPALE ACCUEIL */
  section.main{
  	margin: 15em 10em 3em 10em;
+ 	h2{
+ 		background-image: url('../img/h2Fond.png');
+		background-repeat: repeat-x;
+		line-height: 2.6em;
+		text-transform: uppercase;
+ 	}
+	.titreActu{
+		background-color: $fondBody;
+		padding-right: 1em;
+	}
  	div.titres{
  		margin-top: 2.5em;
- 		h2{
-	 		background-image: url('../img/h2Fond.png');
-			background-repeat: repeat-x;
-			line-height: 2.6em;
-			text-transform: uppercase;
- 		}
-		.titreActu{
-			background-color: $fondBody;
-			padding-right: 1em;
-		}
  	}
+ 	#presentation{
+ 		h3{
+ 			font-size: 20px;
+ 			margin-top: 1em;
+ 		}
+ 		p{
+ 			margin-top: 0.5em;
+ 		}
+ 		.infoVentes{
+ 			color: $grisFonce;
+ 		}
+  	}
  	.produit{
  		margin: 1.5em 4em 1em 0;
  		position: relative;
@@ -203,18 +216,104 @@ nav#menu {
 		}
 	}
  }
+	/* SECTION CONTACT */
+section.contact{
+	margin: 15em 0 0 0;
+	h2{
+ 		background-image: url('../img/h2Fond.png');
+		background-repeat: repeat-x;
+		line-height: 2.6em;
+		text-transform: uppercase;
+		margin: 0 10em;
+ 	}
+ 	.titreActuColor{
+ 		background-color: $rougePale;
+ 		padding-right: 1em;
+ 		color: white;
+ 	}
+ 	.titreActuColor2{
+ 		background-color: $grisContour;
+ 		padding-right: 1em;
+ 	}
+	.titreActu{
+		background-color: $fondBody;
+		padding-right: 1em;
+	}
+	article.questions{
+		width: 100%;
+		padding-bottom: 3em;
+		p{
+			text-align: center;
+		}
+		.questions{
+			display: block;
+		}
+	}
+	article.deux {
+		background-color: $rougePale;
+		border-top: 1px solid $rougeLiens;
+		color: white;
+	}
+	article.trois {
+		background-color: $grisContour;
+		border-top: 1px solid $grisFonce;
+		padding-bottom: 5em;
+		#newsletter{
+			width: 60%;
+			.texte{
+				width: 100%;
+			}
+			#OK{
+				@extend .submit;
+				padding: 1.5em;
+				margin-top: 1.5em;
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+	.formulaire {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		.formContact{
+			display: block;
+			width: 105.8%;
+			padding: 1em;
+			margin-top: 0.5em;
+			border: none;
+		}
+		textarea{
+			font-family: "Roboto Regular";
+		}
+		#contact{
+			background-color: $bleuClair;
+			font-weight: bold;
+			padding: 1em;
+			margin-top: 1.5em;
+			color: $grisFonce;
+			text-transform: uppercase;
+			&:hover{
+				background-color: $bleuPale;
+			}
+		}
+	}
+}
+	
 
  footer{
- 	background-color: $bleuPale;
+ 	background-color: white;
  	padding: 3em 5em;
  	border-top: 1px solid $bleuClair;
  	position: relative;
  	.news{
  		width: 17em;
+ 		border: 1px solid $grisFonce;
  	}
  	.titreFooter{
  		text-transform: uppercase;
  		padding-bottom: 1em;
+ 		color: black;
  	}
  	.infos{
  		float: left;
@@ -226,13 +325,13 @@ nav#menu {
  	#logoFooter{
 		position: absolute;
 		top: -1.4em;
-		left: 40em;
+		left: 40.8em;
  	}
  }
 
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after{
+nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after{
 	content:'';
 	clear: both;
 	display: block;

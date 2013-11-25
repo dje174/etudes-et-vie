@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/screen.css">
+    <title>Contact | Études et vie</title>
+</head>
+<body>
+    <header>
+        <div id="client">
+            <div class="client connect">
+                <a href="#" title="Me connecter">Se connecter</a> | <a href="#" title="M'inscrire">S'inscrire</a>
+            </div>
+            <div class="client panier">
+                <a href="#" id="cart" title="Panier">Panier</a>
+            </div>
+        </div>
+        <div id="logo">
+            <a href="index.html" title="Études et vie">
+                <img src="../img/logo.png" alt="Études et vie logo">
+            </a>
+        </div>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li class="onglets"><a href="index.html" title="Produits">Produits</a></li>
+            <li class="onglets"><a href="categories.html" title="Catégories">Catégories</a></li>
+            <li class="onglets"><a href="contact.html" title="Contact">Contact</a></li>
+            <li class="onglets searchDiv"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search"><input type="submit" value="OK" class="submit into"></a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <article class="questions">
+            <h2 role="heading" aria-level="2"><span class="titreActu">Vous avez des questions?</span></h2>
+            <p>Ci cela ne conçerne pas ces quelques liens ci-dessous, envoyez-nous un mail</p>
+            <p>
+                <a href="#" class="questions">Livraisons et retour</a>
+                <a href="#" class="questions">Réservations</a>
+                <a href="#" class="questions">Conditions de ventes</a>
+            </p>
+        </article>
+        <article class="questions deux">
+            <h2 role="heading" aria-level="2"><span class="titreActuColor">Contactez-nous</span></h2>
+            <div class="formulaire">
+                <p>Choississez un sujet par rapport à votre question ou précisez vous-même le sujet avec l'esapce texte tout en dessous</p>
+                <form action="post">
+                    <input type="text" placeholder="Votre nom" class="formContact">
+                    <input type="text" placeholder="Votre prénom" class="formContact">
+                    <input type="text" placeholder="Votre email" class="formContact">
+                    <select name="sujet" id="sujet" class="formContact">
+                        <option value="Livraisons et retour">Livraisons et retour</option>
+                        <option value="Réservations">Réservations</option>
+                        <option value="Conditions de ventes">Conditions de ventes</option>
+                    </select>
+                    <textarea name="textarea" id="message" cols="30" rows="10" placeholder="Votre message" class="formContact"></textarea>
+                    <input type="submit" value="Envoyer le message" class="submit" id="contact">
+                </form>
+            </div>
+        </article>
+        <article class="questions trois">
+            <h2 role="heading" aria-level="2"><span class="titreActuColor2">Inscrivez-vous à notre newsletter</span></h2>
+            <div class="formulaire">
+                <span id="newsletter">
+                    <input type="text" placeholder="Inscrivez vous avec votre e-mail" class="texte news"><span href="#" title="Rechercher" class="search"><input type="submit" value="OK" class="submit" id="OK"></span>
+                </span>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div id="logoFooter">
+            <a href="contact.html" title="Haut de page">
+                <img src="../img/logoSmall.png" alt="Études et vie logo">
+            </a>
+        </div>
+        <div class="infos">
+            <h3 class="titreFooter" role="heading" aria-level="3">À propos</h3>
+                <a href="contact.html" class="linksFooter">Contactez-nous</a>
+                <a href="#" class="linksFooter">Service Client</a>
+                <a href="#" class="linksFooter">Support Technique</a>
+                <a href="#" class="linksFooter">Études et vie, le site</a>
+        </div>
+        <div class="infos">
+            <h3 class="titreFooter" role="heading" aria-level="3">Infos</h3>
+                <a href="cms.html" class="linksFooter">Livraisons et retour</a>
+                <a href="#" class="linksFooter">Réservations</a>
+                <a href="#" class="linksFooter">Conditions de ventes</a>
+        </div>
+        <div class="infos">
+            <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
+            <input type="text" placeholder="Inscrivez vous avec votre e-mail" class="texte news"><span href="#" title="Rechercher" class="search"><input type="submit" value="OK" class="submit into"></span>
+        </div>
+        <div class="infos">
+            <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
+            <a href="#" class="linksFooter">Facebook</a>
+            <a href="#" class="linksFooter">Twitter</a>
+            <a href="#" class="linksFooter">Youtube</a>        
+        </div>
+    </footer>    
+</body>
+</html>
