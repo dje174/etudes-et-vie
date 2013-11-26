@@ -64,7 +64,7 @@ body div#logo img {
   top: 2em;
   left: 2em; }
 /* line 24, ../scss/screen.scss */
-body .submit, body section.contact article.trois #newsletter #OK, section.contact article.trois #newsletter body #OK {
+body .submit {
   padding: 0.3em 0.5em;
   color: white;
   border: none;
@@ -76,7 +76,7 @@ body .submit, body section.contact article.trois #newsletter #OK, section.contac
   -o-border-radius: 0.3em;
   border-radius: 0.3em; }
 /* line 31, ../scss/screen.scss */
-body .submit:hover, body section.contact article.trois #newsletter #OK:hover, section.contact article.trois #newsletter body #OK:hover {
+body .submit:hover {
   background-color: #f45b5b; }
 /* line 35, ../scss/screen.scss */
 body .texte {
@@ -123,7 +123,7 @@ div#client {
   padding: 0.7em 0.5em;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
-  -border: 1px solid #969696;
+  color: white;
   border-top: none; }
 /* line 81, ../scss/screen.scss */
 div#client .client {
@@ -138,16 +138,15 @@ div#client #cart:before {
 /* line 93, ../scss/screen.scss */
 nav#menu {
   text-transform: uppercase;
-  width: 100%;
-  font-weight: bold; }
-/* line 97, ../scss/screen.scss */
-nav#menu ul {
-  list-style-type: none;
+  width: 50%;
   margin: 0 auto;
-  position: absolute;
-  top: 11.7em;
-  left: 23em; }
-/* line 103, ../scss/screen.scss */
+  font-weight: bold;
+  position: relative;
+  top: 11.65em; }
+/* line 100, ../scss/screen.scss */
+nav#menu ul {
+  list-style-type: none; }
+/* line 102, ../scss/screen.scss */
 nav#menu ul li {
   display: block;
   float: left;
@@ -155,42 +154,54 @@ nav#menu ul li {
   margin: 0px 1em; }
 
 /* SECTION PRINCIPALE ACCUEIL */
-/* line 113, ../scss/screen.scss */
+/* line 112, ../scss/screen.scss */
 section.main {
   margin: 15em 10em 3em 10em;
   /* SECTION PRINCIPALE CATEGORIES */ }
-/* line 115, ../scss/screen.scss */
+/* line 114, ../scss/screen.scss */
 section.main h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   text-transform: uppercase; }
-/* line 121, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 section.main .titreActu {
   background-color: white;
   padding-right: 1em; }
-/* line 125, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 section.main div.titres {
   margin-top: 2.5em; }
-/* line 129, ../scss/screen.scss */
+/* line 127, ../scss/screen.scss */
+section.main #presentation {
+  width: 60%;
+  margin: 0 auto; }
+/* line 130, ../scss/screen.scss */
 section.main #presentation h3 {
   font-size: 20px;
   margin-top: 1em; }
-/* line 133, ../scss/screen.scss */
+/* line 134, ../scss/screen.scss */
+section.main #presentation #TitreUn {
+  padding: 0 1em;
+  text-align: center; }
+/* line 137, ../scss/screen.scss */
+section.main #presentation #TitreUn span {
+  padding: 0 1em;
+  background-color: white; }
+/* line 142, ../scss/screen.scss */
 section.main #presentation p {
   margin-top: 0.5em; }
-/* line 136, ../scss/screen.scss */
+/* line 145, ../scss/screen.scss */
 section.main #presentation .infoVentes {
   color: #535353; }
-/* line 140, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 section.main .produit {
   margin: 1.5em 4em 1em 0;
   position: relative;
   float: left; }
-/* line 144, ../scss/screen.scss */
+/* line 153, ../scss/screen.scss */
 section.main .produit .thumbProduit {
   border: 1px solid #969696; }
-/* line 147, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 section.main .produit .prix {
   background-color: #e23836;
   color: white;
@@ -205,42 +216,42 @@ section.main .produit .prix {
   padding: 0.3em;
   top: -1em;
   left: 6em; }
-/* line 158, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 section.main .produit .legend {
   width: 8.444em;
   text-align: center;
   border-top: 2px solid #68cef4;
   border-bottom: 2px solid #68cef4;
   min-height: 3em; }
-/* line 166, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 section.main .plus {
   float: right;
   width: 10em; }
-/* line 172, ../scss/screen.scss */
+/* line 181, ../scss/screen.scss */
 section.main .categorie {
   margin-top: 1em; }
-/* line 174, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 section.main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
-/* line 178, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 section.main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
-/* line 182, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 section.main .categorie .thumbCategorie {
   border: 1px solid #969696;
   float: left;
   margin-right: 1em; }
-/* line 187, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 section.main .categorie .description {
   min-height: 7em; }
-/* line 190, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 section.main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
-/* line 191, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 section.main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
@@ -250,97 +261,75 @@ section.main .categorie .article .ImgProdCat {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #969696; }
-/* line 200, ../scss/screen.scss */
+/* line 209, ../scss/screen.scss */
 section.main .categorie .article .cat {
   display: block; }
-/* line 204, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 section.main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
-/* line 208, ../scss/screen.scss */
+/* line 217, ../scss/screen.scss */
 section.main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
 
 /* SECTION CONTACT */
-/* line 217, ../scss/screen.scss */
+/* line 226, ../scss/screen.scss */
 section.contact {
   margin: 15em 0 0 0; }
-/* line 219, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 section.contact h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   text-transform: uppercase;
   margin: 3em 10em 1.5em 10em; }
-/* line 226, ../scss/screen.scss */
-section.contact .titreActuColor {
-  background-color: #f85a59;
-  padding-right: 1em;
-  color: white; }
-/* line 231, ../scss/screen.scss */
-section.contact .titreActuColor2 {
-  background-color: #b2d9cd;
-  padding-right: 1em; }
 /* line 235, ../scss/screen.scss */
-section.contact .titreActu {
+section.contact .titreActuColor {
   background-color: white;
-  padding: 0 1em;
-  text-align: center; }
+  padding-right: 1em;
+  color: black; }
 /* line 240, ../scss/screen.scss */
 section.contact article.questions {
-  width: 100%;
-  padding-bottom: 3em; }
-/* line 243, ../scss/screen.scss */
+  width: 75%;
+  padding-bottom: 3em;
+  margin: 0 auto; }
+/* line 244, ../scss/screen.scss */
 section.contact article.questions p {
   text-align: center; }
-/* line 246, ../scss/screen.scss */
+/* line 247, ../scss/screen.scss */
 section.contact article.questions .questions {
   display: block; }
-/* line 250, ../scss/screen.scss */
-section.contact article.deux {
-  background-color: #f85a59;
-  border-top: 1px solid #e23836;
-  color: white; }
-/* line 255, ../scss/screen.scss */
-section.contact article.trois {
-  background-color: #b2d9cd;
-  border-top: 1px solid #68cef4;
-  padding-bottom: 5em; }
-/* line 259, ../scss/screen.scss */
-section.contact article.trois #newsletter {
-  width: 60%; }
-/* line 261, ../scss/screen.scss */
-section.contact article.trois #newsletter .texte {
-  width: 100%; }
-/* line 264, ../scss/screen.scss */
-section.contact article.trois #newsletter #OK {
-  padding: 1.5em;
-  margin-top: 1.5em;
-  color: white;
-  font-weight: bold; }
-/* line 273, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 section.contact #sujet {
-  width: 68%; }
-/* line 276, ../scss/screen.scss */
+  width: 69.5%; }
+/* line 254, ../scss/screen.scss */
 section.contact .formulaire {
   width: 60%;
   margin: 0 auto;
   text-align: center; }
-/* line 280, ../scss/screen.scss */
+/* line 258, ../scss/screen.scss */
+section.contact .formulaire form {
+  padding-top: 1em; }
+/* line 261, ../scss/screen.scss */
 section.contact .formulaire .texte {
   width: 60%; }
-/* line 283, ../scss/screen.scss */
+/* line 264, ../scss/screen.scss */
 section.contact .formulaire .formContact {
   display: block;
   width: 65%;
   padding: 1em;
   margin: 0.5em auto 0 auto;
-  border: none; }
-/* line 290, ../scss/screen.scss */
+  border: 1px solid #535353;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em; }
+/* line 272, ../scss/screen.scss */
 section.contact .formulaire textarea {
   font-family: "Roboto Regular"; }
-/* line 293, ../scss/screen.scss */
+/* line 275, ../scss/screen.scss */
 section.contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
@@ -348,32 +337,32 @@ section.contact .formulaire #contact {
   margin-top: 1.5em;
   color: #535353;
   text-transform: uppercase; }
-/* line 300, ../scss/screen.scss */
+/* line 282, ../scss/screen.scss */
 section.contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
 
-/* line 308, ../scss/screen.scss */
+/* line 290, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   padding: 0em 5em 3em 5em;
   border-top: 2px solid #e23836;
   position: relative; }
-/* line 313, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 footer .news {
   width: 17em; }
-/* line 316, ../scss/screen.scss */
+/* line 298, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   padding-bottom: 1em;
   color: white; }
-/* line 321, ../scss/screen.scss */
+/* line 303, ../scss/screen.scss */
 footer .infos {
   float: left;
   width: 25%; }
-/* line 324, ../scss/screen.scss */
+/* line 306, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 328, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 footer #logoFooter {
   position: relative;
   top: -2em;
@@ -387,7 +376,7 @@ footer #logoFooter {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 341, ../scss/screen.scss */
+/* line 323, ../scss/screen.scss */
 nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after {
   content: '';
   clear: both;

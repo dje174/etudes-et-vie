@@ -76,7 +76,7 @@ div#client{
 	padding: 0.7em 0.5em;
 	position: absolute;
 	background-color: $blancTransparent; //#d7d7d7
-	-border: 1px solid $grisContour;
+	color: white;
 	border-top: none;
 	.client{
 		float: left;
@@ -92,14 +92,13 @@ div#client{
 
 nav#menu {
     text-transform: uppercase;
-    width: 100%;
+	width: 50%;
+	margin: 0 auto;
     font-weight: bold;
+    position: relative;
+    top: 11.65em;
 	ul{
 		list-style-type: none;
-		margin: 0 auto;
-		position: absolute;
-		top: 11.7em;
-		left: 23em;
 		li {
 		display: block;
 		float: left;
@@ -126,9 +125,19 @@ nav#menu {
  		margin-top: 2.5em;
  	}
  	#presentation{
+ 		width: 60%;
+ 		margin: 0 auto;
  		h3{
  			font-size: 20px;
  			margin-top: 1em;
+ 		}
+ 		#TitreUn{
+ 			padding: 0 1em;
+ 			text-align: center;
+ 			span{
+ 				padding: 0 1em;
+ 				background-color: white;
+ 			}
  		}
  		p{
  			margin-top: 0.5em;
@@ -224,22 +233,14 @@ section.contact{
 		margin: 3em 10em 1.5em 10em;
  	}
  	.titreActuColor{
- 		background-color: $rougePale;
+ 		background-color: white;
  		padding-right: 1em;
- 		color: white;
+ 		color: black;
  	}
- 	.titreActuColor2{
- 		background-color: $bleuPale;
- 		padding-right: 1em;
- 	}
-	.titreActu{
-		background-color: white;
-		padding: 0 1em;
-		text-align: center;
-	}
 	article.questions{
-		width: 100%;
+		width: 75%;
 		padding-bottom: 3em;
+		margin: 0 auto;
 		p{
 			text-align: center;
 		}
@@ -247,36 +248,16 @@ section.contact{
 			display: block;
 		}
 	}
-	article.deux {
-		background-color: $rougePale;
-		border-top: 1px solid $rougeLiens;
-		color: white;
-	}
-	article.trois {
-		background-color: $bleuPale;
-		border-top: 1px solid $bleuClair;
-		padding-bottom: 5em;
-		#newsletter{
-			width: 60%;
-			.texte{
-				width: 100%;
-			}
-			#OK{
-				@extend .submit;
-				padding: 1.5em;
-				margin-top: 1.5em;
-				color: white;
-				font-weight: bold;
-			}
-		}
-	}
 	#sujet{
-		width: 68%;
+		width: 69.5%;
 	}
 	.formulaire {
 		width: 60%;
 		margin: 0 auto;
 		text-align: center;
+		form{
+			padding-top: 1em;
+		}
 		.texte{
 			width: 60%;
 		}
@@ -285,7 +266,8 @@ section.contact{
 			width: 65%;
 			padding: 1em;
 			margin: 0.5em auto 0 auto;
-			border: none;
+			border: 1px solid $grisFonce;
+			@include border-radius(0.5em);
 		}
 		textarea{
 			font-family: "Roboto Regular";
