@@ -214,6 +214,7 @@ nav#menu > ul > #categorie:hover > #drop-down {
 section.main {
   margin: 15em 10em 3em 10em;
   /*PAGE PRODUIT */
+  /* Panier */
   /* SECTION PRINCIPALE CATEGORIES */ }
 /* line 171, ../scss/screen.scss */
 section.main h2 {
@@ -307,11 +308,6 @@ section.main .descriptionProduit {
   width: 45%;
   position: relative; }
 /* line 260, ../scss/screen.scss */
-section.main .descriptionProduit .tf {
-  color: green;
-  position: relative;
-  top: -0.25em; }
-/* line 265, ../scss/screen.scss */
 section.main .descriptionProduit .nom {
   text-transform: uppercase;
   border-top: 2px solid #68cef4;
@@ -319,7 +315,7 @@ section.main .descriptionProduit .nom {
   margin: 1em 0 1.5em 0;
   text-align: center;
   font-weight: bold; }
-/* line 273, ../scss/screen.scss */
+/* line 268, ../scss/screen.scss */
 section.main .descriptionProduit .prix {
   background-color: #e23836;
   color: white;
@@ -338,7 +334,7 @@ section.main .descriptionProduit .prix {
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   -moz-transform: rotate(15deg); }
-/* line 288, ../scss/screen.scss */
+/* line 283, ../scss/screen.scss */
 section.main .descriptionProduit .breveDescription {
   text-align: center;
   margin: 0.5em 0 1em 0;
@@ -347,48 +343,94 @@ section.main .descriptionProduit .breveDescription {
   border-top: 1px solid #969696;
   border-bottom: 1px solid #969696;
   background-color: #e3e3e3; }
+/* line 293, ../scss/screen.scss */
+section.main .tf, section.main .tff {
+  color: green;
+  position: relative;
+  top: -0.25em; }
 /* line 299, ../scss/screen.scss */
+section.main .tff {
+  color: #ab0000; }
+/* line 304, ../scss/screen.scss */
 section.main .half {
   width: 48%;
   float: left;
   margin-right: 1em; }
-/* line 303, ../scss/screen.scss */
+/* line 308, ../scss/screen.scss */
 section.main .half h4 {
   font-weight: bold;
   color: #535353;
   padding: 1em 0 0.5em 0; }
-/* line 309, ../scss/screen.scss */
+/* line 314, ../scss/screen.scss */
 section.main .full {
   width: 100%;
   float: left; }
-/* line 316, ../scss/screen.scss */
+/* line 322, ../scss/screen.scss */
+section.main #panier #voir {
+  display: block; }
+/* line 325, ../scss/screen.scss */
+section.main #panier th {
+  background-color: #e3e3e3;
+  color: #535353;
+  padding: 0.4em 4.45em 0.4em 0.5em;
+  font-size: 16px; }
+/* line 331, ../scss/screen.scss */
+section.main #panier td {
+  padding: 0.5em 1em 0.5em 0.5em; }
+/* line 334, ../scss/screen.scss */
+section.main #panier .quantity {
+  width: 2.5em;
+  text-align: center; }
+/* line 338, ../scss/screen.scss */
+section.main #panier .delete {
+  font-size: 16px; }
+/* line 341, ../scss/screen.scss */
+section.main #panier .disponibility {
+  position: relative;
+  top: -0.5em; }
+/* line 344, ../scss/screen.scss */
+section.main #panier .disponibility img {
+  padding-left: none; }
+/* line 348, ../scss/screen.scss */
+section.main #panier .articles {
+  border-bottom: 1px solid #969696; }
+/* line 352, ../scss/screen.scss */
+section.main .prix {
+  color: #ab0000;
+  font-weight: bold; }
+/* line 356, ../scss/screen.scss */
+section.main .total {
+  float: right;
+  padding: 0.5em 0 1em 0;
+  font-weight: bold; }
+/* line 364, ../scss/screen.scss */
 section.main .categorie {
   margin-top: 1em; }
-/* line 318, ../scss/screen.scss */
+/* line 366, ../scss/screen.scss */
 section.main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
-/* line 321, ../scss/screen.scss */
+/* line 369, ../scss/screen.scss */
 section.main .categorie .links .sousCat {
   margin: 1.5em 0 0.5em 0; }
-/* line 325, ../scss/screen.scss */
+/* line 373, ../scss/screen.scss */
 section.main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
-/* line 329, ../scss/screen.scss */
+/* line 377, ../scss/screen.scss */
 section.main .categorie .thumbCategorie {
   border: 1px solid #969696;
   float: left;
   margin-right: 1em; }
-/* line 334, ../scss/screen.scss */
+/* line 382, ../scss/screen.scss */
 section.main .categorie .description {
   min-height: 7em; }
-/* line 337, ../scss/screen.scss */
+/* line 385, ../scss/screen.scss */
 section.main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
-/* line 338, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 section.main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
@@ -398,76 +440,79 @@ section.main .categorie .article .ImgProdCat {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #969696; }
-/* line 347, ../scss/screen.scss */
+/* line 395, ../scss/screen.scss */
 section.main .categorie .article .cat {
   display: block; }
-/* line 351, ../scss/screen.scss */
+/* line 399, ../scss/screen.scss */
 section.main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
-/* line 355, ../scss/screen.scss */
+/* line 403, ../scss/screen.scss */
 section.main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
-/* line 361, ../scss/screen.scss */
-section.main .categorie .tri {
+/* line 410, ../scss/screen.scss */
+section.main .tri {
   background-color: #e3e3e3;
   margin-bottom: 1em; }
-/* line 364, ../scss/screen.scss */
-section.main .categorie .tri span, section.main .categorie .tri legend {
+/* line 413, ../scss/screen.scss */
+section.main .tri span, section.main .tri legend {
   font-size: 15px;
   color: #535353;
   margin-left: 1em; }
-/* line 369, ../scss/screen.scss */
-section.main .categorie .tri select, section.main .categorie .tri legend {
+/* line 418, ../scss/screen.scss */
+section.main .tri select, section.main .tri legend, section.main .tri .critere {
   float: left;
   margin: 0.265em; }
-/* line 373, ../scss/screen.scss */
-section.main .categorie .tri #select {
+/* line 422, ../scss/screen.scss */
+section.main .tri .critere {
+  margin-right: 5em; }
+/* line 425, ../scss/screen.scss */
+section.main .tri #select {
   float: right; }
 
 /* SECTION CONTACT */
-/* line 380, ../scss/screen.scss */
+/* line 431, ../scss/screen.scss */
 section.contact {
   margin: 15em 0 0 0; }
-/* line 382, ../scss/screen.scss */
+/* line 433, ../scss/screen.scss */
 section.contact h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   text-transform: uppercase;
   margin: 3em 10em 1.5em 10em; }
-/* line 389, ../scss/screen.scss */
+/* line 440, ../scss/screen.scss */
 section.contact .titreActuColor {
   background-color: white;
   padding-right: 1em;
   color: black; }
-/* line 394, ../scss/screen.scss */
+/* line 445, ../scss/screen.scss */
 section.contact article.questions {
   width: 75%;
   padding-bottom: 3em;
   margin: 0 auto; }
-/* line 398, ../scss/screen.scss */
+/* line 449, ../scss/screen.scss */
 section.contact article.questions p {
   text-align: center; }
-/* line 401, ../scss/screen.scss */
+/* line 452, ../scss/screen.scss */
 section.contact article.questions .questions {
   display: block; }
-/* line 405, ../scss/screen.scss */
+/* line 456, ../scss/screen.scss */
 section.contact #sujet {
   width: 69.5%; }
-/* line 408, ../scss/screen.scss */
+/* line 459, ../scss/screen.scss */
 section.contact .formulaire {
   width: 60%;
   margin: 0 auto;
   text-align: center; }
-/* line 412, ../scss/screen.scss */
+/* line 463, ../scss/screen.scss */
 section.contact .formulaire form {
   padding-top: 1em; }
-/* line 415, ../scss/screen.scss */
+/* line 466, ../scss/screen.scss */
 section.contact .formulaire .texte {
   width: 60%; }
-/* line 418, ../scss/screen.scss */
+/* line 469, ../scss/screen.scss */
 section.contact .formulaire .formContact {
   display: block;
   width: 65%;
@@ -479,10 +524,10 @@ section.contact .formulaire .formContact {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 426, ../scss/screen.scss */
+/* line 477, ../scss/screen.scss */
 section.contact .formulaire textarea {
   font-family: "Roboto Regular"; }
-/* line 429, ../scss/screen.scss */
+/* line 480, ../scss/screen.scss */
 section.contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
@@ -490,32 +535,32 @@ section.contact .formulaire #contact {
   margin-top: 1.5em;
   color: #535353;
   text-transform: uppercase; }
-/* line 436, ../scss/screen.scss */
+/* line 487, ../scss/screen.scss */
 section.contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
 
-/* line 444, ../scss/screen.scss */
+/* line 495, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   padding: 0em 5em 3em 5em;
   border-top: 2px solid #e23836;
   position: relative; }
-/* line 449, ../scss/screen.scss */
+/* line 500, ../scss/screen.scss */
 footer .news {
   width: 17em; }
-/* line 452, ../scss/screen.scss */
+/* line 503, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   padding-bottom: 1em;
   color: white; }
-/* line 457, ../scss/screen.scss */
+/* line 508, ../scss/screen.scss */
 footer .infos {
   float: left;
   width: 25%; }
-/* line 460, ../scss/screen.scss */
+/* line 511, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 464, ../scss/screen.scss */
+/* line 515, ../scss/screen.scss */
 footer #logoFooter {
   position: relative;
   top: -2em;
@@ -529,8 +574,8 @@ footer #logoFooter {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 477, ../scss/screen.scss */
-nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, #presentation:after, .actuality:after {
+/* line 528, ../scss/screen.scss */
+nav#menu:after, section.main:after, div.titres:after, footer:after, .quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, #presentation:after, .actuality:after {
   content: '';
   clear: both;
   display: block; }

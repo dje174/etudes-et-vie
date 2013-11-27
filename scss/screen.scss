@@ -257,11 +257,6 @@ nav#menu > ul > #categorie:hover > #drop-down{
 		float: left;
 		width: 45%;
 	   	position: relative;
-	   	.tf{
-	   		color: green;
-	   		position: relative;
-	   		top: -0.25em;
-	   	}
 		.nom{
 			text-transform: uppercase;
 			border-top: 2px solid $bleuClair;
@@ -295,6 +290,16 @@ nav#menu > ul > #categorie:hover > #drop-down{
 	    	background-color: $grisTresClair;
  		}
 	}
+	.tf{
+   		color: green;
+   		position: relative;
+   		top: -0.25em;
+   	}
+
+   	.tff{
+   		@extend .tf;
+   		color: $rougeFonce;
+   	}
 
 	.half{
 		width: 48%;
@@ -309,6 +314,49 @@ nav#menu > ul > #categorie:hover > #drop-down{
 	.full{
 		width: 100%;
 		float: left;
+	}
+
+	/* Panier */
+
+	#panier{
+		#voir{
+			display: block;
+		}
+		th{
+			background-color: $grisTresClair;
+			color: $grisFonce;
+			padding: 0.4em 4.45em 0.4em 0.5em;
+			font-size: 16px;
+		}
+		td{
+			padding:0.5em 1em 0.5em 0.5em;
+		}
+		.quantity{
+			width: 2.5em;
+			text-align: center;
+		}
+		.delete{
+			font-size: 16px;
+		}
+		.disponibility{
+			position: relative;
+			top: -0.5em;
+			img{
+				padding-left: none;
+			}
+		}
+		.articles{
+			border-bottom: 1px solid $grisContour;
+		}
+	}
+	.prix{
+		color: $rougeFonce;
+		font-weight: bold;
+	}
+	.total{
+		float: right;
+		padding: 0.5em 0 1em 0;
+		font-weight: bold;
 	}
 	
 
@@ -358,7 +406,8 @@ nav#menu > ul > #categorie:hover > #drop-down{
 				}
 			}
 		}
-		.tri{
+	}
+	.tri{
 			background-color: $grisTresClair;
 			margin-bottom: 1em;
 			span,legend{
@@ -366,14 +415,16 @@ nav#menu > ul > #categorie:hover > #drop-down{
 				color: $grisFonce;
 				margin-left: 1em;
 			}
-			select, legend{
+			select, legend,.critere{
 				float: left;
 				margin: 0.265em;
+			}
+			.critere{
+				margin-right: 5em;
 			}
 			#select{
 				float: right;
 			}
-		}
 	}
  }
 	/* SECTION CONTACT */
@@ -474,7 +525,7 @@ section.contact{
 
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after{
+nav#menu:after, section.main:after, div.titres:after, footer:after,.quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after{
 	content:'';
 	clear: both;
 	display: block;

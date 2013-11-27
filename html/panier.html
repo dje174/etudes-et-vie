@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/screen.css">
-    <title>Accueil | Produit</title>
+    <title>Accueil | Études et vie</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
         </div>
         <div id="logo">
             <a href="index.html" title="Études et vie">
-                <img src="../img/logo.png" alt="Études et vie logo">
+                <img src="../img/logo.png" alt="Études et vie. Santé, vie, environnement">
             </a>
         </div>
     </header>
@@ -84,80 +84,65 @@
     </nav>
     <section class="main">
         <div class="actuality">
-            <article id="presentation">
-                <h2 role="heading" aria-level="2"><span class="titreActu">Fiche du produit</span></h2>
-                <article class="slider">
-                    <img src="../img/imageProduit.png" alt="Image du produit" class="imgProduit">
-                    <article class="small">
-                        <img src="../img/imageProduitSmall.png" alt="Image du produit petite">
-                        <img src="../img/imageProduit2Small.png" alt="Image du produit 2 petite">
-                        <img src="../img/imageProduit3Small.png" alt="Image du produit 3 petite">
-                    </article>
-                </article>
-                <article class="descriptionProduit">
-                    <h3 class="nom">Nom du produit</h3>
-                    <span class="prix">1289€</span>
-                    <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span>
-                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                    <figure class="breveDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figure>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, consequuntur, cupiditate eveniet earum laborum natus accusantium rem autem quidem a quis ut officiis vero! Iure, nam necessitatibus blanditiis fuga aperiam!</p>
-                </article>
-            </article>
-            <div class="titres half">
-                <h2 role="heading" aria-level="2"><span class="titreActu">En savoir plus sur le produit</span></h2>
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, optio sapiente corporis? Dolorem, iste, qui fuga consequuntur ratione maiores suscipit dicta temporibus aliquam magnam mollitia ad nobis voluptas voluptatibus quia.</p>
-                <h4>Lorem Encore Sum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sint, suscipit, cumque voluptatibus totam reprehenderit minima ad dolorem distinctio beatae libero officiis numquam culpa maxime laudantium aut eligendi ipsam facilis!</p>
-                <h4>Lorem Finpsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, dolor, debitis, iusto dolorem perspiciatis temporibus unde expedita accusantium porro at autem aspernatur culpa repellat sapiente pariatur similique nam. Ipsam, libero.</p>
-            </div>
-            <div class="titres half">
-                <h2 role="heading" aria-level="2"><span class="titreActu">Accessoires</span></h2>
-                <article class="links">
-                    <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article1.png" alt="Produit">
-                            <span class="prix">798€</span>
-                            <figcaption class="legend">MK30 Kit de mesure</figcaption>
-                            </a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
-                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                        </article>
-                    </a>
-                    <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article2.png" alt="Produit">
+            <div id="presentation">
+                <h2 role="heading" aria-level="2" id="TitreUn"><span>Votre panier</span></h2>
+                <table id="panier">
+                    <tr>
+                        <th>Articles sélectionnés pour achat</th>
+                        <th>Modifier</th>
+                        <th>Prix</th>
+                        <th>Quantité</th>
+                    </tr>
+                    <tr class="articles">
+                        <td>
+                            <a href="pageProduit.html" title="Voir le produit" id="voir">PRISMA P1 Lite - Protection</a>
+                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
+                        </td>
+                        <td><span><a href="" class="delete">Supprimer</a></span></td>
+                        <td class="prix">99€</td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                    </tr>
+                    <tr class="articles">
+                        <td>
+                            <a href="pageProduit.html" title="Voir le produit" id="voir">Voile écran 40db - Blanc</a>
+                            <span class="disponibility"><img src="../img/disable.png" alt="Produit indisponible"> <span class="tff">Produit indisponible</span></span>
+                        </td>
+                        <td><span><a href="" class="delete">Supprimer</a></span></td>
+                        <td class="prix">99€</td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                    </tr>
+                    <tr class="articles">
+                        <td>
+                            <a href="pageProduit.html" title="Voir le produit" id="voir">MRK30 Kit de Mesure</a>
+                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
+                        </td>
+                        <td><span><a href="" class="delete">Supprimer</a></span></td>
+                        <td class="prix">798€</td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                    </tr>
+                </table>
+                <p class="total">Total des articles TTC: <span class="prix">996€</span></p>
+                <!--<p class="tri">
+                    <span>Articles sélectionnés pour achat</span>
+                    <span id="select">
+                        <span class="critere">Prix</span>
+                        <span class="critere">Quantité</span>
+                    </span>
+                </p>
+                <figure class="articlesSelect">
+                        <article>
+                            <span class="quoi"><a href="pageProduit.html" title="Voir le produit">
+                                <p>PRISMA P1 Lite - Protection</a></p>
+                                <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span>
+                                <span><a href="" class="delete">Supprimer du panier</a></span>
+                            </span>
                             <span class="prix">99€</span>
-                            <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
-                            </a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
-                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            <span class="combien"><input type="text" value="1"></span>
                         </article>
-                    </a>
-                    <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article3.png" alt="Produit">
-                            <span class="prix">99€</span>
-                            <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
-                            </a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
-                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                        </article>
-                    </a>
-                    <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article4.png" alt="Produit">
-                            <span class="prix">1289€</span>
-                            <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
-                            </a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
-                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                        </article>
-                    </a>
+                </figure>-->
             </div>
             <div class="titres full">
-                <h2 role="heading" aria-level="2"><span class="titreActu">Articles similaires</span></h2>
+                <h2 role="heading" aria-level="2"><span class="titreActu">Les client ayant acheter les articles dans votre panier ont également apprécié</span></h2>
                     <article class="links">
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit">
@@ -214,7 +199,7 @@
         </div>
     </section>
     <footer>
-        <a href="pageProduit.html" title="Haut de page">
+        <a href="panier.html" title="Haut de page">
             <div id="logoFooter">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>
@@ -242,6 +227,6 @@
             <a href="#" class="linksFooter">Twitter</a>
             <a href="#" class="linksFooter">Youtube</a>        
         </div>
-    </footer>   
+    </footer>    
 </body>
 </html>
