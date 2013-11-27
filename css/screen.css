@@ -232,7 +232,7 @@ section.main #presentation {
   width: 60%;
   margin: 0 auto; }
 /* line 187, ../scss/screen.scss */
-section.main #presentation h3 {
+section.main #presentation #where {
   font-size: 20px;
   margin-top: 1em; }
 /* line 191, ../scss/screen.scss */
@@ -290,24 +290,27 @@ section.main .categorie {
 section.main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
-/* line 244, ../scss/screen.scss */
+/* line 243, ../scss/screen.scss */
+section.main .categorie .links .sousCat {
+  margin: 1.5em 0 0.5em 0; }
+/* line 247, ../scss/screen.scss */
 section.main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
-/* line 248, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 section.main .categorie .thumbCategorie {
   border: 1px solid #969696;
   float: left;
   margin-right: 1em; }
-/* line 253, ../scss/screen.scss */
+/* line 256, ../scss/screen.scss */
 section.main .categorie .description {
   min-height: 7em; }
-/* line 256, ../scss/screen.scss */
+/* line 259, ../scss/screen.scss */
 section.main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
-/* line 257, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 section.main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
@@ -317,60 +320,76 @@ section.main .categorie .article .ImgProdCat {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #969696; }
-/* line 266, ../scss/screen.scss */
+/* line 269, ../scss/screen.scss */
 section.main .categorie .article .cat {
   display: block; }
-/* line 270, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 section.main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
-/* line 274, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
 section.main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
+/* line 283, ../scss/screen.scss */
+section.main .categorie .tri {
+  background-color: #e3e3e3;
+  margin-bottom: 1em; }
+/* line 286, ../scss/screen.scss */
+section.main .categorie .tri span, section.main .categorie .tri legend {
+  font-size: 15px;
+  color: #535353;
+  margin-left: 1em; }
+/* line 291, ../scss/screen.scss */
+section.main .categorie .tri select, section.main .categorie .tri legend {
+  float: left;
+  margin: 0.265em; }
+/* line 295, ../scss/screen.scss */
+section.main .categorie .tri #select {
+  float: right; }
 
 /* SECTION CONTACT */
-/* line 283, ../scss/screen.scss */
+/* line 302, ../scss/screen.scss */
 section.contact {
   margin: 15em 0 0 0; }
-/* line 285, ../scss/screen.scss */
+/* line 304, ../scss/screen.scss */
 section.contact h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   text-transform: uppercase;
   margin: 3em 10em 1.5em 10em; }
-/* line 292, ../scss/screen.scss */
+/* line 311, ../scss/screen.scss */
 section.contact .titreActuColor {
   background-color: white;
   padding-right: 1em;
   color: black; }
-/* line 297, ../scss/screen.scss */
+/* line 316, ../scss/screen.scss */
 section.contact article.questions {
   width: 75%;
   padding-bottom: 3em;
   margin: 0 auto; }
-/* line 301, ../scss/screen.scss */
+/* line 320, ../scss/screen.scss */
 section.contact article.questions p {
   text-align: center; }
-/* line 304, ../scss/screen.scss */
+/* line 323, ../scss/screen.scss */
 section.contact article.questions .questions {
   display: block; }
-/* line 308, ../scss/screen.scss */
+/* line 327, ../scss/screen.scss */
 section.contact #sujet {
   width: 69.5%; }
-/* line 311, ../scss/screen.scss */
+/* line 330, ../scss/screen.scss */
 section.contact .formulaire {
   width: 60%;
   margin: 0 auto;
   text-align: center; }
-/* line 315, ../scss/screen.scss */
+/* line 334, ../scss/screen.scss */
 section.contact .formulaire form {
   padding-top: 1em; }
-/* line 318, ../scss/screen.scss */
+/* line 337, ../scss/screen.scss */
 section.contact .formulaire .texte {
   width: 60%; }
-/* line 321, ../scss/screen.scss */
+/* line 340, ../scss/screen.scss */
 section.contact .formulaire .formContact {
   display: block;
   width: 65%;
@@ -382,10 +401,10 @@ section.contact .formulaire .formContact {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 329, ../scss/screen.scss */
+/* line 348, ../scss/screen.scss */
 section.contact .formulaire textarea {
   font-family: "Roboto Regular"; }
-/* line 332, ../scss/screen.scss */
+/* line 351, ../scss/screen.scss */
 section.contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
@@ -393,32 +412,32 @@ section.contact .formulaire #contact {
   margin-top: 1.5em;
   color: #535353;
   text-transform: uppercase; }
-/* line 339, ../scss/screen.scss */
+/* line 358, ../scss/screen.scss */
 section.contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
 
-/* line 347, ../scss/screen.scss */
+/* line 366, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   padding: 0em 5em 3em 5em;
   border-top: 2px solid #e23836;
   position: relative; }
-/* line 352, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 footer .news {
   width: 17em; }
-/* line 355, ../scss/screen.scss */
+/* line 374, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   padding-bottom: 1em;
   color: white; }
-/* line 360, ../scss/screen.scss */
+/* line 379, ../scss/screen.scss */
 footer .infos {
   float: left;
   width: 25%; }
-/* line 363, ../scss/screen.scss */
+/* line 382, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 367, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 footer #logoFooter {
   position: relative;
   top: -2em;
@@ -432,7 +451,7 @@ footer #logoFooter {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 380, ../scss/screen.scss */
+/* line 399, ../scss/screen.scss */
 nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after {
   content: '';
   clear: both;

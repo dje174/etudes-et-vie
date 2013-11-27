@@ -121,7 +121,7 @@ nav#menu {
 		opacity: 0;
 		visibility: hidden;
 		overflow: hidden;
-		background-color: #e3e3e3;
+		background-color: $grisTresClair;
 		color: black;
 		z-index: 100;
 		-webkit-transition: all .3s ease .15s;
@@ -184,7 +184,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
  	#presentation{
  		width: 60%;
  		margin: 0 auto;
- 		h3{
+ 		#where{
  			font-size: 20px;
  			margin-top: 1em;
  		}
@@ -240,6 +240,9 @@ nav#menu > ul > #categorie:hover > #drop-down{
 		.links{
 			margin: 1em 1em 0 0;
 			float: left;
+			.sousCat{
+				margin: 1.5em 0 0.5em 0;
+			}
 		}
 		.sousCat{
 			font-weight: bold;
@@ -275,6 +278,22 @@ nav#menu > ul > #categorie:hover > #drop-down{
 					float: left;
 					margin-left: 1em;
 				}
+			}
+		}
+		.tri{
+			background-color: $grisTresClair;
+			margin-bottom: 1em;
+			span,legend{
+				font-size: 15px;
+				color: $grisFonce;
+				margin-left: 1em;
+			}
+			select, legend{
+				float: left;
+				margin: 0.265em;
+			}
+			#select{
+				float: right;
 			}
 		}
 	}
