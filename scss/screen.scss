@@ -46,7 +46,7 @@ body{
 	}
 	.into{
 		position: absolute;
-		top: 0.075em;
+		top: 0.05em;
 		left: -3em;
 		cursor: pointer;
 	}
@@ -96,17 +96,74 @@ nav#menu {
 	margin: 0 auto;
     font-weight: bold;
     position: relative;
-    top: 11.65em;
+    top: 11.7em;
 	ul{
 		list-style-type: none;
-		li {
+		.onglets {
 		display: block;
 		float: left;
 		padding: 0px 1em;
 		margin: 0px 1em; //vert: #ceea88 orange: #e28a36 orange pale: #F1AA67
+			.onglet{
+				padding: 0.7em 0;
+			}
 		}
+	    #categorie span{
+	    	color: $rougeLiens;
+	    }
+	}
+	#drop-down{
+		position: absolute;
+		display: block;
+		width: 130%;
+		top: 2.2em;
+		left: -15%;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		background-color: #e3e3e3;
+		color: black;
+		z-index: 100;
+		-webkit-transition: all .3s ease .15s;
+	    -moz-transition: all .3s ease .15s;
+	    -o-transition: all .3s ease .15s;
+	    -ms-transition: all .3s ease .15s;
+	    transition: all .3s ease .15s;
+	    h3{
+	    	text-transform: none;
+	    	font-weight: lighter;
+	    	margin: 1em 1em 0 0;
+	    	padding: 0.25em 0;
+	    	border-top: 1px solid $rougeLiensHover;
+	    	border-bottom: 1px solid $rougeLiensHover;
+	    	font-size: 15px;
+		    text-align: center;
+	    }
+	    a{
+	    	display: block;
+	    	text-decoration: none;
+	    	text-transform: none;
+	    	font-size: 12px;
+	    	padding-top: 0.5em;
+
+	    }
+	    .nav-column{
+	    	float: left;
+		    width: 20%;
+		    padding-bottom: 1em;
+	    }
+	    .dropdownImg{
+	    	float:left;
+	    	padding: 1em 1em 3em 1em;
+	    }
 	}
 }
+
+nav#menu > ul > #categorie:hover > #drop-down{
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+		}
 
 /* SECTION PRINCIPALE ACCUEIL */
  section.main{
@@ -320,7 +377,7 @@ section.contact{
 
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after{
+nav#menu:after, section.main:after, div.titres:after, footer:after, div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after{
 	content:'';
 	clear: both;
 	display: block;
