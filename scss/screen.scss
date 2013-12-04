@@ -168,6 +168,9 @@ nav#menu > ul > #categorie:hover > #drop-down{
 /* SECTION PRINCIPALE ACCUEIL */
  section.main{
          margin: 15em 10em 3em 10em;
+         .acutality{
+            position: relative;
+         }
          h2{
                  background-image: url('../img/h2Fond.png');
                 background-repeat: repeat-x;
@@ -358,7 +361,25 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 padding: 0.5em 0 1em 0;
                 font-weight: bold;
         }
-        
+        .commande {
+            padding: 0 0.5em 0.5em 0.5em;
+            font-size: 16px;
+            position: absolute;
+            width: 18%;
+            left: 62.5em;
+            top: 21.6em;
+            background-color: $grisTresClair;
+            border: 1px solid $rougeLiens;
+            @include border-radius(0.25em);
+        }
+        #confirmCommande{
+            margin: 0 0 0.5em 3.5em;
+        }
+        .sign{
+            font-size: 12px;
+            text-align: center;
+            padding-bottom: 0.5em;
+        }
 
          /* SECTION PRINCIPALE CATEGORIES */
         .categorie{
@@ -493,6 +514,15 @@ section.contact{
                             padding-top: 1em;
                         }
                 }
+        }
+
+        /* Connect */
+        .connect {
+            padding-bottom: 1em;
+        }
+
+        #mdp {
+            margin: 1.5em 0 0.5em 0;
         }
 }
         
