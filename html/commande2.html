@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/screen.css">
-    <title>Votre commande | Études et vie</title>
+    <title>Vos coordonnées | Études et vie</title>
 </head>
 <body>
     <header>
@@ -86,58 +86,66 @@
         <div class="actuality">
             <div class="commande adjust">
                 <p class="total confirm">Il y a 4 articles dans votre panier pour un total de <span class="prix">1095€</span></p>
-                <a href="commande2.html" id="confirmCommande"><input type="submit" value="Continuer la commande" id="order"></a>
+                <a href="commande3.html" id="confirmCommande"><input type="submit" value="Continuer la commande" id="order"></a>
             </div>
             <div id="presentation">
                 <h2 role="heading" aria-level="2" id="TitreUn"><span>Votre commande</span></h2>
                 <ul class="procedureAchat">
-                    <li class="actif">Articles</li>
-                    <li>Coordonéées</li>
+                    <li class="old">Articles</li>
+                    <li class="actif">Coordonéées</li>
                     <li>Mode de paiement</li>
                     <li>Validation</li>
                 </ul>
-                <table id="panier">
-                    <tr>
-                        <th>Articles sélectionnés pour achat</th>
-                        <th>Quantité</th>
-                        <th>Prix unité</th>
-                        <th>Prix Total</th>
-                    </tr>
-                    <tr class="articles">
-                        <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">PRISMA P1 Lite - Protection</a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
-                        </td>
-                        <td>2x</td>
-                        <td>99€</td>
-                        <td class="prix">108€</td>
-                    </tr>
-                    <tr class="articles">
-                        <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">Voile écran 40db - Blanc</a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
-                        </td>
-                        <td>1x</td>
-                        <td>99€</td>
-                        <td class="prix">99€</td>
-                    </tr>
-                    <tr class="articles">
-                        <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">MRK30 Kit de Mesure</a>
-                            <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
-                        </td>
-                        <td>1x</td>
-                        <td>798€</td>
-                        <td class="prix">798€</td>
-                    </tr>
-                </table>
-                <p class="total">Total des articles TTC: <span class="prix">1095€</span></p>
+                <article class="coordonees">
+                    <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de livraison</span></h3>
+                        <h4 role="heading" aria-level="4">Adresse actuelle</h4>
+                        <aside>
+                            <p>Jérôme Poucet</p>
+                            <p>Avenue Emile Digneffe, 10</p>
+                            <p>4000</p>
+                            <p>Liège Belgique</p>
+                        </aside>
+                        <h4 role="heading" aria-level="4">Ajouter une adresse (facultatif)</h4>
+                        <form action="#">
+                            <label for="adresse 1">Adresse 1</label>
+                            <input type="text" placeholder="Rue, numéro de maison, nom de la société">
+                            <label for="adresse 1">Adresse 2 (facultatif)</label>
+                            <input type="text" placeholder="Bâtiment, étage, indication au livreur">
+                            <label for="ville">Ville</label>
+                            <input type="text" placeholder="Le nom de votre ville">
+                            <label for="ville">Code postal</label>
+                            <input type="text" placeholder="Votre code postal">
+                            <label for="pays">Pays</label>
+                            <input type="text" placeholder="Votre pays">
+                            <label for="telephone">Numéro de téléphone (facultatif)</label>
+                            <input type="text" placeholder="Votre numéro de téléphone">
+                        </form>
+                </article>
+                <article class="coordonees">
+                    <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de facturation</span></h3>
+                    <label for="facturation"><input type="checkbox"> Utiliser la même adresse que celle de livraison</label>
+                    <h4 role="heading" aria-level="4" id="facturation">Ajouter une adresse</h4>
+                        <form action="#">
+                            <label for="adresse 1">Adresse 1</label>
+                            <input type="text" placeholder="Rue, numéro de maison, nom de la société">
+                            <label for="adresse 1">Adresse 2 (facultatif)</label>
+                            <input type="text" placeholder="Bâtiment, étage, indication au livreur">
+                            <label for="ville">Ville</label>
+                            <input type="text" placeholder="Le nom de votre ville">
+                            <label for="ville">Code postal</label>
+                            <input type="text" placeholder="Votre code postal">
+                            <label for="pays">Pays</label>
+                            <input type="text" placeholder="Votre pays">
+                            <label for="telephone">Numéro de téléphone (facultatif)</label>
+                            <input type="text" placeholder="Votre numéro de téléphone">
+                        </form>
+                </article>
             </div>
             
         </div>
     </section>
     <footer>
-        <a href="commande.html" title="Haut de page">
+        <a href="commande2.html" title="Haut de page">
             <div id="logoFooter">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>

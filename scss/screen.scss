@@ -65,7 +65,14 @@ body{
                         padding: 0.6em 0.6em 0.6em 2em;
                         cursor: pointer;
                 }
-         }
+         } 
+        #order{
+            @extend .submit;
+            padding: 0.5em 1em;
+            margin-top: 1em;
+            font-size: 16px;
+            width: 100%;
+        }
 }
 
 /* ESPACE CLIENT */
@@ -172,7 +179,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
             position: relative;
          }
          h2{
-                 background-image: url('../img/h2Fond.png');
+                background-image: url('../img/h2Fond.png');
                 background-repeat: repeat-x;
                 line-height: 2.6em;
                 text-transform: uppercase;
@@ -322,13 +329,14 @@ nav#menu > ul > #categorie:hover > #drop-down{
         /* Panier */
 
         #panier{
+            width: 100%;
                 #voir{
                         display: block;
                 }
                 th{
                         background-color: $grisTresClair;
                         color: $grisFonce;
-                        padding: 0.4em 4.45em 0.4em 0.5em;
+                        padding: 0.4em 4em 0.4em 0.5em;
                         font-size: 16px;
                 }
                 td{
@@ -361,24 +369,101 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 padding: 0.5em 0 1em 0;
                 font-weight: bold;
         }
+        .confirm{
+            text-align: center;
+        }
         .commande {
             padding: 0 0.5em 0.5em 0.5em;
             font-size: 16px;
             position: absolute;
             width: 18%;
-            left: 62.5em;
+            left: 63.5em;
             top: 21.6em;
             background-color: $grisTresClair;
             border: 1px solid $rougeLiens;
             @include border-radius(0.25em);
         }
-        #confirmCommande{
-            margin: 0 0 0.5em 3.5em;
+        .adjust {
+            top: 25em;
+        }
+        .recap{
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            color: $grisFonce;
+        }
+        .strong{
+            font-weight: bold;
         }
         .sign{
             font-size: 12px;
             text-align: center;
             padding-bottom: 0.5em;
+        }
+
+        /* Procédure d'achat */
+        ul.procedureAchat{
+            background-color: $rougeOpacity;
+            li{
+                width: 25%;
+                float: left;
+                text-align: center;
+                padding: 0.5em 0;
+                color: $grisFonce;
+                border-bottom: 0.5em solid $grisContour;
+            }
+            .actif{
+                color: white;
+                background-color: $rougeLiens;
+                border-bottom: 0.5em solid $grisFonce;
+            }
+            .old{
+                color: $grisTresClair;
+                background-color: $rougeLiensHover;
+                border-bottom: 0.5em solid $grisFonce;
+            }
+        }
+        .coordonees{
+            width: 48%;
+            float: left;
+            margin-left: 0.75em;
+            h3{
+                background-image: url('../img/h2Fond.png');
+                background-repeat: repeat-x;
+                line-height: 2.6em;
+                font-size: 20px;
+            }
+            h4{
+                font-weight: bold;
+                color: $grisFonce;
+                padding-bottom: 0.5em;
+            }
+            aside{
+                line-height: 1em;
+                padding-bottom: 1.5em;
+            }
+            label, #crypto{
+                font-size: 15px;
+            }
+            form{
+                label{
+                    display: block;
+                }
+                input{
+                    display: block;
+                    padding: 0.5em 0.75em;
+                    @include border-radius(0.5em);
+                    border: 1px solid $grisContour;
+                    margin-bottom: 0.75em;
+                    width: 80%;
+                }
+                select{
+                    margin-bottom: 1.25em;
+                }
+            }
+            #facturation{
+                margin-top: 0.75em;
+            }
         }
 
          /* SECTION PRINCIPALE CATEGORIES */
@@ -429,23 +514,23 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 }
         }
         .tri{
-                        background-color: $grisTresClair;
-                        margin-bottom: 1em;
-                        span,legend{
-                                font-size: 15px;
-                                color: $grisFonce;
-                                margin-left: 1em;
-                        }
-                        select, legend,.critere{
-                                float: left;
-                                margin: 0.265em;
-                        }
-                        .critere{
-                                margin-right: 5em;
-                        }
-                        #select{
-                                float: right;
-                        }
+            background-color: $grisTresClair;
+            margin-bottom: 1em;
+            span,legend{
+                    font-size: 15px;
+                    color: $grisFonce;
+                    margin-left: 1em;
+            }
+            select, legend,.critere{
+                    float: left;
+                    margin: 0.265em;
+            }
+            .critere{
+                    margin-right: 5em;
+            }
+            #select{
+                    float: right;
+            }
         }
  }
         /* SECTION CONTACT */
@@ -560,7 +645,7 @@ section.contact{
 
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after,.quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after{
+nav#menu:after, section.main:after, div.titres:after, footer:after,.quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after, ul.procedureAchat:after{
         content:'';
         clear: both;
         display: block;
