@@ -19,7 +19,7 @@ body{
         }
         div#logo img{
                 position: absolute;
-                top: 2em; left: 2em;
+                top: 2em; left: 3em;
         }
         .submit{
                 padding: 0.3em 0.5em;
@@ -46,7 +46,7 @@ body{
         }
         .into{
                 position: absolute;
-                top: 0.05em;
+                top: 0.125em;
                 left: -3em;
                 cursor: pointer;
         }
@@ -73,6 +73,7 @@ body{
             font-size: 16px;
             width: 100%;
         }
+
 }
 
 /* ESPACE CLIENT */
@@ -99,8 +100,8 @@ div#client{
 
 nav#menu {
     text-transform: uppercase;
-        width: 57%;
-        margin: 0 auto;
+    width: 58%;
+    margin: 0 auto;
     font-weight: bold;
     position: relative;
     top: 11.7em;
@@ -109,8 +110,10 @@ nav#menu {
                 .onglets {
                 display: block;
                 float: left;
-                padding: 0px 1em;
-                margin: 0px 1em; //vert: #ceea88 orange: #e28a36 orange pale: #F1AA67
+                width: 10em;
+                text-align: center;
+                -padding: 0px 2.6em;
+                -margin: 0px 1em; //vert: #ceea88 orange: #e28a36 orange pale: #F1AA67
                         .onglet{
                                 padding: 0.7em 0;
                         }
@@ -181,8 +184,8 @@ nav#menu > ul > #categorie:hover > #drop-down{
          h2{
                 background-image: url('../img/h2Fond.png');
                 background-repeat: repeat-x;
-                line-height: 2.6em;
-                text-transform: uppercase;
+                line-height: 2.25em;
+                font-size: 22.9px;
          }
         .titreActu{
                 background-color: white;
@@ -192,10 +195,11 @@ nav#menu > ul > #categorie:hover > #drop-down{
                  margin-top: 2.5em;
          }
          #presentation{
-                 width: 80%;
+                 width: 70%;
                  margin: 0 auto;
+                 text-align: center;
                  #where{
-                         font-size: 20px;
+                         font-size: 20.3px;
                          margin-top: 1em;
                  }
                  #TitreUn{
@@ -213,8 +217,20 @@ nav#menu > ul > #categorie:hover > #drop-down{
                          color: $grisFonce;
                  }
           }
+          #pageCategorie{
+            width: 70%;
+            margin: 0 auto;
+            #TitreUn{
+                 padding: 0 1em;
+                 text-align: center;
+                 span{
+                    padding: 0 1em;
+                    background-color: white;
+                 }
+            }
+          }
          .produit{
-                 margin: 1.5em 3.75em 1em 0;
+                 margin: 1.5em 2.16em 1em 1.9em;
                  position: relative;
                  float: left;
                  .thumbProduit{
@@ -253,7 +269,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
                         float: left;
                 }
                 .imgProduit{
-                        margin: 1em 2.5em 8em 0;
+                        margin: 1em 1em 8em 0;
                 }
                 .small{
                         position: absolute;
@@ -312,9 +328,9 @@ nav#menu > ul > #categorie:hover > #drop-down{
            }
 
         .half{
-                width: 48%;
+                width: 49%;
                 float: left;
-                margin-right: 1em;
+                margin-right: 0.5em;
                 h4{
                         font-weight: bold;
                         color: $grisFonce;
@@ -327,7 +343,18 @@ nav#menu > ul > #categorie:hover > #drop-down{
         }
 
         /* Panier */
-
+        #commandeAdjust{
+            width: 80%;
+            margin: 0 auto;
+            #TitreUn{
+                padding: 0 1em;
+                text-align: center;
+                span{
+                     padding: 0 1em;
+                     background-color: white;
+                }
+            }
+        }
         #panier{
             width: 100%;
                 #voir{
@@ -424,7 +451,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
             }
         }
         .coordonees{
-            width: 48%;
+            width: 47%;
             float: left;
             margin-left: 0.75em;
             h3{
@@ -523,13 +550,13 @@ nav#menu > ul > #categorie:hover > #drop-down{
             }
             select, legend,.critere{
                     float: left;
-                    margin: 0.265em;
             }
             .critere{
                     margin-right: 5em;
             }
             #select{
                     float: right;
+                    margin: 0.165em 0.265em;
             }
         }
  }
@@ -539,33 +566,37 @@ section.contact{
         h2{
                  background-image: url('../img/h2Fond.png');
                 background-repeat: repeat-x;
-                line-height: 2.6em;
-                text-transform: uppercase;
+                line-height: 2.25em;
+                text-align: center;
+                font-size: 22.9px;
                 margin: 3em 10em 1.5em 10em;
          }
          .titreActuColor{
                  background-color: white;
-                 padding-right: 1em;
+                 padding: 0 1em;
                  color: black;
          }
-        article.questions{
-                width: 75%;
-                padding-bottom: 3em;
-                margin: 0 auto;
-                p{
-                        text-align: center;
-                }
-                .questions{
-                        display: block;
-                }
+        article.questions{           
+            width: 86.5%;
+            padding-bottom: 3em;
+            margin: 0 auto;
+            p{
+                    text-align: center;
+            }
+            .questions{
+                    display: block;
+            }
         }
         #sujet{
-                width: 69.5%;
+                width: 68%;
         }
         .formulaire {
                 width: 60%;
                 margin: 0 auto;
                 text-align: center;
+                p.mdp{
+                    padding-top: 1em;
+                }
                 form{
                         padding-top: 1em;
                 }
@@ -575,13 +606,11 @@ section.contact{
                 .formContact{
                         display: block;
                         width: 65%;
-                        padding: 1em;
+                        padding: 0.5em;
                         margin: 0.5em auto 0 auto;
                         border: 1px solid $grisFonce;
                         @include border-radius(0.5em);
-                }
-                textarea{
-                        font-family: "Roboto Regular";
+                        font-size: 18px;
                 }
                 #contact{
                         background-color: $bleuClair;
@@ -590,6 +619,7 @@ section.contact{
                         margin-top: 1.5em;
                         color: $grisFonce;
                         text-transform: uppercase;
+                        font-size: 15px;
                         &:hover{
                                 background-color: $bleuPale;
                         }
