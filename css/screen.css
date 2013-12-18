@@ -47,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   height: 100%;
   width: 100%;
-  font: 18px/1.5 "Roboto Regular" sans-serif;
+  font: 18px/1.5 "Roboto", sans-serif;
   background-image: url("../img/banNav2.png");
   background-repeat: repeat-x;
   background-color: white; }
