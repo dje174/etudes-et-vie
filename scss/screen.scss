@@ -1,6 +1,7 @@
 @import "compass";
 @import "compass/reset";
 @import "colors";
+@import "mixins";
 
 body{
         height: 100%;
@@ -11,13 +12,13 @@ body{
          background-color: white;
         a{
                 text-decoration: none;
-                color: $rougeLiens;                        
+                color: $redLinks;                        
                 &:hover{
                         text-decoration: underline;
-                        color: $rougeLiensHover;
+                        color: $redLinksHover;
                 }
         }
-        div#logo img{
+        .homeLogo img{
                 position: absolute;
                 top: 2em; left: 3em;
         }
@@ -25,11 +26,11 @@ body{
                 padding: 0.3em 0.5em;
                 color: white;
                 border: none;
-                background-color: $rougeLiens;
+                background-color: $redLinks;
                 cursor: pointer;
                 @include border-radius(0.3em);
                 &:hover{
-                        background-color: $rougeLiensHover;
+                        background-color: $redLinksHover;
                 }
         }
         .texte{
@@ -78,12 +79,12 @@ body{
 
 /* ESPACE CLIENT */
 
-div#client{
+.user{
         left: 52em;
         top: 0.01em;
         padding: 0.7em 0.5em;
         position: absolute;
-        background-color: $blancTransparent; //#d7d7d7
+        background-color: $whiteOpacity; //#d7d7d7
         color: white;
         border-top: none;
         .client{
@@ -98,13 +99,12 @@ div#client{
 
 /* MENU */
 
-nav#menu {
+#menu {
     text-transform: uppercase;
     width: 58%;
-    margin: 0 auto;
+    margin: 11.7em auto 0 auto;
     font-weight: bold;
     position: relative;
-    top: 11.7em;
         ul{
                 list-style-type: none;
                 .onglets {
@@ -119,7 +119,7 @@ nav#menu {
                         }
                 }
             #categorie span{
-                    color: $rougeLiens;
+                    color: $redLinks;
             }
         }
         #drop-down{
@@ -131,7 +131,7 @@ nav#menu {
                 opacity: 0;
                 visibility: hidden;
                 overflow: hidden;
-                background-color: $grisTresClair;
+                background-color: $veryClearGray;
                 color: black;
                 z-index: 100;
                 -webkit-transition: all .3s ease .15s;
@@ -144,8 +144,8 @@ nav#menu {
                     font-weight: lighter;
                     margin: 1em 1em 0 0;
                     padding: 0.25em 0;
-                    border-top: 1px solid $rougeLiensHover;
-                    border-bottom: 1px solid $rougeLiensHover;
+                    border-top: 1px solid $redLinksHover;
+                    border-bottom: 1px solid $redLinksHover;
                     font-size: 15px;
                     text-align: center;
             }
@@ -169,15 +169,15 @@ nav#menu {
         }
 }
 
-nav#menu > ul > #categorie:hover > #drop-down{
+#menu > ul > #categorie:hover > #drop-down{
                 opacity: 1;
                 visibility: visible;
                 overflow: visible;
                 }
 
 /* SECTION PRINCIPALE ACCUEIL */
- section.main{
-         margin: 15em 10em 3em 10em;
+ .main{
+         margin: 3em 10em 3em 10em;
          .acutality{
             position: relative;
          }
@@ -191,10 +191,10 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 background-color: white;
                 padding-right: 1em;
         }
-         div.titres{
+        .titres{
                  margin-top: 2.5em;
-         }
-         #presentation{
+        }
+        #presentation{
                  width: 70%;
                  margin: 0 auto;
                  text-align: center;
@@ -214,7 +214,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
                          margin-top: 0.5em;
                  }
                  .infoVentes{
-                         color: $grisFonce;
+                         color: $darkGray;
                  }
           }
           #pageCategorie{
@@ -234,10 +234,10 @@ nav#menu > ul > #categorie:hover > #drop-down{
                  position: relative;
                  float: left;
                  .thumbProduit{
-                         border: 1px solid $grisContour;
+                         border: 1px solid $borderGray;
                  }
                  .prix{
-                         background-color: $rougeLiens;
+                         background-color: $redLinks;
                          color: white;
                          -font-weight: bold;
                          @include border-radius(0.4em);
@@ -250,8 +250,8 @@ nav#menu > ul > #categorie:hover > #drop-down{
                  .legend{
                          width: 8.444em;
                          text-align: center;
-                         border-top: 2px solid $bleuClair;
-                         border-bottom: 2px solid $bleuClair;
+                         border-top: 2px solid $blueClear;
+                         border-bottom: 2px solid $blueClear;
                          min-height:3em;
                  }
          }
@@ -265,7 +265,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
         .slider{
                 position: relative;
                 img{
-                        border: 1px solid $grisContour;
+                        border: 1px solid $borderGray;
                         float: left;
                 }
                 .imgProduit{
@@ -285,14 +285,14 @@ nav#menu > ul > #categorie:hover > #drop-down{
                    position: relative;
                 .nom{
                         text-transform: uppercase;
-                        border-top: 2px solid $bleuClair;
-                    border-bottom: 2px solid $bleuClair;
+                        border-top: 2px solid $blueClear;
+                    border-bottom: 2px solid $blueClear;
                     margin: 1em 0 1.5em 0;
                     text-align: center;
                     font-weight: bold;
                 }
                 .prix{
-                         background-color: $rougeLiens;
+                         background-color: $redLinks;
                          color: white;
                          -font-weight: bold;
                          @include border-radius(0.4em);
@@ -310,10 +310,10 @@ nav#menu > ul > #categorie:hover > #drop-down{
                          text-align: center;
                          margin: 0.5em 0 1em 0;
                          padding: 1em 0;
-                         color: $grisFonce;
-                         border-top: 1px solid $grisContour;
-                    border-bottom: 1px solid $grisContour;
-                    background-color: $grisTresClair;
+                         color: $darkGray;
+                         border-top: 1px solid $borderGray;
+                    border-bottom: 1px solid $borderGray;
+                    background-color: $veryClearGray;
                  }
         }
         .tf{
@@ -324,7 +324,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
 
            .tff{
                    @extend .tf;
-                   color: $rougeFonce;
+                   color: $redDark;
            }
 
         .half{
@@ -333,7 +333,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 margin-right: 0.5em;
                 h4{
                         font-weight: bold;
-                        color: $grisFonce;
+                        color: $darkGray;
                         padding: 1em 0 0.5em 0;
                 }
         }
@@ -361,8 +361,8 @@ nav#menu > ul > #categorie:hover > #drop-down{
                         display: block;
                 }
                 th{
-                        background-color: $grisTresClair;
-                        color: $grisFonce;
+                        background-color: $veryClearGray;
+                        color: $darkGray;
                         padding: 0.4em 4em 0.4em 0.5em;
                         font-size: 16px;
                 }
@@ -384,11 +384,11 @@ nav#menu > ul > #categorie:hover > #drop-down{
                         }
                 }
                 .articles{
-                        border-bottom: 1px solid $grisContour;
+                        border-bottom: 1px solid $borderGray;
                 }
         }
         .prix{
-                color: $rougeFonce;
+                color: $redDark;
                 -font-weight: bold;
         }
         .total{
@@ -406,8 +406,8 @@ nav#menu > ul > #categorie:hover > #drop-down{
             width: 18%;
             left: 63.5em;
             top: 21.6em;
-            background-color: $grisTresClair;
-            border: 1px solid $rougeLiens;
+            background-color: $veryClearGray;
+            border: 1px solid $redLinks;
             @include border-radius(0.25em);
         }
         .adjust {
@@ -417,7 +417,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
             display: block;
             text-align: center;
             font-size: 20px;
-            color: $grisFonce;
+            color: $darkGray;
         }
         .strong{
             font-weight: bold;
@@ -429,25 +429,25 @@ nav#menu > ul > #categorie:hover > #drop-down{
         }
 
         /* Procédure d'achat */
-        ul.procedureAchat{
-            background-color: $rougeOpacity;
+        .procedureAchat{
+            background-color: $redOpacity;
             li{
                 width: 25%;
                 float: left;
                 text-align: center;
                 padding: 0.5em 0;
-                color: $grisFonce;
-                border-bottom: 0.5em solid $grisContour;
+                color: $darkGray;
+                border-bottom: 0.5em solid $borderGray;
             }
             .actif{
                 color: white;
-                background-color: $rougeLiens;
-                border-bottom: 0.5em solid $grisFonce;
+                background-color: $redLinks;
+                border-bottom: 0.5em solid $darkGray;
             }
             .old{
-                color: $grisTresClair;
-                background-color: $rougeLiensHover;
-                border-bottom: 0.5em solid $grisFonce;
+                color: $veryClearGray;
+                background-color: $redLinksHover;
+                border-bottom: 0.5em solid $darkGray;
             }
         }
         .coordonees{
@@ -462,7 +462,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
             }
             h4{
                 font-weight: bold;
-                color: $grisFonce;
+                color: $darkGray;
                 padding-bottom: 0.5em;
             }
             aside{
@@ -480,7 +480,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
                     display: block;
                     padding: 0.5em 0.75em;
                     @include border-radius(0.5em);
-                    border: 1px solid $grisContour;
+                    border: 1px solid $borderGray;
                     margin-bottom: 0.75em;
                     width: 80%;
                 }
@@ -505,10 +505,10 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 }
                 .sousCat{
                         font-weight: bold;
-                        color: $grisFonce;
+                        color: $darkGray;
                 }
                 .thumbCategorie{
-                        border: 1px solid $grisContour;
+                        border: 1px solid $borderGray;
                         float: left;
                         margin-right: 1em;
                 }
@@ -520,7 +520,7 @@ nav#menu > ul > #categorie:hover > #drop-down{
                                 float: left;
                                 margin: 0.4em 0.5em 0 0;
                                 @include border-radius(0.3em);
-                                border: 1px solid $grisContour;
+                                border: 1px solid $borderGray;
                         }
                         float: left;
                         width: 12em;
@@ -541,11 +541,11 @@ nav#menu > ul > #categorie:hover > #drop-down{
                 }
         }
         .tri{
-            background-color: $grisTresClair;
+            background-color: $veryClearGray;
             margin-bottom: 1em;
             span,legend{
                     font-size: 15px;
-                    color: $grisFonce;
+                    color: $darkGray;
                     margin-left: 1em;
             }
             select, legend,.critere{
@@ -561,75 +561,85 @@ nav#menu > ul > #categorie:hover > #drop-down{
         }
  }
         /* SECTION CONTACT */
-section.contact{
-        margin: 15em 0 0 0;
-        h2{
-                 background-image: url('../img/h2Fond.png');
-                background-repeat: repeat-x;
-                line-height: 2.25em;
+.contact{
+    margin: 3em 0 0 0;
+    h2{
+             background-image: url('../img/h2Fond.png');
+            background-repeat: repeat-x;
+            line-height: 2.25em;
+            text-align: center;
+            font-size: 22.9px;
+            margin: 3em 10em 1.5em 10em;
+     }
+     .titreActuColor{
+             background-color: white;
+             padding: 0 1em;
+             color: black;
+     }
+    article.questions{           
+        width: 86.5%;
+        padding-bottom: 3em;
+        margin: 0 auto;
+        p{
                 text-align: center;
-                font-size: 22.9px;
-                margin: 3em 10em 1.5em 10em;
-         }
-         .titreActuColor{
-                 background-color: white;
-                 padding: 0 1em;
-                 color: black;
-         }
-        article.questions{           
-            width: 86.5%;
-            padding-bottom: 3em;
+        }
+        .questions{
+                display: block;
+        }
+    }
+    #sujet{
+            width: 68%;
+    }
+    .h-card{
+        margin-bottom: 1em;
+        .adresse{
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+        .coordonneesInt{
+            color: $darkGray;
+        }
+    }
+    .formulaire {
+            width: 60%;
             margin: 0 auto;
-            p{
-                    text-align: center;
+            text-align: center;
+            p.mdp{
+                padding-top: 1em;
             }
-            .questions{
-                    display: block;
-            }
-        }
-        #sujet{
-                width: 68%;
-        }
-        .formulaire {
-                width: 60%;
-                margin: 0 auto;
-                text-align: center;
-                p.mdp{
+            form{
                     padding-top: 1em;
-                }
-                form{
+            }
+            .texte{
+                    width: 60%;
+            }
+            .formContact{
+                    display: block;
+                    width: 65%;
+                    padding: 0.5em;
+                    margin: 0.5em auto 0 auto;
+                    border: 1px solid $darkGray;
+                    @include border-radius(0.5em);
+                    font-size: 18px;
+            }
+            #contact{
+                    background-color: $blueClear;
+                    font-weight: bold;
+                    padding: 1em;
+                    margin-top: 1.5em;
+                    color: $darkGray;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    &:hover{
+                            background-color: $bluePale;
+                    }
+            }
+            .contact{
+                    p{
                         padding-top: 1em;
-                }
-                .texte{
-                        width: 60%;
-                }
-                .formContact{
-                        display: block;
-                        width: 65%;
-                        padding: 0.5em;
-                        margin: 0.5em auto 0 auto;
-                        border: 1px solid $grisFonce;
-                        @include border-radius(0.5em);
-                        font-size: 18px;
-                }
-                #contact{
-                        background-color: $bleuClair;
-                        font-weight: bold;
-                        padding: 1em;
-                        margin-top: 1.5em;
-                        color: $grisFonce;
-                        text-transform: uppercase;
-                        font-size: 15px;
-                        &:hover{
-                                background-color: $bleuPale;
-                        }
-                }
-                .contact{
-                        p{
-                            padding-top: 1em;
-                        }
-                }
-        }
+                    }
+            }
+}
 
         /* Connect */
         .connect {
@@ -645,7 +655,7 @@ section.contact{
  footer{
         background-color: #2c2c2c;
          padding: 0em 5em 3em 5em;
-         border-top: 2px solid $rougeLiens;
+         border-top: 2px solid $redLinks;
          position: relative;
          .news{
                  width: 17em;
@@ -662,7 +672,7 @@ section.contact{
                          display: block;
                  }
          }
-         #logoFooter{
+         .footerLogo{
                  position: relative;
                  top: -2em;
                 margin: 0 auto;
@@ -675,8 +685,6 @@ section.contact{
 
 
 
-nav#menu:after, section.main:after, div.titres:after, footer:after,.quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after, ul.procedureAchat:after{
-        content:'';
-        clear: both;
-        display: block;
+#menu:after, .main:after, .titres:after, footer:after,.quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,#presentation:after, .actuality:after, .procedureAchat:after{
+    @include reinitFloat();
 }

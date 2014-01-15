@@ -43,7 +43,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 5, ../scss/screen.scss */
+/* line 6, ../scss/screen.scss */
 body {
   height: 100%;
   width: 100%;
@@ -51,20 +51,20 @@ body {
   background-image: url("../img/banNav2.png");
   background-repeat: repeat-x;
   background-color: white; }
-/* line 12, ../scss/screen.scss */
+/* line 13, ../scss/screen.scss */
 body a {
   text-decoration: none;
   color: #e23836; }
-/* line 15, ../scss/screen.scss */
+/* line 16, ../scss/screen.scss */
 body a:hover {
   text-decoration: underline;
   color: #f45b5b; }
-/* line 20, ../scss/screen.scss */
-body div#logo img {
+/* line 21, ../scss/screen.scss */
+body .homeLogo img {
   position: absolute;
   top: 2em;
   left: 3em; }
-/* line 24, ../scss/screen.scss */
+/* line 25, ../scss/screen.scss */
 body .submit, body #order {
   padding: 0.3em 0.5em;
   color: white;
@@ -76,10 +76,10 @@ body .submit, body #order {
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em; }
-/* line 31, ../scss/screen.scss */
+/* line 32, ../scss/screen.scss */
 body .submit:hover, body #order:hover {
   background-color: #f45b5b; }
-/* line 35, ../scss/screen.scss */
+/* line 36, ../scss/screen.scss */
 body .texte {
   padding: 0.5em;
   -webkit-border-radius: 0.3em;
@@ -88,34 +88,34 @@ body .texte {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: none; }
-/* line 40, ../scss/screen.scss */
+/* line 41, ../scss/screen.scss */
 body .searchDiv {
   position: relative;
   top: -0.1em; }
-/* line 44, ../scss/screen.scss */
+/* line 45, ../scss/screen.scss */
 body .search {
   position: relative; }
-/* line 47, ../scss/screen.scss */
+/* line 48, ../scss/screen.scss */
 body .into {
   position: absolute;
   top: 0.125em;
   left: -3em;
   cursor: pointer; }
-/* line 53, ../scss/screen.scss */
+/* line 54, ../scss/screen.scss */
 body .add {
   background-image: url("../img/add-26.png");
   background-repeat: no-repeat; }
-/* line 58, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 body .disponibility img {
   padding: 0.5em 0.5em 0 0.5em; }
-/* line 61, ../scss/screen.scss */
+/* line 62, ../scss/screen.scss */
 body .disponibility input {
   float: right;
   text-transform: uppercase;
   margin: 0.5em 0.5em 0 0;
   padding: 0.6em 0.6em 0.6em 2em;
   cursor: pointer; }
-/* line 69, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 body #order {
   padding: 0.5em 1em;
   margin-top: 1em;
@@ -123,8 +123,8 @@ body #order {
   width: 100%; }
 
 /* ESPACE CLIENT */
-/* line 81, ../scss/screen.scss */
-div#client {
+/* line 82, ../scss/screen.scss */
+.user {
   left: 52em;
   top: 0.01em;
   padding: 0.7em 0.5em;
@@ -132,29 +132,28 @@ div#client {
   background-color: rgba(255, 255, 255, 0.6);
   color: white;
   border-top: none; }
-/* line 89, ../scss/screen.scss */
-div#client .client {
+/* line 90, ../scss/screen.scss */
+.user .client {
   float: left;
   padding: 0 0.5em; }
-/* line 93, ../scss/screen.scss */
-div#client #cart:before {
+/* line 94, ../scss/screen.scss */
+.user #cart:before {
   content: url("../img/cart.png");
   padding-right: 0.5em; }
 
 /* MENU */
-/* line 101, ../scss/screen.scss */
-nav#menu {
+/* line 102, ../scss/screen.scss */
+#menu {
   text-transform: uppercase;
   width: 58%;
-  margin: 0 auto;
+  margin: 11.7em auto 0 auto;
   font-weight: bold;
-  position: relative;
-  top: 11.7em; }
+  position: relative; }
 /* line 108, ../scss/screen.scss */
-nav#menu ul {
+#menu ul {
   list-style-type: none; }
 /* line 110, ../scss/screen.scss */
-nav#menu ul .onglets {
+#menu ul .onglets {
   display: block;
   float: left;
   width: 10em;
@@ -162,13 +161,13 @@ nav#menu ul .onglets {
   -padding: 0px 2.6em;
   -margin: 0px 1em; }
 /* line 117, ../scss/screen.scss */
-nav#menu ul .onglets .onglet {
+#menu ul .onglets .onglet {
   padding: 0.7em 0; }
 /* line 121, ../scss/screen.scss */
-nav#menu ul #categorie span {
+#menu ul #categorie span {
   color: #e23836; }
 /* line 125, ../scss/screen.scss */
-nav#menu #drop-down {
+#menu #drop-down {
   position: absolute;
   display: block;
   width: 130%;
@@ -186,7 +185,7 @@ nav#menu #drop-down {
   -ms-transition: all .3s ease .15s;
   transition: all .3s ease .15s; }
 /* line 142, ../scss/screen.scss */
-nav#menu #drop-down h3 {
+#menu #drop-down h3 {
   text-transform: none;
   font-weight: lighter;
   margin: 1em 1em 0 0;
@@ -196,97 +195,97 @@ nav#menu #drop-down h3 {
   font-size: 15px;
   text-align: center; }
 /* line 152, ../scss/screen.scss */
-nav#menu #drop-down a {
+#menu #drop-down a {
   display: block;
   text-decoration: none;
   text-transform: none;
   font-size: 12px;
   padding-top: 0.5em; }
 /* line 160, ../scss/screen.scss */
-nav#menu #drop-down .nav-column {
+#menu #drop-down .nav-column {
   float: left;
   width: 20%;
   padding-bottom: 1em; }
 /* line 165, ../scss/screen.scss */
-nav#menu #drop-down .dropdownImg {
+#menu #drop-down .dropdownImg {
   float: left;
   padding: 1em 1em 3em 1em; }
 
 /* line 172, ../scss/screen.scss */
-nav#menu > ul > #categorie:hover > #drop-down {
+#menu > ul > #categorie:hover > #drop-down {
   opacity: 1;
   visibility: visible;
   overflow: visible; }
 
 /* SECTION PRINCIPALE ACCUEIL */
 /* line 179, ../scss/screen.scss */
-section.main {
-  margin: 15em 10em 3em 10em;
+.main {
+  margin: 3em 10em 3em 10em;
   /*PAGE PRODUIT */
   /* Panier */
   /* Procédure d'achat */
   /* SECTION PRINCIPALE CATEGORIES */ }
 /* line 181, ../scss/screen.scss */
-section.main .acutality {
+.main .acutality {
   position: relative; }
 /* line 184, ../scss/screen.scss */
-section.main h2 {
+.main h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.25em;
   font-size: 22.9px; }
 /* line 190, ../scss/screen.scss */
-section.main .titreActu {
+.main .titreActu {
   background-color: white;
   padding-right: 1em; }
 /* line 194, ../scss/screen.scss */
-section.main div.titres {
+.main .titres {
   margin-top: 2.5em; }
 /* line 197, ../scss/screen.scss */
-section.main #presentation {
+.main #presentation {
   width: 70%;
   margin: 0 auto;
   text-align: center; }
 /* line 201, ../scss/screen.scss */
-section.main #presentation #where {
+.main #presentation #where {
   font-size: 20.3px;
   margin-top: 1em; }
 /* line 205, ../scss/screen.scss */
-section.main #presentation #TitreUn {
+.main #presentation #TitreUn {
   padding: 0 1em;
   text-align: center; }
 /* line 208, ../scss/screen.scss */
-section.main #presentation #TitreUn span {
+.main #presentation #TitreUn span {
   padding: 0 1em;
   background-color: white; }
 /* line 213, ../scss/screen.scss */
-section.main #presentation p {
+.main #presentation p {
   margin-top: 0.5em; }
 /* line 216, ../scss/screen.scss */
-section.main #presentation .infoVentes {
+.main #presentation .infoVentes {
   color: #535353; }
 /* line 220, ../scss/screen.scss */
-section.main #pageCategorie {
+.main #pageCategorie {
   width: 70%;
   margin: 0 auto; }
 /* line 223, ../scss/screen.scss */
-section.main #pageCategorie #TitreUn {
+.main #pageCategorie #TitreUn {
   padding: 0 1em;
   text-align: center; }
 /* line 226, ../scss/screen.scss */
-section.main #pageCategorie #TitreUn span {
+.main #pageCategorie #TitreUn span {
   padding: 0 1em;
   background-color: white; }
 /* line 232, ../scss/screen.scss */
-section.main .produit {
+.main .produit {
   margin: 1.5em 2.16em 1em 1.9em;
   position: relative;
   float: left; }
 /* line 236, ../scss/screen.scss */
-section.main .produit .thumbProduit {
+.main .produit .thumbProduit {
   border: 1px solid #969696; }
 /* line 239, ../scss/screen.scss */
-section.main .produit .prix {
+.main .produit .prix {
   background-color: #e23836;
   color: white;
   -font-weight: bold;
@@ -301,40 +300,40 @@ section.main .produit .prix {
   top: -1em;
   left: 6em; }
 /* line 250, ../scss/screen.scss */
-section.main .produit .legend {
+.main .produit .legend {
   width: 8.444em;
   text-align: center;
   border-top: 2px solid #68cef4;
   border-bottom: 2px solid #68cef4;
   min-height: 3em; }
 /* line 258, ../scss/screen.scss */
-section.main .plus {
+.main .plus {
   float: right;
   width: 10em; }
 /* line 265, ../scss/screen.scss */
-section.main .slider {
+.main .slider {
   position: relative; }
 /* line 267, ../scss/screen.scss */
-section.main .slider img {
+.main .slider img {
   border: 1px solid #969696;
   float: left; }
 /* line 271, ../scss/screen.scss */
-section.main .slider .imgProduit {
+.main .slider .imgProduit {
   margin: 1em 1em 8em 0; }
 /* line 274, ../scss/screen.scss */
-section.main .slider .small {
+.main .slider .small {
   position: absolute;
   top: 20.4em; }
 /* line 277, ../scss/screen.scss */
-section.main .slider .small img {
+.main .slider .small img {
   margin-right: 0.8em; }
 /* line 282, ../scss/screen.scss */
-section.main .descriptionProduit {
+.main .descriptionProduit {
   float: left;
   width: 45%;
   position: relative; }
 /* line 286, ../scss/screen.scss */
-section.main .descriptionProduit .nom {
+.main .descriptionProduit .nom {
   text-transform: uppercase;
   border-top: 2px solid #68cef4;
   border-bottom: 2px solid #68cef4;
@@ -342,7 +341,7 @@ section.main .descriptionProduit .nom {
   text-align: center;
   font-weight: bold; }
 /* line 294, ../scss/screen.scss */
-section.main .descriptionProduit .prix {
+.main .descriptionProduit .prix {
   background-color: #e23836;
   color: white;
   -font-weight: bold;
@@ -361,7 +360,7 @@ section.main .descriptionProduit .prix {
   -o-transform: rotate(15deg);
   -moz-transform: rotate(15deg); }
 /* line 309, ../scss/screen.scss */
-section.main .descriptionProduit .breveDescription {
+.main .descriptionProduit .breveDescription {
   text-align: center;
   margin: 0.5em 0 1em 0;
   padding: 1em 0;
@@ -370,85 +369,85 @@ section.main .descriptionProduit .breveDescription {
   border-bottom: 1px solid #969696;
   background-color: #e3e3e3; }
 /* line 319, ../scss/screen.scss */
-section.main .tf, section.main .tff {
+.main .tf, .main .tff {
   color: green;
   position: relative;
   top: -0.25em; }
 /* line 325, ../scss/screen.scss */
-section.main .tff {
+.main .tff {
   color: #ab0000; }
 /* line 330, ../scss/screen.scss */
-section.main .half {
+.main .half {
   width: 49%;
   float: left;
   margin-right: 0.5em; }
 /* line 334, ../scss/screen.scss */
-section.main .half h4 {
+.main .half h4 {
   font-weight: bold;
   color: #535353;
   padding: 1em 0 0.5em 0; }
 /* line 340, ../scss/screen.scss */
-section.main .full {
+.main .full {
   width: 100%;
   float: left; }
 /* line 346, ../scss/screen.scss */
-section.main #commandeAdjust {
+.main #commandeAdjust {
   width: 80%;
   margin: 0 auto; }
 /* line 349, ../scss/screen.scss */
-section.main #commandeAdjust #TitreUn {
+.main #commandeAdjust #TitreUn {
   padding: 0 1em;
   text-align: center; }
 /* line 352, ../scss/screen.scss */
-section.main #commandeAdjust #TitreUn span {
+.main #commandeAdjust #TitreUn span {
   padding: 0 1em;
   background-color: white; }
 /* line 358, ../scss/screen.scss */
-section.main #panier {
+.main #panier {
   width: 100%; }
 /* line 360, ../scss/screen.scss */
-section.main #panier #voir {
+.main #panier #voir {
   display: block; }
 /* line 363, ../scss/screen.scss */
-section.main #panier th {
+.main #panier th {
   background-color: #e3e3e3;
   color: #535353;
   padding: 0.4em 4em 0.4em 0.5em;
   font-size: 16px; }
 /* line 369, ../scss/screen.scss */
-section.main #panier td {
+.main #panier td {
   padding: 0.5em 1em 0.5em 0.5em; }
 /* line 372, ../scss/screen.scss */
-section.main #panier .quantity {
+.main #panier .quantity {
   width: 2.5em;
   text-align: center; }
 /* line 376, ../scss/screen.scss */
-section.main #panier .delete {
+.main #panier .delete {
   font-size: 16px; }
 /* line 379, ../scss/screen.scss */
-section.main #panier .disponibility {
+.main #panier .disponibility {
   position: relative;
   top: -0.5em; }
 /* line 382, ../scss/screen.scss */
-section.main #panier .disponibility img {
+.main #panier .disponibility img {
   padding-left: none; }
 /* line 386, ../scss/screen.scss */
-section.main #panier .articles {
+.main #panier .articles {
   border-bottom: 1px solid #969696; }
 /* line 390, ../scss/screen.scss */
-section.main .prix {
+.main .prix {
   color: #ab0000;
   -font-weight: bold; }
 /* line 394, ../scss/screen.scss */
-section.main .total {
+.main .total {
   float: right;
   padding: 0.5em 0 1em 0;
   font-weight: bold; }
 /* line 399, ../scss/screen.scss */
-section.main .confirm {
+.main .confirm {
   text-align: center; }
 /* line 402, ../scss/screen.scss */
-section.main .commande {
+.main .commande {
   padding: 0 0.5em 0.5em 0.5em;
   font-size: 16px;
   position: absolute;
@@ -463,27 +462,27 @@ section.main .commande {
   -o-border-radius: 0.25em;
   border-radius: 0.25em; }
 /* line 413, ../scss/screen.scss */
-section.main .adjust {
+.main .adjust {
   top: 25em; }
 /* line 416, ../scss/screen.scss */
-section.main .recap {
+.main .recap {
   display: block;
   text-align: center;
   font-size: 20px;
   color: #535353; }
 /* line 422, ../scss/screen.scss */
-section.main .strong {
+.main .strong {
   font-weight: bold; }
 /* line 425, ../scss/screen.scss */
-section.main .sign {
+.main .sign {
   font-size: 12px;
   text-align: center;
   padding-bottom: 0.5em; }
 /* line 432, ../scss/screen.scss */
-section.main ul.procedureAchat {
+.main .procedureAchat {
   background-color: rgba(248, 90, 89, 0.5); }
 /* line 434, ../scss/screen.scss */
-section.main ul.procedureAchat li {
+.main .procedureAchat li {
   width: 25%;
   float: left;
   text-align: center;
@@ -491,43 +490,43 @@ section.main ul.procedureAchat li {
   color: #535353;
   border-bottom: 0.5em solid #969696; }
 /* line 442, ../scss/screen.scss */
-section.main ul.procedureAchat .actif {
+.main .procedureAchat .actif {
   color: white;
   background-color: #e23836;
   border-bottom: 0.5em solid #535353; }
 /* line 447, ../scss/screen.scss */
-section.main ul.procedureAchat .old {
+.main .procedureAchat .old {
   color: #e3e3e3;
   background-color: #f45b5b;
   border-bottom: 0.5em solid #535353; }
 /* line 453, ../scss/screen.scss */
-section.main .coordonees {
+.main .coordonees {
   width: 47%;
   float: left;
   margin-left: 0.75em; }
 /* line 457, ../scss/screen.scss */
-section.main .coordonees h3 {
+.main .coordonees h3 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   font-size: 20px; }
 /* line 463, ../scss/screen.scss */
-section.main .coordonees h4 {
+.main .coordonees h4 {
   font-weight: bold;
   color: #535353;
   padding-bottom: 0.5em; }
 /* line 468, ../scss/screen.scss */
-section.main .coordonees aside {
+.main .coordonees aside {
   line-height: 1em;
   padding-bottom: 1.5em; }
 /* line 472, ../scss/screen.scss */
-section.main .coordonees label, section.main .coordonees #crypto {
+.main .coordonees label, .main .coordonees #crypto {
   font-size: 15px; }
 /* line 476, ../scss/screen.scss */
-section.main .coordonees form label {
+.main .coordonees form label {
   display: block; }
 /* line 479, ../scss/screen.scss */
-section.main .coordonees form input {
+.main .coordonees form input {
   display: block;
   padding: 0.5em 0.75em;
   -webkit-border-radius: 0.5em;
@@ -539,40 +538,40 @@ section.main .coordonees form input {
   margin-bottom: 0.75em;
   width: 80%; }
 /* line 487, ../scss/screen.scss */
-section.main .coordonees form select {
+.main .coordonees form select {
   margin-bottom: 1.25em; }
 /* line 491, ../scss/screen.scss */
-section.main .coordonees #facturation {
+.main .coordonees #facturation {
   margin-top: 0.75em; }
 /* line 497, ../scss/screen.scss */
-section.main .categorie {
+.main .categorie {
   margin-top: 1em; }
 /* line 499, ../scss/screen.scss */
-section.main .categorie .links {
+.main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
 /* line 502, ../scss/screen.scss */
-section.main .categorie .links .sousCat {
+.main .categorie .links .sousCat {
   margin: 1.5em 0 0.5em 0; }
 /* line 506, ../scss/screen.scss */
-section.main .categorie .sousCat {
+.main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
 /* line 510, ../scss/screen.scss */
-section.main .categorie .thumbCategorie {
+.main .categorie .thumbCategorie {
   border: 1px solid #969696;
   float: left;
   margin-right: 1em; }
 /* line 515, ../scss/screen.scss */
-section.main .categorie .description {
+.main .categorie .description {
   min-height: 7em; }
 /* line 518, ../scss/screen.scss */
-section.main .categorie .article {
+.main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
 /* line 519, ../scss/screen.scss */
-section.main .categorie .article .ImgProdCat {
+.main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
   -webkit-border-radius: 0.3em;
@@ -582,43 +581,43 @@ section.main .categorie .article .ImgProdCat {
   border-radius: 0.3em;
   border: 1px solid #969696; }
 /* line 528, ../scss/screen.scss */
-section.main .categorie .article .cat {
+.main .categorie .article .cat {
   display: block; }
 /* line 532, ../scss/screen.scss */
-section.main .categorie .article .disponibility img {
+.main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
 /* line 536, ../scss/screen.scss */
-section.main .categorie .article .disponibility .add {
+.main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
 /* line 543, ../scss/screen.scss */
-section.main .tri {
+.main .tri {
   background-color: #e3e3e3;
   margin-bottom: 1em; }
 /* line 546, ../scss/screen.scss */
-section.main .tri span, section.main .tri legend {
+.main .tri span, .main .tri legend {
   font-size: 15px;
   color: #535353;
   margin-left: 1em; }
 /* line 551, ../scss/screen.scss */
-section.main .tri select, section.main .tri legend, section.main .tri .critere {
+.main .tri select, .main .tri legend, .main .tri .critere {
   float: left; }
 /* line 554, ../scss/screen.scss */
-section.main .tri .critere {
+.main .tri .critere {
   margin-right: 5em; }
 /* line 557, ../scss/screen.scss */
-section.main .tri #select {
+.main .tri #select {
   float: right;
   margin: 0.165em 0.265em; }
 
 /* SECTION CONTACT */
 /* line 564, ../scss/screen.scss */
-section.contact {
-  margin: 15em 0 0 0;
+.contact {
+  margin: 3em 0 0 0;
   /* Connect */ }
 /* line 566, ../scss/screen.scss */
-section.contact h2 {
+.contact h2 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.25em;
@@ -626,40 +625,50 @@ section.contact h2 {
   font-size: 22.9px;
   margin: 3em 10em 1.5em 10em; }
 /* line 574, ../scss/screen.scss */
-section.contact .titreActuColor {
+.contact .titreActuColor {
   background-color: white;
   padding: 0 1em;
   color: black; }
 /* line 579, ../scss/screen.scss */
-section.contact article.questions {
+.contact article.questions {
   width: 86.5%;
   padding-bottom: 3em;
   margin: 0 auto; }
 /* line 583, ../scss/screen.scss */
-section.contact article.questions p {
+.contact article.questions p {
   text-align: center; }
 /* line 586, ../scss/screen.scss */
-section.contact article.questions .questions {
+.contact article.questions .questions {
   display: block; }
 /* line 590, ../scss/screen.scss */
-section.contact #sujet {
+.contact #sujet {
   width: 68%; }
 /* line 593, ../scss/screen.scss */
-section.contact .formulaire {
+.contact .h-card {
+  margin-bottom: 1em; }
+/* line 595, ../scss/screen.scss */
+.contact .h-card .adresse {
+  margin-bottom: 1em;
+  font-weight: bold; }
+/* line 599, ../scss/screen.scss */
+.contact .h-card .coordonneesInt {
+  color: #535353; }
+/* line 603, ../scss/screen.scss */
+.contact .formulaire {
   width: 60%;
   margin: 0 auto;
   text-align: center; }
-/* line 597, ../scss/screen.scss */
-section.contact .formulaire p.mdp {
+/* line 607, ../scss/screen.scss */
+.contact .formulaire p.mdp {
   padding-top: 1em; }
-/* line 600, ../scss/screen.scss */
-section.contact .formulaire form {
+/* line 610, ../scss/screen.scss */
+.contact .formulaire form {
   padding-top: 1em; }
-/* line 603, ../scss/screen.scss */
-section.contact .formulaire .texte {
+/* line 613, ../scss/screen.scss */
+.contact .formulaire .texte {
   width: 60%; }
-/* line 606, ../scss/screen.scss */
-section.contact .formulaire .formContact {
+/* line 616, ../scss/screen.scss */
+.contact .formulaire .formContact {
   display: block;
   width: 65%;
   padding: 0.5em;
@@ -671,8 +680,8 @@ section.contact .formulaire .formContact {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   font-size: 18px; }
-/* line 615, ../scss/screen.scss */
-section.contact .formulaire #contact {
+/* line 625, ../scss/screen.scss */
+.contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
   padding: 1em;
@@ -680,42 +689,42 @@ section.contact .formulaire #contact {
   color: #535353;
   text-transform: uppercase;
   font-size: 15px; }
-/* line 623, ../scss/screen.scss */
-section.contact .formulaire #contact:hover {
+/* line 633, ../scss/screen.scss */
+.contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
-/* line 628, ../scss/screen.scss */
-section.contact .formulaire .contact p {
+/* line 638, ../scss/screen.scss */
+.contact .formulaire .contact p {
   padding-top: 1em; }
-/* line 635, ../scss/screen.scss */
-section.contact .connect {
+/* line 645, ../scss/screen.scss */
+.contact .connect {
   padding-bottom: 1em; }
-/* line 639, ../scss/screen.scss */
-section.contact #mdp {
+/* line 649, ../scss/screen.scss */
+.contact #mdp {
   margin: 1.5em 0 0.5em 0; }
 
-/* line 645, ../scss/screen.scss */
+/* line 655, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   padding: 0em 5em 3em 5em;
   border-top: 2px solid #e23836;
   position: relative; }
-/* line 650, ../scss/screen.scss */
+/* line 660, ../scss/screen.scss */
 footer .news {
   width: 17em; }
-/* line 653, ../scss/screen.scss */
+/* line 663, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   padding-bottom: 1em;
   color: white; }
-/* line 658, ../scss/screen.scss */
+/* line 668, ../scss/screen.scss */
 footer .infos {
   float: left;
   width: 25%; }
-/* line 661, ../scss/screen.scss */
+/* line 671, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 665, ../scss/screen.scss */
-footer #logoFooter {
+/* line 675, ../scss/screen.scss */
+footer .footerLogo {
   position: relative;
   top: -2em;
   margin: 0 auto;
@@ -728,8 +737,8 @@ footer #logoFooter {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 678, ../scss/screen.scss */
-nav#menu:after, section.main:after, div.titres:after, footer:after, .quoi:after div#client:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, #presentation:after, .actuality:after, ul.procedureAchat:after {
+/* line 688, ../scss/screen.scss */
+#menu:after, .main:after, .titres:after, footer:after, .quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, #presentation:after, .actuality:after, .procedureAchat:after {
   content: '';
   clear: both;
   display: block; }
