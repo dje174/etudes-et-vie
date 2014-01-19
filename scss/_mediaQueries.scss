@@ -351,11 +351,6 @@
 	.question{
 		text-align: center;
 	}
-	.formulaire{
-		.formContact{
-			width: 20em;
-		}
-	}
 	/* Panier */
     .commande{
     	width: 20em;
@@ -409,6 +404,11 @@
 			margin-top: 2em;
 		}
 	}
+	.formulaire{
+		.formContact{
+			width: 20em;
+		}
+	}
 }
 @media only screen and (min-width:1200px) and (max-width:1500px){
 	#menu{
@@ -440,6 +440,15 @@
     		margin-left: 2em;
     	}
     }
+    #drop-down{
+		width: 125%;
+		left: -6em;
+		.nav-column{
+			width: 19%;
+			float: left;
+			padding:1em 0;
+		}
+	}
 }
 
 @media only screen and (min-width:1500px){
@@ -472,4 +481,14 @@
     		margin-left: 2em;
     	}
     }
+    /* Drop Down */
+	#drop-down{
+		width: 130%;
+		left: -9em;
+		.nav-column{
+			width: 19%;
+			float: left;
+			padding:1em 0;
+		}
+	}
 }
