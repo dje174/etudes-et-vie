@@ -1,0 +1,148 @@
+@media only screen and (min-width : 320px) and (max-width : 500px) {
+	.user{
+		width: 100%;
+		padding: 0.25em 0;
+	}
+	.homeLogo img {
+		margin: 3em auto 0 auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	#menu{
+		width: 100%;
+		ul{
+			li{
+				width: 33%;
+			}
+		}
+		.searchDiv{
+			width: 100%;
+			margin: 1em 0 0 0;
+			.texte{
+				border: 1px solid $darkGray;
+				width: 16em;
+				font-size: 17px;
+			}
+			.into{
+				padding: 0.5em 0.75em;
+				top: 0.01em;
+				left: -3.5em;
+			}
+		}
+	}
+	h2{
+		font-size: 18px;
+		text-align: center;
+	}
+	.main{
+		margin-top: 1em;
+		
+		#presentation{
+			margin: 0 0.5em;
+		}
+		.produit{
+			width: 8.5em;
+			margin: 2em auto;
+		}
+		.plus{
+			margin-left: 4.25em;
+		}
+	}
+	.contact{
+		margin-top: 1em;
+		padding: 0 0.75em;
+		.formulaire{
+			input{
+				width: 80%;
+				text-align: center;
+			}
+		}
+		#message, .formContact{
+			width: 80%;
+		}
+		.adresse{
+			margin-top: 1em;
+		}
+	}
+	/* Categorie */
+	#pageCategorie{
+		text-align: center;
+		padding: 0 0.75em;		
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		.tri>span{
+			float: left;
+			margin-top: 0.25em;
+		}
+		.tri{
+			width: 100%;
+			font-size: 12px;
+		}
+	}
+	/* Page produit */
+	.slider{
+		width: 17em;
+		margin: 0 auto;
+	}
+    .imgProduit{
+        margin: 1em 0 8em 0;
+        max-width: 286px;
+    }
+    .imgProduitSmall{
+        max-width: 84px;
+        position: relative;
+        top: -2em;
+    }
+    #presentation{
+    	&>h2{
+    		margin-top: 1em;
+    	}
+    	text-align: center;
+    }
+    .descriptionProduit{
+    	.nom{
+    		margin: 0.5em 0 1em 0;
+    	} 	
+	    .prix{
+	    	display: block;
+	    	width: 10em;
+	    	margin: 0 auto 0.75em auto;
+	    }
+    }
+    .titres{
+    	text-align: center;
+    	padding: 0 0.75em;
+    }
+    /* Panier */
+    .commande{
+    	width: 17em;
+    	margin: 0 auto;
+    }
+    #panier{
+    	width: 100%;
+    	margin-top: 1em;
+    	font-size: 14px;
+    	th{
+    		padding: 0 0.4em;
+    	}
+    }
+    .procedureAchat{
+    	font-size: 13px;
+    }
+    .coordonees{
+    	width: 17em;
+    	margin: 0 auto;
+    	h3{
+    		margin-top: 0.75em;
+    	}
+    }
+    /* Footer */
+	footer{
+		.infos{
+			width: 100%;
+			text-align: center;
+			padding-bottom: 1.5em;
+		}
+	}
+}
