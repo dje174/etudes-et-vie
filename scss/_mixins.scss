@@ -3,3 +3,9 @@
     clear: both;
     display: block;
 }
+
+@mixin InputTextStyle {
+    padding: 0.5em 0.75em;
+    @include border-radius(0.5em);
+    border: 1px solid $borderGray;
+}

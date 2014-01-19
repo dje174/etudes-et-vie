@@ -126,48 +126,48 @@ body{
             }
         }
         #drop-down{
-                position: absolute;
-                display: block;
-                width: 130%;
-                top: 2.2em;
-                left: -15%;
-                opacity: 0;
-                visibility: hidden;
-                overflow: hidden;
-                background-color: $veryClearGray;
-                color: black;
-                z-index: 100;
-                -webkit-transition: all .3s ease .15s;
+            position: absolute;
+            display: block;
+            //width: 130%;
+            top: 2.2em;
+            //left: -15%;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            background-color: $veryClearGray;
+            color: black;
+            z-index: 100;
+            -webkit-transition: all .3s ease .15s;
             -moz-transition: all .3s ease .15s;
             -o-transition: all .3s ease .15s;
             -ms-transition: all .3s ease .15s;
             transition: all .3s ease .15s;
             h3{
-                    text-transform: none;
-                    font-weight: lighter;
-                    margin: 1em 1em 0 0;
-                    padding: 0.25em 0;
-                    border-top: 1px solid $redLinksHover;
-                    border-bottom: 1px solid $redLinksHover;
-                    font-size: 15px;
-                    text-align: center;
+                text-transform: none;
+                font-weight: lighter;
+                margin: 1em 1em 0 0;
+                padding: 0.25em 0;
+                border-top: 1px solid $redLinksHover;
+                border-bottom: 1px solid $redLinksHover;
+                font-size: 15px;
+                text-align: center;
             }
             a{
-                    display: block;
-                    text-decoration: none;
-                    text-transform: none;
-                    font-size: 12px;
-                    padding-top: 0.5em;
+                display: block;
+                text-decoration: none;
+                text-transform: none;
+                font-size: 12px;
+                padding-top: 0.5em;
 
             }
             .nav-column{
-                    float: left;
-                    width: 20%;
-                    padding-bottom: 1em;
+                float: left;
+                width: 20%;
+                //padding-bottom: 1em;
             }
             .dropdownImg{
-                    float:left;
-                    padding: 1em 1em 3em 1em;
+                float:left;
+                padding: 1em 1em 3em 1em;
             }
         }
 }
@@ -484,10 +484,9 @@ body{
                 }
                 input{
                     display: block;
-                    padding: 0.5em 0.75em;
-                    @include border-radius(0.5em);
-                    border: 1px solid $borderGray;
                     margin-bottom: 0.75em;
+                    font-size: 16px;
+                    @include InputTextStyle();
                     width: 80%;
                 }
                 select{
