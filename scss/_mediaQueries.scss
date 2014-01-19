@@ -7,10 +7,13 @@
 		margin: 3em auto 0 auto;
 		top: 0; left: 0; bottom: 0; right: 0;
 	}
+	.links{
+		@extend .titres;
+	}
 }
 @media only screen and (min-width : 320px) and(max-width:950px){
 	#presentation{
-		padding: 0 1em;
+		//padding: 0 1em;
 	}
 }
 @media only screen and (min-width : 320px) and (max-width : 500px) {
@@ -248,9 +251,6 @@
     		margin-top: 0.75em;
     	}
     }
-	.links{
-		@extend .titres;
-	}
 }
 
 @media only screen and(min-width:500px) and (max-width:950px){
@@ -309,6 +309,16 @@
 		}
 	}
 }
+@media only screen and(min-width:950px){
+    footer{
+		.infos{
+			width: 25%;
+			text-align: center;
+			padding-bottom: 1.5em;
+			min-height: 8em;
+		}
+	}
+}
 @media only screen and(min-width:800px) and (max-width:950px){
 	.titres{
 		h2{
@@ -325,6 +335,61 @@
 			}
 		}
 	}
+	/* Drop Down */
+	#drop-down{
+		width: 100%;
+		left: 0;
+		.dropdownImg{
+			visibility: hidden;
+			position: absolute;
+		}
+		.nav-column{
+			width: 20%;
+			padding: 0 1em 1em 1em;
+		}
+	}
+	.question{
+		text-align: center;
+	}
+	.formulaire{
+		.formContact{
+			width: 20em;
+		}
+	}
+	/* Panier */
+    .commande{
+    	width: 20em;
+    	margin: 2em auto 1em auto;
+    }
+    #panier{
+    	width: 100%;
+    	margin: 0 auto;
+    	font-size: 17px;
+    	th{
+    		padding: 0 0.5em;
+    	}
+	}
+	.total{
+		padding-right: 1em;
+	}
+    .procedureAchat{
+    	width: 100%;
+    	margin: 0 auto;
+    	font-size: 16px;
+    }
+    #commandeAdjust{
+    	width: 80%;
+    }
+    .coordonees{
+    	width: 47%;
+        float: left;
+        margin-left: 0.75em;
+    	h3{
+    		margin-top: 0.75em;
+    	}
+    }
+}
+@media only screen and (min-width:800px) {
 	.searchDiv{
 			.texte{
 				border: 1px solid $darkGray;
@@ -334,8 +399,9 @@
 			}
 			.into{
 				padding: 0.5em 0.75em;
-				top: -0.4em;
-				left: -3.5em;
+				font-size: 15px;
+				top: -0.65em;
+				left: -3.45em;
 			}
 	}
 	#presentation{
@@ -343,4 +409,67 @@
 			margin-top: 2em;
 		}
 	}
+}
+@media only screen and (min-width:1200px) and (max-width:1500px){
+	#menu{
+		width: 70%;
+		ul{
+			li{
+				width: 25%;
+			}
+		}
+	}
+	#presentation{
+    	width: 51em;
+    	margin: 0 auto;
+    }
+    .titres{
+    	padding: 0 0.75em;
+    	margin: 0 auto;
+    	width: 65em;
+    	.produit{
+    		float: left;
+    		margin: 1.75em 6em 0 0;
+    	}
+    	.plus{
+    		width: 15em;
+    		position: relative;
+    		top: 13em;
+    	}
+    	h2{
+    		margin-left: 2em;
+    	}
+    }
+}
+
+@media only screen and (min-width:1500px){
+	#menu{
+		width: 55%;
+		ul{
+			li{
+				width: 25%;
+			}
+		}
+	}
+	#presentation{
+    	width: 51em;
+    	margin: 0 auto;
+    }
+    .titres{
+    	padding: 0 0.75em;
+    	margin: 0 auto;
+    	width: 70em;
+    	.produit{
+    		float: left;
+    		margin: 1.75em 6em 0 0;
+    	}
+    	.plus{
+    		width: 15em;
+    		position: relative;
+    		top: 13em;
+    	}
+    	h2{
+    		margin-left: 2em;
+    	}
+    }
 }
