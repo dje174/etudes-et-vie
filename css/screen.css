@@ -256,9 +256,6 @@ body .titreActuColor {
 /* line 229, ../scss/screen.scss */
 .main #presentation .infoVentes {
   color: #535353; }
-/* line 233, ../scss/screen.scss */
-.main #pageCategorie {
-  margin: 0; }
 /* line 237, ../scss/screen.scss */
 .main #pageCategorie #TitreUn {
   padding: 0 1em;
@@ -966,24 +963,42 @@ footer .footerLogo {
   .descriptionProduit .prix {
     display: block;
     width: 10em;
-    margin: 0 auto 0.75em auto; } }
+    margin: 0 auto 0.75em auto; }
+
+  /* line 279, ../scss/_mediaQueries.scss */
+  #pageCategorie {
+    text-align: center;
+    padding: 0 0.75em; }
+
+  /* line 283, ../scss/_mediaQueries.scss */
+  .links {
+    text-align: center;
+    width: 100%; }
+  /* line 286, ../scss/_mediaQueries.scss */
+  .links .tri > span {
+    float: left;
+    margin-top: 0.25em; }
+  /* line 290, ../scss/_mediaQueries.scss */
+  .links .tri {
+    width: 100%;
+    font-size: 12px; } }
 @media only screen and (min-width: 500px) and (max-width: 950px) {
   /* Accueil */
-  /* line 283, ../scss/_mediaQueries.scss */
+  /* line 299, ../scss/_mediaQueries.scss */
   .titres {
     padding: 0 0.75em;
     width: 26em;
     margin: 0 auto; }
-  /* line 287, ../scss/_mediaQueries.scss */
+  /* line 303, ../scss/_mediaQueries.scss */
   .titres .produit {
     float: left;
     margin-top: 1.75em; }
-  /* line 291, ../scss/_mediaQueries.scss */
+  /* line 307, ../scss/_mediaQueries.scss */
   .titres .plus {
     margin-left: 8em; }
 
   /* Footer */
-  /* line 297, ../scss/_mediaQueries.scss */
+  /* line 313, ../scss/_mediaQueries.scss */
   footer .infos {
     width: 50%;
     text-align: center;
@@ -991,80 +1006,80 @@ footer .footerLogo {
     min-height: 8em; } }
 @media only screen and (min-width: 950px) and (max-width: 1200px) {
   /* Accueil */
-  /* line 308, ../scss/_mediaQueries.scss */
+  /* line 324, ../scss/_mediaQueries.scss */
   .titres {
     padding: 0 0.75em;
     margin: 0 auto;
     width: 51em; }
-  /* line 312, ../scss/_mediaQueries.scss */
+  /* line 328, ../scss/_mediaQueries.scss */
   .titres .produit {
     float: left;
     margin-top: 1.75em; }
-  /* line 316, ../scss/_mediaQueries.scss */
+  /* line 332, ../scss/_mediaQueries.scss */
   .titres .plus {
     margin-left: 2em;
     width: 15em; }
-  /* line 320, ../scss/_mediaQueries.scss */
+  /* line 336, ../scss/_mediaQueries.scss */
   .titres h2 {
     margin-left: 2em; }
 
-  /* line 329, ../scss/_mediaQueries.scss */
+  /* line 345, ../scss/_mediaQueries.scss */
   footer .infos {
     width: 25%;
     text-align: center;
     padding-bottom: 1.5em;
     min-height: 8em; } }
 @media only screen and (min-width: 950px) {
-  /* line 339, ../scss/_mediaQueries.scss */
+  /* line 355, ../scss/_mediaQueries.scss */
   footer .infos {
     width: 25%;
     text-align: center;
     padding-bottom: 1.5em;
     min-height: 8em; } }
 @media only screen and (min-width: 800px) and (max-width: 950px) {
-  /* line 349, ../scss/_mediaQueries.scss */
+  /* line 365, ../scss/_mediaQueries.scss */
   .titres h2 {
     margin-left: 2em; } }
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-  /* line 355, ../scss/_mediaQueries.scss */
+  /* line 371, ../scss/_mediaQueries.scss */
   #menu {
     width: 100%; }
-  /* line 358, ../scss/_mediaQueries.scss */
+  /* line 374, ../scss/_mediaQueries.scss */
   #menu ul li {
     width: 25%; }
 
   /* Drop Down */
-  /* line 364, ../scss/_mediaQueries.scss */
+  /* line 380, ../scss/_mediaQueries.scss */
   #drop-down {
     width: 100%;
     left: 0; }
-  /* line 367, ../scss/_mediaQueries.scss */
+  /* line 383, ../scss/_mediaQueries.scss */
   #drop-down .dropdownImg {
     visibility: hidden;
     position: absolute; }
-  /* line 371, ../scss/_mediaQueries.scss */
+  /* line 387, ../scss/_mediaQueries.scss */
   #drop-down .nav-column {
     width: 20%;
     padding: 0 1em 1em 1em; }
 
-  /* line 376, ../scss/_mediaQueries.scss */
+  /* line 392, ../scss/_mediaQueries.scss */
   .question {
     text-align: center; }
 
   /* Panier */
-  /* line 380, ../scss/_mediaQueries.scss */
+  /* line 396, ../scss/_mediaQueries.scss */
   .commande {
     width: 20em;
     margin: 2em auto 1em auto; }
 
   /* Page Produit */
-  /* line 385, ../scss/_mediaQueries.scss */
+  /* line 401, ../scss/_mediaQueries.scss */
   .descriptionProduit {
     float: left;
     width: 40%;
     position: relative;
     top: 3em; }
-  /* line 390, ../scss/_mediaQueries.scss */
+  /* line 406, ../scss/_mediaQueries.scss */
   .descriptionProduit .prix {
     position: absolute;
     top: -0.75em;
@@ -1074,7 +1089,7 @@ footer .footerLogo {
     -o-transform: rotate(15deg);
     -moz-transform: rotate(15deg); }
 
-  /* line 400, ../scss/_mediaQueries.scss */
+  /* line 416, ../scss/_mediaQueries.scss */
   .slider {
     float: left;
     width: 47%;
@@ -1082,112 +1097,130 @@ footer .footerLogo {
     left: 4em;
     margin: 2em 2em 0 0; }
 
-  /* line 407, ../scss/_mediaQueries.scss */
+  /* line 423, ../scss/_mediaQueries.scss */
   .presentationProduit {
     width: 40em;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  /* line 427, ../scss/_mediaQueries.scss */
+  #pageCategorie {
+    text-align: center;
+    padding: 0 0.75em; }
+
+  /* line 431, ../scss/_mediaQueries.scss */
+  .links {
+    text-align: center;
+    width: 100%; }
+  /* line 434, ../scss/_mediaQueries.scss */
+  .links .tri > span {
+    float: left;
+    margin-top: 0.25em; }
+  /* line 438, ../scss/_mediaQueries.scss */
+  .links .tri {
+    width: 100%;
+    font-size: 12px; } }
 @media only screen and (min-width: 800px) {
-  /* line 414, ../scss/_mediaQueries.scss */
+  /* line 446, ../scss/_mediaQueries.scss */
   .searchDiv .texte {
     border: 1px solid #535353;
     font-size: 17px;
     position: relative;
     top: -0.3em; }
-  /* line 420, ../scss/_mediaQueries.scss */
+  /* line 452, ../scss/_mediaQueries.scss */
   .searchDiv .into {
     padding: 0.5em 0.75em;
     font-size: 15px;
     top: -0.65em;
     left: -3.45em; }
 
-  /* line 428, ../scss/_mediaQueries.scss */
+  /* line 460, ../scss/_mediaQueries.scss */
   #presentation h2 {
     margin-top: 2em; }
 
-  /* line 433, ../scss/_mediaQueries.scss */
+  /* line 465, ../scss/_mediaQueries.scss */
   .formulaire .formContact {
     width: 20em; }
 
-  /* line 438, ../scss/_mediaQueries.scss */
+  /* line 470, ../scss/_mediaQueries.scss */
   #panier {
     width: 100%;
     margin: 0 auto;
     font-size: 17px; }
-  /* line 442, ../scss/_mediaQueries.scss */
+  /* line 474, ../scss/_mediaQueries.scss */
   #panier th {
     padding: 0 0.5em; }
 
-  /* line 446, ../scss/_mediaQueries.scss */
+  /* line 478, ../scss/_mediaQueries.scss */
   .total {
     padding-right: 1em; }
 
-  /* line 449, ../scss/_mediaQueries.scss */
+  /* line 481, ../scss/_mediaQueries.scss */
   .procedureAchat {
     width: 100%;
     margin: 0 auto;
     font-size: 16px; }
 
-  /* line 454, ../scss/_mediaQueries.scss */
+  /* line 486, ../scss/_mediaQueries.scss */
   #commandeAdjust {
     width: 80%; }
 
-  /* line 457, ../scss/_mediaQueries.scss */
+  /* line 489, ../scss/_mediaQueries.scss */
   .coordonees {
     width: 47%;
     float: left;
     margin-left: 0.75em; }
-  /* line 461, ../scss/_mediaQueries.scss */
+  /* line 493, ../scss/_mediaQueries.scss */
   .coordonees h3 {
     margin-top: 0.75em; } }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  /* line 467, ../scss/_mediaQueries.scss */
+  /* line 499, ../scss/_mediaQueries.scss */
   #menu {
     width: 70%; }
-  /* line 470, ../scss/_mediaQueries.scss */
+  /* line 502, ../scss/_mediaQueries.scss */
   #menu ul li {
     width: 25%; }
 
-  /* line 479, ../scss/_mediaQueries.scss */
+  /* line 511, ../scss/_mediaQueries.scss */
   .titres {
     padding: 0 0.75em;
     margin: 0 auto;
     width: 65em; }
-  /* line 483, ../scss/_mediaQueries.scss */
+  /* line 515, ../scss/_mediaQueries.scss */
   .titres .produit {
     float: left;
     margin: 1.75em 6em 0 0; }
-  /* line 487, ../scss/_mediaQueries.scss */
+  /* line 519, ../scss/_mediaQueries.scss */
   .titres .plus {
     width: 15em;
     position: relative;
     top: 13em; }
-  /* line 492, ../scss/_mediaQueries.scss */
+  /* line 524, ../scss/_mediaQueries.scss */
   .titres h2 {
     margin-left: 2em; }
 
-  /* line 496, ../scss/_mediaQueries.scss */
+  /* line 528, ../scss/_mediaQueries.scss */
   #drop-down {
     width: 125%;
     left: -6em; }
-  /* line 499, ../scss/_mediaQueries.scss */
+  /* line 531, ../scss/_mediaQueries.scss */
   #drop-down .nav-column {
     width: 19%;
     float: left;
     padding: 1em 0; }
 
-  /* line 505, ../scss/_mediaQueries.scss */
+  /* line 537, ../scss/_mediaQueries.scss */
   .commande {
     width: 20em;
     margin: 2em auto 1em auto; }
 
   /* Page Produit */
-  /* line 510, ../scss/_mediaQueries.scss */
+  /* line 542, ../scss/_mediaQueries.scss */
   .descriptionProduit {
     float: left;
     width: 40%;
     position: relative;
     top: 3em; }
-  /* line 515, ../scss/_mediaQueries.scss */
+  /* line 547, ../scss/_mediaQueries.scss */
   .descriptionProduit .prix {
     position: absolute;
     top: -0.75em;
@@ -1197,7 +1230,7 @@ footer .footerLogo {
     -o-transform: rotate(15deg);
     -moz-transform: rotate(15deg); }
 
-  /* line 525, ../scss/_mediaQueries.scss */
+  /* line 557, ../scss/_mediaQueries.scss */
   .slider {
     float: left;
     width: 47%;
@@ -1205,60 +1238,84 @@ footer .footerLogo {
     left: 4em;
     margin: 2em 2em 0 0; }
 
-  /* line 532, ../scss/_mediaQueries.scss */
+  /* line 564, ../scss/_mediaQueries.scss */
   .presentationProduit {
     width: 40em;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  /* line 568, ../scss/_mediaQueries.scss */
+  #pageCategorie {
+    text-align: left;
+    padding: 0 0.75em;
+    width: 30em;
+    margin: 0 auto; }
+  /* line 573, ../scss/_mediaQueries.scss */
+  #pageCategorie .thumbCategorie {
+    float: left;
+    margin-right: 1.5em; }
+
+  /* line 578, ../scss/_mediaQueries.scss */
+  .links {
+    text-align: center;
+    width: 100%; }
+  /* line 581, ../scss/_mediaQueries.scss */
+  .links .tri > span {
+    float: left;
+    margin-top: 0.25em; }
+  /* line 585, ../scss/_mediaQueries.scss */
+  .links .tri {
+    width: 100%;
+    font-size: 15px; } }
 @media only screen and (min-width: 1500px) {
-  /* line 539, ../scss/_mediaQueries.scss */
+  /* line 593, ../scss/_mediaQueries.scss */
   #menu {
     width: 55%; }
-  /* line 542, ../scss/_mediaQueries.scss */
+  /* line 596, ../scss/_mediaQueries.scss */
   #menu ul li {
     width: 25%; }
 
-  /* line 551, ../scss/_mediaQueries.scss */
+  /* line 605, ../scss/_mediaQueries.scss */
   .titres {
     padding: 0 0.75em;
     margin: 0 auto;
     width: 70em; }
-  /* line 555, ../scss/_mediaQueries.scss */
+  /* line 609, ../scss/_mediaQueries.scss */
   .titres .produit {
     float: left;
     margin: 1.75em 6em 0 0; }
-  /* line 559, ../scss/_mediaQueries.scss */
+  /* line 613, ../scss/_mediaQueries.scss */
   .titres .plus {
     width: 15em;
     position: relative;
     top: 13em; }
-  /* line 564, ../scss/_mediaQueries.scss */
+  /* line 618, ../scss/_mediaQueries.scss */
   .titres h2 {
     margin-left: 2em; }
 
   /* Drop Down */
-  /* line 569, ../scss/_mediaQueries.scss */
+  /* line 623, ../scss/_mediaQueries.scss */
   #drop-down {
     width: 130%;
     left: -9em; }
-  /* line 572, ../scss/_mediaQueries.scss */
+  /* line 626, ../scss/_mediaQueries.scss */
   #drop-down .nav-column {
     width: 19%;
     float: left;
     padding: 1em 0; }
 
-  /* line 578, ../scss/_mediaQueries.scss */
+  /* line 632, ../scss/_mediaQueries.scss */
   .commande {
     width: 20em;
     margin: 2em auto 1em auto; }
 
   /* Page Produit */
-  /* line 584, ../scss/_mediaQueries.scss */
+  /* line 638, ../scss/_mediaQueries.scss */
   .descriptionProduit {
     float: left;
     width: 40%;
     position: relative;
     top: 3em; }
-  /* line 589, ../scss/_mediaQueries.scss */
+  /* line 643, ../scss/_mediaQueries.scss */
   .descriptionProduit .prix {
     position: absolute;
     top: -0.75em;
@@ -1268,7 +1325,7 @@ footer .footerLogo {
     -o-transform: rotate(15deg);
     -moz-transform: rotate(15deg); }
 
-  /* line 599, ../scss/_mediaQueries.scss */
+  /* line 653, ../scss/_mediaQueries.scss */
   .slider {
     float: left;
     width: 47%;
@@ -1276,7 +1333,31 @@ footer .footerLogo {
     left: 4em;
     margin: 2em 2em 0 0; }
 
-  /* line 606, ../scss/_mediaQueries.scss */
+  /* line 660, ../scss/_mediaQueries.scss */
   .presentationProduit {
     width: 40em;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  /* line 664, ../scss/_mediaQueries.scss */
+  #pageCategorie {
+    text-align: left;
+    padding: 0 0.75em;
+    width: 30em;
+    margin: 0 auto; }
+  /* line 669, ../scss/_mediaQueries.scss */
+  #pageCategorie .thumbCategorie {
+    float: left;
+    margin-right: 1.5em; }
+
+  /* line 674, ../scss/_mediaQueries.scss */
+  .links {
+    text-align: center;
+    width: 100%; }
+  /* line 677, ../scss/_mediaQueries.scss */
+  .links .tri > span {
+    float: left;
+    margin-top: 0.25em; }
+  /* line 681, ../scss/_mediaQueries.scss */
+  .links .tri {
+    width: 100%;
+    font-size: 15px; } }

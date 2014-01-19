@@ -276,6 +276,22 @@
 	    	margin: 0 auto 0.75em auto;
 	    }
     }
+    #pageCategorie{
+		text-align: center;
+		padding: 0 0.75em;		
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		.tri>span{
+			float: left;
+			margin-top: 0.25em;
+		}
+		.tri{
+			width: 100%;
+			font-size: 12px;
+		}
+	}
 }
 
 @media only screen and(min-width:500px) and (max-width:950px){
@@ -408,6 +424,22 @@
     	width: 40em;
     	margin: 0 auto;
     }
+    #pageCategorie{
+		text-align: center;
+		padding: 0 0.75em;		
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		.tri>span{
+			float: left;
+			margin-top: 0.25em;
+		}
+		.tri{
+			width: 100%;
+			font-size: 12px;
+		}
+	}
 }
 @media only screen and (min-width:800px) {
 	.searchDiv{
@@ -533,6 +565,28 @@
     	width: 40em;
     	margin: 0 auto;
     }
+    #pageCategorie{
+		text-align: left;
+		padding: 0 0.75em;
+		width: 30em;
+		margin: 0 auto;
+		.thumbCategorie{
+			float: left;
+			margin-right: 1.5em;
+		}	
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		.tri>span{
+			float: left;
+			margin-top: 0.25em;
+		}
+		.tri{
+			width: 100%;
+			font-size: 15px;
+		}
+	}
 }
 
 @media only screen and (min-width:1500px){
@@ -579,7 +633,7 @@
 		width: 20em;
 		margin: 2em auto 1em auto;
 	}
-	
+
 	/* Page Produit */
     .descriptionProduit{
 		float: left;
@@ -607,4 +661,26 @@
     	width: 40em;
     	margin: 0 auto;
     }
+    #pageCategorie{
+		text-align: left;
+		padding: 0 0.75em;
+		width: 30em;
+		margin: 0 auto;
+		.thumbCategorie{
+			float: left;
+			margin-right: 1.5em;
+		}	
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		.tri>span{
+			float: left;
+			margin-top: 0.25em;
+		}
+		.tri{
+			width: 100%;
+			font-size: 15px;
+		}
+	}
 }
