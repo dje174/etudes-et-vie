@@ -73,8 +73,13 @@ body{
             margin-top: 1em;
             font-size: 16px;
             width: 100%;
+        }        
+        .titreActuColor{
+             background-color: white;
+             padding: 0 1em;
+             color: black;
+             font-size: 22px;
         }
-
 }
 
 /* ESPACE CLIENT */
@@ -407,7 +412,7 @@ body{
             @include border-radius(0.25em);
         }
         .adjust {
-            top: 25em;
+            //top: 25em;
         }
         .recap{
             display: block;
@@ -577,17 +582,16 @@ body{
     //         font-size: 22.9px;
     //         margin: 3em 10em 1.5em 10em;
     //  }
-     .titreActuColor{
-             background-color: white;
-             padding: 0 1em;
-             color: black;
-     }
+    h2{
+        text-align: center;
+    }
     article.questions{           
         //width: 86.5%;
         padding: 1em 0 3em 0;
         margin: 0 auto;
         p{
-                text-align: center;
+            text-align: center;
+            margin-top: 1em;
         }
         .questions{
                 display: block;
@@ -599,7 +603,7 @@ body{
     .h-card{
         margin-bottom: 1em;
         .adresse{
-            margin-bottom: 1em;
+            margin: 1em 0;
             font-weight: bold;
         }
         .coordonneesInt{
