@@ -266,7 +266,7 @@ body{
          }
         .plus{
                 //float: right;
-                width: 10em;
+                //width: 10em;
         }
 
         /*PAGE PRODUIT */
@@ -379,7 +379,10 @@ body{
                         }
                 }
                 .articles{
-                        border-bottom: 1px solid $borderGray;
+                    border-bottom: 1px solid $borderGray;
+                    input{
+                        @include InputTextStyle();
+                    }
                 }
         }
         .prix{
@@ -387,7 +390,7 @@ body{
         }
         .total{
                 float: right;
-                padding: 0.5em 0 1em 0;
+                padding: 0.5em 1em 1em 0;
                 font-weight: bold;
         }
         .confirm{
@@ -582,7 +585,7 @@ body{
      }
     article.questions{           
         //width: 86.5%;
-        padding-bottom: 3em;
+        padding: 1em 0 3em 0;
         margin: 0 auto;
         p{
                 text-align: center;

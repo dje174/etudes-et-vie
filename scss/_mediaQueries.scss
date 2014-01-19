@@ -58,9 +58,6 @@
 			width: 8.5em;
 			margin: 2em auto;
 		}
-		.plus{
-			margin-left: 4.25em;
-		}
 	}
 	/*Contact*/
 	.contact{
@@ -160,5 +157,112 @@
 			text-align: center;
 			padding-bottom: 1.5em;
 		}
+	}
+}
+
+@media only screen and (min-width : 500px) and (max-width: 800px){
+	.user{
+		width: 100%;
+		padding: 0.25em 0;
+	}
+	.homeLogo img {
+		margin: 3em auto 0 auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	#menu{
+		width: 100%;
+		ul{
+			li{
+				width: 33%;
+			}
+		}
+		.searchDiv{
+			width: 100%;
+			margin: 1em 0 0 0;
+			.texte{
+				border: 1px solid $darkGray;
+				width: 16em;
+				font-size: 17px;
+			}
+			.into{
+				padding: 0.5em 0.75em;
+				top: 0.01em;
+				left: -3.5em;
+			}
+		}
+	}
+	h2{
+		font-size: 18px;
+		text-align: center;
+	}
+	/* Drop Down */
+	#drop-down{
+		width: 100%;
+		left: 0;
+		.dropdownImg{
+			visibility: hidden;
+			position: absolute;
+		}
+		.nav-column{
+			width: 20%;
+			padding: 0 1em 1em 1em;
+		}
+	}
+	/* Contact */
+	.formulaire{
+		width: 60%;
+		.formContact{
+			width: 80%;
+		}
+	}
+	/* Accueil */
+	.titres{
+    	padding: 0 0.75em;
+    	width: 26em;
+    	margin: 0 auto;
+    	.produit{
+    		float: left;
+    		margin-top: 1.75em;
+    	}
+    	.plus{
+    		margin-left: 8em;
+    	}
+    }
+    /* Panier */
+    .commande{
+    	width: 20em;
+    	margin: 2em auto 1em auto;
+    }
+    #panier{
+    	width: 100%;
+    	font-size: 17px;
+    	th{
+    		padding: 0 0.5em;
+    	}
+	}
+	.total{
+		padding-right: 1em;
+	}
+    .procedureAchat{
+    	font-size: 16px;
+    }
+    .coordonees{
+    	width: 17em;
+    	margin: 0 auto;
+    	h3{
+    		margin-top: 0.75em;
+    	}
+    }
+    /* Footer */
+	footer{
+		.infos{
+			width: 50%;
+			text-align: center;
+			padding-bottom: 1.5em;
+			min-height: 8em;
+		}
+	}
+	.links{
+		@extend .titres;
 	}
 }
