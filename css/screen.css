@@ -50,18 +50,18 @@ body {
   background-image: url("../img/banNav2.png");
   background-repeat: repeat-x;
   background-color: white; }
-/* line 13, ../scss/screen.scss */
+/* line 12, ../scss/screen.scss */
 body a {
   text-decoration: none;
   color: #e23836; }
-/* line 16, ../scss/screen.scss */
+/* line 15, ../scss/screen.scss */
 body a:hover {
   text-decoration: underline;
   color: #f45b5b; }
-/* line 21, ../scss/screen.scss */
+/* line 20, ../scss/screen.scss */
 body .homeLogo img {
   position: absolute; }
-/* line 25, ../scss/screen.scss */
+/* line 23, ../scss/screen.scss */
 body .submit, body #order {
   padding: 0.3em 0.5em;
   color: white;
@@ -73,10 +73,10 @@ body .submit, body #order {
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em; }
-/* line 32, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 body .submit:hover, body #order:hover {
   background-color: #f45b5b; }
-/* line 36, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
 body .texte {
   padding: 0.5em;
   -webkit-border-radius: 0.3em;
@@ -85,38 +85,38 @@ body .texte {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: none; }
-/* line 41, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 body .searchDiv {
   position: relative;
   top: -0.1em; }
-/* line 45, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 body .search {
   position: relative; }
-/* line 48, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 body .into {
   position: absolute;
   cursor: pointer; }
-/* line 54, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 body .add {
   background-image: url("../img/add-26.png");
   background-repeat: no-repeat; }
-/* line 59, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 body .disponibility img {
   padding: 0.5em 0.5em 0 0.5em; }
-/* line 62, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 body .disponibility input {
   float: right;
   text-transform: uppercase;
   margin: 0.75em 0.5em 0 0;
   padding: 0.6em 0.6em 0.6em 2em;
   cursor: pointer; }
-/* line 70, ../scss/screen.scss */
+/* line 66, ../scss/screen.scss */
 body #order {
   padding: 0.5em 1em;
   margin-top: 1em;
   font-size: 16px;
   width: 100%; }
-/* line 77, ../scss/screen.scss */
+/* line 73, ../scss/screen.scss */
 body .titreActuColor {
   background-color: white;
   padding: 0 1em;
@@ -124,49 +124,47 @@ body .titreActuColor {
   font-size: 22px; }
 
 /* ESPACE CLIENT */
-/* line 87, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 .user {
   top: 0.01em;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
   color: white;
   border-top: none; }
-/* line 95, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 .user .client {
   float: left;
   padding: 0 0.5em; }
-/* line 99, ../scss/screen.scss */
+/* line 93, ../scss/screen.scss */
 .user .panier {
   float: right; }
-/* line 102, ../scss/screen.scss */
+/* line 96, ../scss/screen.scss */
 .user #cart:before {
   content: url("../img/cart.png");
   padding-right: 0.5em; }
 
 /* MENU */
-/* line 110, ../scss/screen.scss */
+/* line 104, ../scss/screen.scss */
 #menu {
   text-transform: uppercase;
   margin: 11.7em auto 0 auto;
   font-weight: bold;
   position: relative; }
-/* line 116, ../scss/screen.scss */
+/* line 109, ../scss/screen.scss */
 #menu ul {
   list-style-type: none; }
-/* line 118, ../scss/screen.scss */
+/* line 111, ../scss/screen.scss */
 #menu ul .onglets {
   display: block;
   float: left;
-  text-align: center;
-  -padding: 0px 2.6em;
-  -margin: 0px 1em; }
-/* line 125, ../scss/screen.scss */
+  text-align: center; }
+/* line 115, ../scss/screen.scss */
 #menu ul .onglets .onglet {
   padding: 0.7em 0; }
-/* line 129, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
 #menu ul #categorie span {
   color: #e23836; }
-/* line 133, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 #menu #drop-down {
   position: absolute;
   display: block;
@@ -182,7 +180,7 @@ body .titreActuColor {
   -o-transition: all .3s ease .15s;
   -ms-transition: all .3s ease .15s;
   transition: all .3s ease .15s; }
-/* line 150, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 #menu #drop-down h3 {
   text-transform: none;
   font-weight: lighter;
@@ -192,90 +190,89 @@ body .titreActuColor {
   border-bottom: 1px solid #f45b5b;
   font-size: 15px;
   text-align: center; }
-/* line 160, ../scss/screen.scss */
+/* line 148, ../scss/screen.scss */
 #menu #drop-down a {
   display: block;
   text-decoration: none;
   text-transform: none;
   font-size: 12px;
   padding-top: 0.5em; }
-/* line 168, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 #menu #drop-down .nav-column {
   float: left; }
-/* line 173, ../scss/screen.scss */
+/* line 159, ../scss/screen.scss */
 #menu #drop-down .dropdownImg {
   float: left;
   padding: 1em 1em 3em 1em; }
 
-/* line 180, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 #menu > ul > #categorie:hover > #drop-down {
   opacity: 1;
   visibility: visible;
   overflow: visible; }
 
 /* SECTION PRINCIPALE ACCUEIL */
-/* line 187, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 .main {
   /*PAGE PRODUIT */
   /* Panier */
   /* Procédure d'achat */
   /* SECTION PRINCIPALE CATEGORIES */ }
-/* line 190, ../scss/screen.scss */
+/* line 174, ../scss/screen.scss */
 .main .acutality {
   position: relative; }
-/* line 193, ../scss/screen.scss */
+/* line 177, ../scss/screen.scss */
 .main h2 {
   background-repeat: repeat-x;
   line-height: 2.25em; }
-/* line 199, ../scss/screen.scss */
+/* line 181, ../scss/screen.scss */
 .main .titreActu {
   background-color: white;
   padding-right: 1em; }
-/* line 204, ../scss/screen.scss */
+/* line 186, ../scss/screen.scss */
 .main .titres > h2 {
   font-weight: bold;
   margin-top: 2.5em; }
-/* line 209, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 .main #presentation {
   text-align: center; }
-/* line 214, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 .main #presentation #where {
   font-size: 20.3px;
   margin-top: 1em; }
-/* line 218, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 .main #presentation #TitreUn {
   padding: 0 1em;
   text-align: center; }
-/* line 221, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 .main #presentation #TitreUn span {
   padding: 0 1em;
   background-color: white; }
-/* line 226, ../scss/screen.scss */
+/* line 205, ../scss/screen.scss */
 .main #presentation p {
   margin-top: 0.5em; }
-/* line 229, ../scss/screen.scss */
+/* line 208, ../scss/screen.scss */
 .main #presentation .infoVentes {
   color: #535353; }
-/* line 237, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 .main #pageCategorie #TitreUn {
   padding: 0 1em;
   text-align: center; }
-/* line 240, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 .main #pageCategorie #TitreUn span {
   padding: 0 1em;
   background-color: white; }
-/* line 246, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 .main .produit {
   margin: 1.5em 2.16em 1em 1.9em;
   position: relative; }
-/* line 250, ../scss/screen.scss */
+/* line 225, ../scss/screen.scss */
 .main .produit .thumbProduit {
   border: 1px solid #969696; }
-/* line 253, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 .main .produit .prix {
   background-color: #e23836;
   color: white;
-  -font-weight: bold;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
@@ -286,35 +283,35 @@ body .titreActuColor {
   padding: 0.3em;
   top: -1em;
   left: 6em; }
-/* line 264, ../scss/screen.scss */
+/* line 238, ../scss/screen.scss */
 .main .produit .legend {
   width: 8.444em;
   text-align: center;
   border-top: 2px solid #68cef4;
   border-bottom: 2px solid #68cef4;
   min-height: 3em; }
-/* line 279, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 .main .slider {
   position: relative; }
-/* line 281, ../scss/screen.scss */
+/* line 253, ../scss/screen.scss */
 .main .slider img {
   border: 1px solid #969696;
   float: left; }
-/* line 288, ../scss/screen.scss */
+/* line 257, ../scss/screen.scss */
 .main .slider .small {
   position: absolute;
   top: 20.4em; }
-/* line 291, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 .main .slider .small img {
   margin-right: 0.8em; }
-/* line 297, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 .main .descriptionProduit .nom {
   text-transform: uppercase;
   border-top: 2px solid #68cef4;
   border-bottom: 2px solid #68cef4;
   text-align: center;
   font-weight: bold; }
-/* line 305, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 .main .descriptionProduit .prix {
   background-color: #e23836;
   color: white;
@@ -325,7 +322,7 @@ body .titreActuColor {
   border-radius: 0.4em;
   font-size: 20px;
   padding: 0.5em; }
-/* line 319, ../scss/screen.scss */
+/* line 280, ../scss/screen.scss */
 .main .descriptionProduit .breveDescription {
   text-align: center;
   margin: 0.5em 0 1em 0;
@@ -334,52 +331,52 @@ body .titreActuColor {
   border-top: 1px solid #969696;
   border-bottom: 1px solid #969696;
   background-color: #e3e3e3; }
-/* line 329, ../scss/screen.scss */
+/* line 290, ../scss/screen.scss */
 .main .tf, .main .tff {
   color: green;
   position: relative;
   top: -0.25em; }
-/* line 335, ../scss/screen.scss */
+/* line 296, ../scss/screen.scss */
 .main .tff {
   color: #ab0000; }
-/* line 340, ../scss/screen.scss */
+/* line 301, ../scss/screen.scss */
 .main .half {
   float: left;
   margin-right: 0.5em; }
-/* line 344, ../scss/screen.scss */
+/* line 304, ../scss/screen.scss */
 .main .half h4 {
   font-weight: bold;
   color: #535353;
   padding: 1em 0 0.5em 0; }
-/* line 350, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 .main .full {
   width: 100%;
   float: left; }
-/* line 357, ../scss/screen.scss */
+/* line 317, ../scss/screen.scss */
 .main #panier #voir {
   display: block; }
-/* line 360, ../scss/screen.scss */
+/* line 320, ../scss/screen.scss */
 .main #panier th {
   background-color: #e3e3e3;
   color: #535353; }
-/* line 366, ../scss/screen.scss */
+/* line 324, ../scss/screen.scss */
 .main #panier td {
   padding: 0.5em 1em 0.5em 0.5em; }
-/* line 369, ../scss/screen.scss */
+/* line 327, ../scss/screen.scss */
 .main #panier .quantity {
   width: 2.5em;
   text-align: center; }
-/* line 376, ../scss/screen.scss */
+/* line 331, ../scss/screen.scss */
 .main #panier .disponibility {
   position: relative;
   top: -0.5em; }
-/* line 379, ../scss/screen.scss */
+/* line 334, ../scss/screen.scss */
 .main #panier .disponibility img {
   padding-left: none; }
-/* line 383, ../scss/screen.scss */
+/* line 338, ../scss/screen.scss */
 .main #panier .articles {
   border-bottom: 1px solid #969696; }
-/* line 385, ../scss/screen.scss */
+/* line 340, ../scss/screen.scss */
 .main #panier .articles input {
   padding: 0.5em 0.75em;
   -webkit-border-radius: 0.5em;
@@ -388,17 +385,17 @@ body .titreActuColor {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   border: 1px solid #969696; }
-/* line 390, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 .main .prix {
   color: #ab0000; }
-/* line 393, ../scss/screen.scss */
+/* line 348, ../scss/screen.scss */
 .main .total {
   float: right;
   font-weight: bold; }
-/* line 397, ../scss/screen.scss */
+/* line 352, ../scss/screen.scss */
 .main .confirm {
   text-align: center; }
-/* line 400, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 .main .commande {
   padding: 0 0.5em 0.5em 0.5em;
   font-size: 16px;
@@ -409,35 +406,35 @@ body .titreActuColor {
   -ms-border-radius: 0.25em;
   -o-border-radius: 0.25em;
   border-radius: 0.25em; }
-/* line 414, ../scss/screen.scss */
+/* line 362, ../scss/screen.scss */
 .main .recap {
   display: block;
   text-align: center;
   font-size: 20px;
   color: #535353; }
-/* line 420, ../scss/screen.scss */
+/* line 368, ../scss/screen.scss */
 .main .strong {
   font-weight: bold; }
-/* line 423, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 .main .sign {
   font-size: 12px;
   text-align: center;
   padding-bottom: 0.5em; }
-/* line 430, ../scss/screen.scss */
+/* line 378, ../scss/screen.scss */
 .main #commandeAdjust {
   margin: 0 auto; }
-/* line 433, ../scss/screen.scss */
+/* line 380, ../scss/screen.scss */
 .main #commandeAdjust #TitreUn {
   padding: 0 1em;
   text-align: center; }
-/* line 436, ../scss/screen.scss */
+/* line 383, ../scss/screen.scss */
 .main #commandeAdjust #TitreUn span {
   padding: 0 1em;
   background-color: white; }
-/* line 442, ../scss/screen.scss */
+/* line 389, ../scss/screen.scss */
 .main .procedureAchat {
   background-color: rgba(248, 90, 89, 0.5); }
-/* line 444, ../scss/screen.scss */
+/* line 391, ../scss/screen.scss */
 .main .procedureAchat li {
   width: 25%;
   float: left;
@@ -445,38 +442,38 @@ body .titreActuColor {
   padding: 0.5em 0;
   color: #535353;
   border-bottom: 0.5em solid #969696; }
-/* line 452, ../scss/screen.scss */
+/* line 399, ../scss/screen.scss */
 .main .procedureAchat .actif {
   color: white;
   background-color: #e23836;
   border-bottom: 0.5em solid #535353; }
-/* line 457, ../scss/screen.scss */
+/* line 404, ../scss/screen.scss */
 .main .procedureAchat .old {
   color: #e3e3e3;
   background-color: #f45b5b;
   border-bottom: 0.5em solid #535353; }
-/* line 467, ../scss/screen.scss */
+/* line 411, ../scss/screen.scss */
 .main .coordonees h3 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   font-size: 20px; }
-/* line 473, ../scss/screen.scss */
+/* line 417, ../scss/screen.scss */
 .main .coordonees h4 {
   font-weight: bold;
   color: #535353;
   padding-bottom: 0.5em; }
-/* line 478, ../scss/screen.scss */
+/* line 422, ../scss/screen.scss */
 .main .coordonees aside {
   line-height: 1em;
   padding-bottom: 1.5em; }
-/* line 482, ../scss/screen.scss */
+/* line 426, ../scss/screen.scss */
 .main .coordonees label, .main .coordonees #crypto {
   font-size: 15px; }
-/* line 486, ../scss/screen.scss */
+/* line 430, ../scss/screen.scss */
 .main .coordonees form label {
   display: block; }
-/* line 489, ../scss/screen.scss */
+/* line 433, ../scss/screen.scss */
 .main .coordonees form input {
   display: block;
   margin-bottom: 0.75em;
@@ -489,38 +486,38 @@ body .titreActuColor {
   border-radius: 0.5em;
   border: 1px solid #969696;
   width: 80%; }
-/* line 496, ../scss/screen.scss */
+/* line 440, ../scss/screen.scss */
 .main .coordonees form select {
   margin-bottom: 1.25em; }
-/* line 500, ../scss/screen.scss */
+/* line 444, ../scss/screen.scss */
 .main .coordonees #facturation {
   margin-top: 0.75em; }
-/* line 506, ../scss/screen.scss */
+/* line 450, ../scss/screen.scss */
 .main .categorie {
   margin-top: 1em; }
-/* line 508, ../scss/screen.scss */
+/* line 452, ../scss/screen.scss */
 .main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
-/* line 511, ../scss/screen.scss */
+/* line 455, ../scss/screen.scss */
 .main .categorie .links .sousCat {
   margin: 1.5em 0 0.5em 0; }
-/* line 515, ../scss/screen.scss */
+/* line 459, ../scss/screen.scss */
 .main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
-/* line 519, ../scss/screen.scss */
+/* line 463, ../scss/screen.scss */
 .main .categorie .thumbCategorie {
   border: 1px solid #969696; }
-/* line 524, ../scss/screen.scss */
+/* line 466, ../scss/screen.scss */
 .main .categorie .description {
   min-height: 7em; }
-/* line 527, ../scss/screen.scss */
+/* line 469, ../scss/screen.scss */
 .main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
-/* line 528, ../scss/screen.scss */
+/* line 470, ../scss/screen.scss */
 .main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
@@ -530,75 +527,75 @@ body .titreActuColor {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #969696; }
-/* line 537, ../scss/screen.scss */
+/* line 479, ../scss/screen.scss */
 .main .categorie .article .cat {
   display: block; }
-/* line 541, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 .main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
-/* line 545, ../scss/screen.scss */
+/* line 487, ../scss/screen.scss */
 .main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
-/* line 552, ../scss/screen.scss */
+/* line 494, ../scss/screen.scss */
 .main .tri {
   background-color: #e3e3e3;
   margin-bottom: 1em; }
-/* line 555, ../scss/screen.scss */
+/* line 497, ../scss/screen.scss */
 .main .tri span, .main .tri legend {
   color: #535353;
   margin-left: 1em; }
-/* line 559, ../scss/screen.scss */
+/* line 501, ../scss/screen.scss */
 .main .tri select, .main .tri legend, .main .tri .critere {
   float: left; }
-/* line 562, ../scss/screen.scss */
+/* line 504, ../scss/screen.scss */
 .main .tri .critere {
   margin-right: 5em; }
-/* line 565, ../scss/screen.scss */
+/* line 507, ../scss/screen.scss */
 .main .tri #select {
   float: right;
   margin: 0.165em 0.265em; }
 
 /* SECTION CONTACT */
-/* line 572, ../scss/screen.scss */
+/* line 514, ../scss/screen.scss */
 .contact {
   /* Connect */ }
-/* line 582, ../scss/screen.scss */
+/* line 515, ../scss/screen.scss */
 .contact h2 {
   text-align: center; }
-/* line 585, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 .contact article.questions {
   padding: 1em 0 3em 0;
   margin: 0 auto; }
-/* line 589, ../scss/screen.scss */
+/* line 522, ../scss/screen.scss */
 .contact article.questions p {
   text-align: center;
   margin-top: 1em; }
-/* line 593, ../scss/screen.scss */
+/* line 526, ../scss/screen.scss */
 .contact article.questions .questions {
   display: block; }
-/* line 600, ../scss/screen.scss */
+/* line 530, ../scss/screen.scss */
 .contact .h-card {
   margin-bottom: 1em; }
-/* line 602, ../scss/screen.scss */
+/* line 532, ../scss/screen.scss */
 .contact .h-card .adresse {
   margin: 1em 0;
   font-weight: bold; }
-/* line 606, ../scss/screen.scss */
+/* line 536, ../scss/screen.scss */
 .contact .h-card .coordonneesInt {
   color: #535353; }
-/* line 610, ../scss/screen.scss */
+/* line 540, ../scss/screen.scss */
 .contact .formulaire {
   margin: 0 auto;
   text-align: center; }
-/* line 614, ../scss/screen.scss */
+/* line 543, ../scss/screen.scss */
 .contact .formulaire p.mdp {
   padding-top: 1em; }
-/* line 617, ../scss/screen.scss */
+/* line 546, ../scss/screen.scss */
 .contact .formulaire form {
   padding-top: 1em; }
-/* line 623, ../scss/screen.scss */
+/* line 549, ../scss/screen.scss */
 .contact .formulaire .formContact {
   display: block;
   padding: 0.5em;
@@ -610,7 +607,7 @@ body .titreActuColor {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   font-size: 18px; }
-/* line 632, ../scss/screen.scss */
+/* line 557, ../scss/screen.scss */
 .contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
@@ -619,36 +616,36 @@ body .titreActuColor {
   color: #535353;
   text-transform: uppercase;
   font-size: 15px; }
-/* line 640, ../scss/screen.scss */
+/* line 565, ../scss/screen.scss */
 .contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
-/* line 645, ../scss/screen.scss */
+/* line 570, ../scss/screen.scss */
 .contact .formulaire .contact p {
   padding-top: 1em; }
-/* line 652, ../scss/screen.scss */
+/* line 577, ../scss/screen.scss */
 .contact .connect {
   padding-bottom: 1em; }
-/* line 656, ../scss/screen.scss */
+/* line 581, ../scss/screen.scss */
 .contact #mdp {
   margin: 1.5em 0 0.5em 0; }
 
-/* line 662, ../scss/screen.scss */
+/* line 587, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   border-top: 2px solid #e23836;
   position: relative;
   margin-top: 3em; }
-/* line 671, ../scss/screen.scss */
+/* line 592, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   color: white; }
-/* line 676, ../scss/screen.scss */
+/* line 596, ../scss/screen.scss */
 footer .infos {
   float: left; }
-/* line 679, ../scss/screen.scss */
+/* line 598, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 683, ../scss/screen.scss */
+/* line 602, ../scss/screen.scss */
 footer .footerLogo {
   position: relative;
   top: -2em;
@@ -662,7 +659,7 @@ footer .footerLogo {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 696, ../scss/screen.scss */
+/* line 615, ../scss/screen.scss */
 #menu:after, .main:after, .titres:after, footer:after, .quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, #presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after {
   content: '';
   clear: both;
