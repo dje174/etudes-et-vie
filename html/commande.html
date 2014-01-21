@@ -28,12 +28,12 @@
             </a>
         </div>
     </header>
-    <nav id="menu">
+    <nav id="menu" role="navigation">
         <ul>
             <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
-            <li class="onglets" id="categorie">
-                <span>Catégories</span>
-                <div id="drop-down">
+            <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
+                    <span>Catégories</span>
+                    <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
                     <img src="../img/categorieDrop.png" alt="Description de la catégorie" class="dropdownImg">
                     <div class="nav-column">
                         <h3>Appareils de mesure</h3>

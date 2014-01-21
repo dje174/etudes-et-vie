@@ -28,14 +28,14 @@
             </a>
         </div>
     </header>
-    <nav id="menu">
+    <nav id="menu" role="navigation">
         <ul>
             <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
-            <li class="onglets" id="categorie">
-                <span>Catégories</span>
-                <div id="drop-down">
-                    <img src="../img/categorieDrop.png" alt="Description de la catégorie" class="dropdownImg">
-                    <div class="nav-column">
+            <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
+                    <span>Catégories</span>
+                    <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
+                        <img src="../img/categorieDrop.png" alt="Description de la catégorie" class="dropdownImg">
+                        <div class="nav-column">
                         <h3>Appareils de mesure</h3>
                         <a href="pageCategorie.html" title="Voir la catégorie">Mesureurs basses fréquence</a>
                         <a href="pageCategorie.html" title="Voir la catégorie">GigaHertz Solutions</a>
@@ -90,133 +90,129 @@
         </ul>
     </nav>
     <section class="main">
-        <div class="actuality">
-            <div class="titres categorie">
-                        <figure id="pageCategorie">
-                            <h2 role="heading" aria-level="2" id="TitreUn" class="titreActuColor"><span>Catégorie 1</span></h2>
-                            <img class="thumbCategorie" src="../img/categorie1.png" alt="Categorie">
-                                <h3 class="sousCat">Description de la catégorie</h3>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, unde quos magni soluta magnam omnis fugit quam dolorum sit. Reiciendis, corporis, fugiat officia facere ipsam dolorem laborum quia iure ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </figure>
-                        <article class="links">
-                        <h3 class="sousCat">Articles appartenant à cette catégorie</h3>
-                            <p class="tri">
-                                <span>Résultats 1 - 5 sur 5</span>
-                                <span id="select">
-                                    <legend>Trier par:</legend>
-                                    <select name="tri" id="tri">
-                                        <option value="Meilleures ventes">Meilleures ventes</option>
-                                        <option value="Promotions">Promotions</option>
-                                        <option value="Prix: ordre croissant">Prix: ordre croissant</option>
-                                        <option value="Prix: ordre décroissant">Prix: ordre décroissant</option>
-                                        <option value="Nouveautés">Nouveatés</option>
-                                        <option value="ordre alphabétique de A à Z">de A à Z</option>
-                                        <option value="ordre alphabétique de Z à A">de Z à A</option>
-                                    </select>
-                                    </span>
-                            </p>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article1.png" alt="Produit">
-                                    <span class="prix">798€</span>
-                                    <figcaption class="legend">MK30 Kit de mesure</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article2.png" alt="Produit">
-                                    <span class="prix">99€</span>
-                                    <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article3.png" alt="Produit">
-                                    <span class="prix">99€</span>
-                                    <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
-                                    </a>
-                                    <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article4.png" alt="Produit">
-                                    <span class="prix">1289€</span>
-                                    <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                    </article>
+        <div class="titres categorie">
+                    <figure id="pageCategorie">
+                        <h2 role="heading" aria-level="2" id="TitreUn" class="titreActuColor"><span>Catégorie 1</span></h2>
+                        <img class="thumbCategorie" src="../img/categorie1.png" alt="Categorie">
+                            <h3 class="sousCat">Description de la catégorie</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, unde quos magni soluta magnam omnis fugit quam dolorum sit. Reiciendis, corporis, fugiat officia facere ipsam dolorem laborum quia iure ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figure>
                     <article class="links">
-                        <h3 class="sousCat">Articles que vous pourriez aimer</h3>
-                            <p class="tri">
-                                <span>Résultats 1 - 5 sur 5</span>
-                                <span id="select">
-                                    <legend>Trier par:</legend>
-                                    <select name="tri" id="tri">
-                                        <option value="Meilleures ventes">Meilleures ventes</option>
-                                        <option value="Promotions">Promotions</option>
-                                        <option value="Prix: ordre croissant">Prix: ordre croissant</option>
-                                        <option value="Prix: ordre décroissant">Prix: ordre décroissant</option>
-                                        <option value="Nouveautés">Nouveatés</option>
-                                        <option value="ordre alphabétique de A à Z">de A à Z</option>
-                                        <option value="ordre alphabétique de Z à A">de Z à A</option>
-                                    </select>
-                                    </span>
-                            </p>                       
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article1.png" alt="Produit">
-                                    <span class="prix">798€</span>
-                                    <figcaption class="legend">MK30 Kit de mesure</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article2.png" alt="Produit">
-                                    <span class="prix">99€</span>
-                                    <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article3.png" alt="Produit">
-                                    <span class="prix">99€</span>
-                                    <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                            <a href="pageProduit.html" title="Voir le produit">
-                                <article class="produit">
-                                    <img class="thumbProduit" src="../img/article4.png" alt="Produit">
-                                    <span class="prix">1289€</span>
-                                    <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
-                                    </a>
-                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                    <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                                </article>
-                            </a>
-                    </article>   
-                </figure>
-            </div>
-            
+                    <h3 class="sousCat">Articles appartenant à cette catégorie</h3>
+                        <p class="tri">
+                            <span>Résultats 1 - 5 sur 5</span>
+                            <span id="select">
+                                <legend>Trier par:</legend>
+                                <select name="tri" id="tri">
+                                    <option value="Meilleures ventes">Meilleures ventes</option>
+                                    <option value="Promotions">Promotions</option>
+                                    <option value="Prix: ordre croissant">Prix: ordre croissant</option>
+                                    <option value="Prix: ordre décroissant">Prix: ordre décroissant</option>
+                                    <option value="Nouveautés">Nouveatés</option>
+                                    <option value="ordre alphabétique de A à Z">de A à Z</option>
+                                    <option value="ordre alphabétique de Z à A">de Z à A</option>
+                                </select>
+                                </span>
+                        </p>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
+                                <span class="prix">798€</span>
+                                <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
+                                <span class="prix">99€</span>
+                                <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
+                                <span class="prix">99€</span>
+                                <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
+                                </a>
+                                <span class="disponibility"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
+                                <span class="prix">1289€</span>
+                                <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                </article>
+                <article class="links">
+                    <h3 class="sousCat">Articles que vous pourriez aimer</h3>
+                        <p class="tri">
+                            <span>Résultats 1 - 5 sur 5</span>
+                            <span id="select">
+                                <legend>Trier par:</legend>
+                                <select name="tri" id="tri">
+                                    <option value="Meilleures ventes">Meilleures ventes</option>
+                                    <option value="Promotions">Promotions</option>
+                                    <option value="Prix: ordre croissant">Prix: ordre croissant</option>
+                                    <option value="Prix: ordre décroissant">Prix: ordre décroissant</option>
+                                    <option value="Nouveautés">Nouveatés</option>
+                                    <option value="ordre alphabétique de A à Z">de A à Z</option>
+                                    <option value="ordre alphabétique de Z à A">de Z à A</option>
+                                </select>
+                                </span>
+                        </p>                       
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
+                                <span class="prix">798€</span>
+                                <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
+                                <span class="prix">99€</span>
+                                <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
+                                <span class="prix">99€</span>
+                                <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                        <a href="pageProduit.html" title="Voir le produit">
+                            <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
+                                <span class="prix">1289€</span>
+                                <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
+                                </a>
+                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                            </article>
+                        </a>
+                </article>
         </div>
     </section>
     <footer>

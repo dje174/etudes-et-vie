@@ -73,7 +73,7 @@
 	.main{
 		margin-top: 1em;
 		
-		#presentation{
+		.presentation{
 			margin: 0 0.5em;
 		}
 		.produit{
@@ -129,7 +129,7 @@
         position: relative;
         top: -2em;
     }
-    #presentation{
+    .presentation{
     	&>h2{
     		margin-top: 1em;
     	}
@@ -154,7 +154,7 @@
     	width: 17em;
     	margin: 0 auto;
     }
-    #panier{
+    #panier,.panierAchats{
     	width: 100%;
     	margin-top: 1em;
     	font-size: 14px;
@@ -243,7 +243,7 @@
     	width: 20em;
     	margin: 2em auto 1em auto;
     }
-    #panier{
+    #panier,.panierAchats{
     	width: 100%;
     	font-size: 17px;
     	th{
@@ -310,6 +310,7 @@
     }
     /* Footer */
 	footer{
+		margin-top: 17em;
 		.infos{
 			width: 50%;
 			text-align: center;
@@ -337,7 +338,7 @@
     		margin-left: 2em;
     	}
     }
-    // #presentation{
+    // .presentation{
     // 	width: 51em;
     // 	margin: 0 auto;
     // }
@@ -362,9 +363,7 @@
 }
 @media only screen and(min-width:800px) and (max-width:950px){
 	.titres{
-		h2{
-			margin-left: 2em;
-		}
+		
 	}
 }
 @media only screen and(min-width:800px) and (max-width:1200px){
@@ -456,7 +455,7 @@
 				left: -3.45em;
 			}
 	}
-	#presentation{
+	.presentation{
 		h2{
 			margin-top: 2em;
 		}
@@ -469,6 +468,14 @@
 
     #panier{
     	width: 100%;
+    	margin: 0 auto;
+    	font-size: 17px;
+    	th{
+    		padding: 0 0.5em;
+    	}
+	}
+	.panierAchats{
+		width: 80%;
     	margin: 0 auto;
     	font-size: 17px;
     	th{
@@ -497,14 +504,14 @@
 }
 @media only screen and (min-width:1200px) and (max-width:1500px){
 	#menu{
-		width: 70%;
+		width: 100%;
 		ul{
 			li{
 				width: 25%;
 			}
 		}
 	}
-	// #presentation{
+	// .presentation{
  //    	width: 51em;
  //    	margin: 0 auto;
  //    }
@@ -520,9 +527,6 @@
     		width: 15em;
     		position: relative;
     		top: 13em;
-    	}
-    	h2{
-    		margin-left: 2em;
     	}
     }
     #drop-down{
@@ -598,10 +602,6 @@
 			}
 		}
 	}
-	// #presentation{
- //    	width: 51em;
- //    	margin: 0 auto;
- //    }
     .titres{
     	padding: 0 0.75em;
     	margin: 0 auto;
@@ -682,5 +682,13 @@
 			width: 100%;
 			font-size: 15px;
 		}
+	}
+	.panierAchats{
+		width: 60%;
+    	margin: 0 auto;
+    	font-size: 17px;
+    	th{
+    		padding: 0 0.5em;
+    	}
 	}
 }
