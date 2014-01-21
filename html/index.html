@@ -115,10 +115,10 @@
                     <article class="produit" itemscope itemtype="http://schema.org/Product">
                         <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
                         <span class="prix" itemprop="price">798€</span>
-                        <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
+                        <figcaption class="legend" itemprop="name" name="nameProduct">MK30 Kit de mesure</figcaption>
                         </a>
                         <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                        <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                        <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add" onclick="save_product()"></a></span>
                     </article>
                 </a>
                 <a href="pageProduit.html" title="Voir le produit">
@@ -272,19 +272,8 @@
             </div>
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <script src="../js/script.js"></script>
     </body>
 </html>

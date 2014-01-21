@@ -571,7 +571,30 @@ body{
                     padding-top: 1em;
                 }
             }
-}
+    }
+    .content-cms{
+        h3{
+            text-align: center;
+            margin-top: 1em;
+            &:before{
+                content: url(../img/truck.png);
+                position: relative;
+                top: 0.4em;
+                right: 0.5em;
+            }
+        }
+        ul{
+            li{
+                list-style-type: square;
+                width: 20em;
+                margin: 0.5em auto 0 auto;
+                span{
+                    font-weight: bold;
+                    color: $redLinks;
+                }
+            }
+        }
+    }
 
         /* Connect */
         .connect {
