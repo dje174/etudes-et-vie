@@ -90,6 +90,7 @@ body{
         }
         .panier{
             float: right;
+            margin-right: 0.5em;
         }
         #cart:before{
                 content: url('../img/cart.png');
@@ -172,11 +173,17 @@ body{
          h2{
             //line-height: 2.25em;
          }
-        .titres{
+        .titres, .extraInformationsProduct{
             min-height: 18em;
             &>h2{
                 font-weight: bold;
                 margin-top: 2.5em;
+            }
+        }
+        .extraInformationsProduct{
+            text-align: center;
+            p{
+                margin-top: 0.75em;
             }
         }
         .presentation{
@@ -303,6 +310,9 @@ body{
         }
 
         /* Panier */
+        .panierAchats{
+            margin-top: 1.5em;
+        }
         #panier, .panierAchats{
                 #voir{
                         display: block;
@@ -603,7 +613,7 @@ body{
 
 
 
-#menu:after, .main:after, .titres:after, footer:after,.quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,.presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after, .infos:after{
+#menu:after, .main:after, .titres:after, footer:after,.quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,.presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after, .infos:after, .presentationProduit:after{
     @include reinitFloat();
 }
 

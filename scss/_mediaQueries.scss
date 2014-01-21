@@ -172,6 +172,9 @@
     		margin-top: 0.75em;
     	}
     }
+    .extraInformationsProduct{
+    	padding: 0 1em;
+    }
     /* Footer */
 	footer{
 		.infos{
@@ -292,6 +295,10 @@
 			font-size: 12px;
 		}
 	}
+	.extraInformationsProduct{
+		width: 25em;
+		margin: 0 auto;
+	}
 }
 
 @media only screen and(min-width:500px) and (max-width:950px){
@@ -338,10 +345,6 @@
     		margin-left: 2em;
     	}
     }
-    // .presentation{
-    // 	width: 51em;
-    // 	margin: 0 auto;
-    // }
     footer{
 		.infos{
 			width: 25%;
@@ -360,10 +363,15 @@
 			min-height: 8em;
 		}
 	}
+	.extraInformationsProduct{
+		width: 40em;
+		margin: 0 auto;
+	}
 }
 @media only screen and(min-width:800px) and (max-width:950px){
-	.titres{
-		
+	.extraInformationsProduct{
+		width: 30em;
+		margin: 0 auto;
 	}
 }
 @media only screen and(min-width:800px) and (max-width:1200px){
@@ -530,8 +538,8 @@
     	}
     }
     #drop-down{
-		width: 125%;
-		left: -6em;
+		width: 100%;
+		left: 0em;
 		.nav-column{
 			width: 19%;
 			float: left;

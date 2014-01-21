@@ -90,8 +90,7 @@
         </ul>
     </nav>
     <section class="main">
-        <div class="actuality">
-            <article class="presentation" class="presentationProduit">
+            <article class="presentation presentationProduit">
                 <h2 role="heading" aria-level="2"><span class="titreActuColor">Fiche du produit</span></h2>
                 <article class="slider">
                     <img src="../img/imageProduit.png" alt="Image du produit" class="imgProduit">
@@ -101,16 +100,16 @@
                         <img src="../img/imageProduit3Small.png" alt="Image du produit 3 petite" class="imgProduitSmall">
                     </article>
                 </article>
-                <article class="descriptionProduit">
-                    <h3 class="nom">Nom du produit</h3>
-                    <span class="prix">1289€</span>
-                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span>
+                <article class="descriptionProduit" itemscope itemtype="http://schema.org/Product">
+                    <h3 class="nom" itemprop="name">Nom du produit</h3>
+                    <span class="prix" itemprop="price">1289€</span>
+                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span>
                     <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                    <figure class="breveDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figure>
+                    <figure class="breveDescription" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, consequuntur, cupiditate eveniet earum laborum natus accusantium rem autem quidem a quis ut officiis vero! Iure, nam necessitatibus blanditiis fuga aperiam!</p>
                 </article>
             </article>
-            <div class="titres">
+            <div class="extraInformationsProduct">
                 <h2 role="heading" aria-level="2"><span class="titreActu">En savoir plus sur le produit</span></h2>
                 <h4>Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, optio sapiente corporis? Dolorem, iste, qui fuga consequuntur ratione maiores suscipit dicta temporibus aliquam magnam mollitia ad nobis voluptas voluptatibus quia.</p>
@@ -123,92 +122,91 @@
                 <h2 role="heading" aria-level="2"><span class="titreActu">Accessoires</span></h2>
                 <article class="links">
                     <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article1.png" alt="Produit">
-                            <span class="prix">798€</span>
-                            <figcaption class="legend">MK30 Kit de mesure</figcaption>
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">798€</span>
+                            <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
                             </a>
-                            <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
                             <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
                         </article>
                     </a>
                     <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article2.png" alt="Produit">
-                            <span class="prix">99€</span>
-                            <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">99€</span>
+                            <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
                             </a>
-                            <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
                             <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
                         </article>
                     </a>
                     <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article3.png" alt="Produit">
-                            <span class="prix">99€</span>
-                            <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">99€</span>
+                            <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
                             </a>
-                            <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
                             <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
                         </article>
                     </a>
                     <a href="pageProduit.html" title="Voir le produit">
-                        <article class="produit">
-                            <img class="thumbProduit" src="../img/article4.png" alt="Produit">
-                            <span class="prix">1289€</span>
-                            <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">1289€</span>
+                            <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
                             </a>
-                            <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
                             <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
                         </article>
                     </a>
             </div>
             <div class="titres">
                 <h2 role="heading" aria-level="2"><span class="titreActu">Articles similaires</span></h2>
-                    <article class="links">
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit">
-                                <img class="thumbProduit" src="../img/article1.png" alt="Produit">
-                                <span class="prix">798€</span>
-                                <figcaption class="legend">MK30 Kit de mesure</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit">
-                                <img class="thumbProduit" src="../img/article2.png" alt="Produit">
-                                <span class="prix">99€</span>
-                                <figcaption class="legend">PRISMA P1 Lite - Protection</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit">
-                                <img class="thumbProduit" src="../img/article3.png" alt="Produit">
-                                <span class="prix">99€</span>
-                                <figcaption class="legend">Voile écran 40db Pro Blanc</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit">
-                                <img class="thumbProduit" src="../img/article4.png" alt="Produit">
-                                <span class="prix">1289€</span>
-                                <figcaption class="legend">Baldaquin Écran Magellan</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                    </article>
+                <article class="links">
+                    <a href="pageProduit.html" title="Voir le produit">
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">798€</span>
+                            <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
+                            </a>
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                        </article>
+                    </a>
+                    <a href="pageProduit.html" title="Voir le produit">
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">99€</span>
+                            <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
+                            </a>
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                        </article>
+                    </a>
+                    <a href="pageProduit.html" title="Voir le produit">
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">99€</span>
+                            <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
+                            </a>
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                        </article>
+                    </a>
+                    <a href="pageProduit.html" title="Voir le produit">
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">1289€</span>
+                            <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
+                            </a>
+                            <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                            <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                        </article>
+                    </a>
+                </article>
             </div>
-        </div>
     </section>
     <footer>
         <a href="pageProduit.html" title="Haut de page">
