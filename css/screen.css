@@ -406,36 +406,38 @@ body .titreActuColor {
   -moz-border-radius: 0.25em;
   -ms-border-radius: 0.25em;
   -o-border-radius: 0.25em;
-  border-radius: 0.25em; }
-/* line 362, ../scss/screen.scss */
+  border-radius: 0.25em;
+  position: relative;
+  top: 3em; }
+/* line 364, ../scss/screen.scss */
 .main .recap {
   display: block;
   text-align: center;
   font-size: 20px;
   color: #535353; }
-/* line 368, ../scss/screen.scss */
+/* line 370, ../scss/screen.scss */
 .main .strong {
   font-weight: bold; }
-/* line 371, ../scss/screen.scss */
+/* line 373, ../scss/screen.scss */
 .main .sign {
   font-size: 12px;
   text-align: center;
   padding-bottom: 0.5em; }
-/* line 378, ../scss/screen.scss */
+/* line 380, ../scss/screen.scss */
 .main #commandeAdjust {
   margin: 0 auto; }
-/* line 380, ../scss/screen.scss */
+/* line 382, ../scss/screen.scss */
 .main #commandeAdjust #TitreUn {
   padding: 0 1em;
   text-align: center; }
-/* line 383, ../scss/screen.scss */
+/* line 385, ../scss/screen.scss */
 .main #commandeAdjust #TitreUn span {
   padding: 0 1em;
   background-color: white; }
-/* line 389, ../scss/screen.scss */
+/* line 391, ../scss/screen.scss */
 .main .procedureAchat {
   background-color: rgba(248, 90, 89, 0.5); }
-/* line 391, ../scss/screen.scss */
+/* line 393, ../scss/screen.scss */
 .main .procedureAchat li {
   width: 25%;
   float: left;
@@ -443,38 +445,38 @@ body .titreActuColor {
   padding: 0.5em 0;
   color: #535353;
   border-bottom: 0.5em solid #969696; }
-/* line 399, ../scss/screen.scss */
+/* line 401, ../scss/screen.scss */
 .main .procedureAchat .actif {
   color: white;
   background-color: #e23836;
   border-bottom: 0.5em solid #535353; }
-/* line 404, ../scss/screen.scss */
+/* line 406, ../scss/screen.scss */
 .main .procedureAchat .old {
   color: #e3e3e3;
   background-color: #f45b5b;
   border-bottom: 0.5em solid #535353; }
-/* line 411, ../scss/screen.scss */
+/* line 413, ../scss/screen.scss */
 .main .coordonees h3 {
   background-image: url("../img/h2Fond.png");
   background-repeat: repeat-x;
   line-height: 2.6em;
   font-size: 20px; }
-/* line 417, ../scss/screen.scss */
+/* line 419, ../scss/screen.scss */
 .main .coordonees h4 {
   font-weight: bold;
   color: #535353;
   padding-bottom: 0.5em; }
-/* line 422, ../scss/screen.scss */
+/* line 424, ../scss/screen.scss */
 .main .coordonees aside {
   line-height: 1em;
   padding-bottom: 1.5em; }
-/* line 426, ../scss/screen.scss */
+/* line 428, ../scss/screen.scss */
 .main .coordonees label, .main .coordonees #crypto {
   font-size: 15px; }
-/* line 430, ../scss/screen.scss */
+/* line 432, ../scss/screen.scss */
 .main .coordonees form label {
   display: block; }
-/* line 433, ../scss/screen.scss */
+/* line 435, ../scss/screen.scss */
 .main .coordonees form input {
   display: block;
   margin-bottom: 0.75em;
@@ -487,38 +489,38 @@ body .titreActuColor {
   border-radius: 0.5em;
   border: 1px solid #969696;
   width: 80%; }
-/* line 440, ../scss/screen.scss */
+/* line 442, ../scss/screen.scss */
 .main .coordonees form select {
   margin-bottom: 1.25em; }
-/* line 444, ../scss/screen.scss */
+/* line 446, ../scss/screen.scss */
 .main .coordonees #facturation {
   margin-top: 0.75em; }
-/* line 450, ../scss/screen.scss */
+/* line 452, ../scss/screen.scss */
 .main .categorie {
   margin-top: 1em; }
-/* line 452, ../scss/screen.scss */
+/* line 454, ../scss/screen.scss */
 .main .categorie .links {
   margin: 1em 1em 0 0;
   float: left; }
-/* line 455, ../scss/screen.scss */
+/* line 457, ../scss/screen.scss */
 .main .categorie .links .sousCat {
   margin: 1.5em 0 0.5em 0; }
-/* line 459, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .main .categorie .sousCat {
   font-weight: bold;
   color: #535353; }
-/* line 463, ../scss/screen.scss */
+/* line 465, ../scss/screen.scss */
 .main .categorie .thumbCategorie {
   border: 1px solid #969696; }
-/* line 466, ../scss/screen.scss */
+/* line 468, ../scss/screen.scss */
 .main .categorie .description {
   min-height: 7em; }
-/* line 469, ../scss/screen.scss */
+/* line 471, ../scss/screen.scss */
 .main .categorie .article {
   float: left;
   width: 12em;
   margin: 0.5em 2.5em 1em 0; }
-/* line 470, ../scss/screen.scss */
+/* line 472, ../scss/screen.scss */
 .main .categorie .article .ImgProdCat {
   float: left;
   margin: 0.4em 0.5em 0 0;
@@ -528,75 +530,75 @@ body .titreActuColor {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #969696; }
-/* line 479, ../scss/screen.scss */
+/* line 481, ../scss/screen.scss */
 .main .categorie .article .cat {
   display: block; }
-/* line 483, ../scss/screen.scss */
+/* line 485, ../scss/screen.scss */
 .main .categorie .article .disponibility img {
   float: left;
   padding-left: 0; }
-/* line 487, ../scss/screen.scss */
+/* line 489, ../scss/screen.scss */
 .main .categorie .article .disponibility .add {
   float: left;
   margin-left: 1em; }
-/* line 494, ../scss/screen.scss */
+/* line 496, ../scss/screen.scss */
 .main .tri {
   background-color: #e3e3e3;
   margin-bottom: 1em; }
-/* line 497, ../scss/screen.scss */
+/* line 499, ../scss/screen.scss */
 .main .tri span, .main .tri legend {
   color: #535353;
   margin-left: 1em; }
-/* line 501, ../scss/screen.scss */
+/* line 503, ../scss/screen.scss */
 .main .tri select, .main .tri legend, .main .tri .critere {
   float: left; }
-/* line 504, ../scss/screen.scss */
+/* line 506, ../scss/screen.scss */
 .main .tri .critere {
   margin-right: 5em; }
-/* line 507, ../scss/screen.scss */
+/* line 509, ../scss/screen.scss */
 .main .tri #select {
   float: right;
   margin: 0.165em 0.265em; }
 
 /* SECTION CONTACT */
-/* line 514, ../scss/screen.scss */
+/* line 516, ../scss/screen.scss */
 .contact {
   /* Connect */ }
-/* line 515, ../scss/screen.scss */
+/* line 517, ../scss/screen.scss */
 .contact h2 {
   text-align: center; }
-/* line 518, ../scss/screen.scss */
+/* line 520, ../scss/screen.scss */
 .contact article.questions {
   padding: 1em 0 3em 0;
   margin: 0 auto; }
-/* line 522, ../scss/screen.scss */
+/* line 524, ../scss/screen.scss */
 .contact article.questions p {
   text-align: center;
   margin-top: 1em; }
-/* line 526, ../scss/screen.scss */
+/* line 528, ../scss/screen.scss */
 .contact article.questions .questions {
   display: block; }
-/* line 530, ../scss/screen.scss */
+/* line 532, ../scss/screen.scss */
 .contact .h-card {
   margin-bottom: 1em; }
-/* line 532, ../scss/screen.scss */
+/* line 534, ../scss/screen.scss */
 .contact .h-card .adresse {
   margin: 1em 0;
   font-weight: bold; }
-/* line 536, ../scss/screen.scss */
+/* line 538, ../scss/screen.scss */
 .contact .h-card .coordonneesInt {
   color: #535353; }
-/* line 540, ../scss/screen.scss */
+/* line 542, ../scss/screen.scss */
 .contact .formulaire {
   margin: 0 auto;
   text-align: center; }
-/* line 543, ../scss/screen.scss */
+/* line 545, ../scss/screen.scss */
 .contact .formulaire p.mdp {
   padding-top: 1em; }
-/* line 546, ../scss/screen.scss */
+/* line 548, ../scss/screen.scss */
 .contact .formulaire form {
   padding-top: 1em; }
-/* line 549, ../scss/screen.scss */
+/* line 551, ../scss/screen.scss */
 .contact .formulaire .formContact {
   display: block;
   padding: 0.5em;
@@ -608,7 +610,7 @@ body .titreActuColor {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   font-size: 18px; }
-/* line 557, ../scss/screen.scss */
+/* line 559, ../scss/screen.scss */
 .contact .formulaire #contact {
   background-color: #68cef4;
   font-weight: bold;
@@ -617,56 +619,56 @@ body .titreActuColor {
   color: #535353;
   text-transform: uppercase;
   font-size: 15px; }
-/* line 565, ../scss/screen.scss */
+/* line 567, ../scss/screen.scss */
 .contact .formulaire #contact:hover {
   background-color: #b2d9cd; }
-/* line 570, ../scss/screen.scss */
+/* line 572, ../scss/screen.scss */
 .contact .formulaire .contact p {
   padding-top: 1em; }
-/* line 576, ../scss/screen.scss */
+/* line 578, ../scss/screen.scss */
 .contact .content-cms h3 {
   text-align: center;
   margin-top: 1em; }
-/* line 579, ../scss/screen.scss */
+/* line 581, ../scss/screen.scss */
 .contact .content-cms h3:before {
   content: url(../img/truck.png);
   position: relative;
   top: 0.4em;
   right: 0.5em; }
-/* line 587, ../scss/screen.scss */
+/* line 589, ../scss/screen.scss */
 .contact .content-cms ul li {
   list-style-type: square;
-  width: 20em;
+  width: 70%;
   margin: 0.5em auto 0 auto; }
-/* line 591, ../scss/screen.scss */
+/* line 593, ../scss/screen.scss */
 .contact .content-cms ul li span {
   font-weight: bold;
   color: #e23836; }
-/* line 600, ../scss/screen.scss */
+/* line 602, ../scss/screen.scss */
 .contact .connect {
   padding-bottom: 1em; }
-/* line 604, ../scss/screen.scss */
+/* line 606, ../scss/screen.scss */
 .contact #mdp {
   margin: 1.5em 0 0.5em 0; }
 
-/* line 610, ../scss/screen.scss */
+/* line 612, ../scss/screen.scss */
 footer {
   background-color: #2c2c2c;
   border-top: 2px solid #e23836;
   position: relative;
   margin-top: 3em; }
-/* line 615, ../scss/screen.scss */
+/* line 617, ../scss/screen.scss */
 footer .titreFooter {
   text-transform: uppercase;
   color: white; }
-/* line 619, ../scss/screen.scss */
+/* line 621, ../scss/screen.scss */
 footer .infos {
   float: left;
   background-color: #2c2c2c; }
-/* line 622, ../scss/screen.scss */
+/* line 624, ../scss/screen.scss */
 footer .infos a {
   display: block; }
-/* line 626, ../scss/screen.scss */
+/* line 628, ../scss/screen.scss */
 footer .footerLogo {
   position: relative;
   top: -2em;
@@ -680,7 +682,7 @@ footer .footerLogo {
   -o-border-radius: 2em;
   border-radius: 2em; }
 
-/* line 639, ../scss/screen.scss */
+/* line 641, ../scss/screen.scss */
 #menu:after, .main:after, .titres:after, footer:after, .quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after, .presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after, .infos:after, .presentationProduit:after {
   content: '';
   clear: both;

@@ -358,6 +358,8 @@ body{
             background-color: $veryClearGray;
             border: 1px solid $redLinks;
             @include border-radius(0.25em);
+            position: relative;
+            top: 3em;
         }
         .recap{
             display: block;
@@ -586,7 +588,7 @@ body{
         ul{
             li{
                 list-style-type: square;
-                width: 20em;
+                width: 70%;
                 margin: 0.5em auto 0 auto;
                 span{
                     font-weight: bold;
