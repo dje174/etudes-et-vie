@@ -92,9 +92,9 @@
             <li class="onglets searchDiv">
                 <form action="#">
                     <input type="text" placeholder="Rechercher" class="texte" title="search">
-                        <a href="#" title="Rechercher" class="search onglet">
+                        <!-- <a href="#" title="Rechercher" class="search onglet">
                             <span class="submit into">OK</span>
-                        </a>
+                        </a> -->
                     <input type="submit" class='cache'>
                 </form>
             </li>
@@ -102,14 +102,8 @@
     </nav>
     <section class="main">
         <div class="actuality">
-            <div class="commande adjust">
-                <p class="total confirm">Il y a 4 articles dans votre panier pour un total de <span class="prix">1095€</span></p>
-                <a href="commande2.html" id="confirmCommande">
-                    <span id="order">Passer commande</span>
-                </a>
-            </div>
             <div id="commandeAdjust">
-                <h2 role="heading" aria-level="2" id="TitreUn"><span>Votre commande</span></h2>
+                <h2 role="heading" aria-level="2" class="firstTitle"><span>Votre commande</span></h2>
                 <ul class="procedureAchat">
                     <li class="actif">Articles</li>
                     <li>Coordonéées</li>
@@ -153,15 +147,20 @@
                 </table>
                 <p class="total">Total des articles TTC: <span class="prix">1095€</span></p>
             </div>
-            
+            <div class="commande adjust">
+                <p class="total confirm">Il y a 4 articles dans votre panier pour un total de <span class="prix">1095€</span></p>
+                <a href="commande2.html">
+                    <span id="order">Continuer</span>
+                </a>
+            </div>
         </div>
     </section>
     <footer>
         <h2 class="cache">Plus d'informations sur Études et vie</h2>
         <a href="../index.html" title="Haut de page">
-            <div class="footerLogo">
+            <!-- <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
-            </div>
+            </div> -->
         </a>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">À propos</h3>

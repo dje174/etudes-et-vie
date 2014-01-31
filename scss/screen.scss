@@ -30,6 +30,16 @@ body{
                         background-color: $redLinksHover;
                 }
         }
+        .continueCommand{
+            @extend .submit;
+            width: 12em;
+            position: relative;
+            font-size: 18px;
+            -left: 6em;
+            &:hover{
+                color: white;
+            }
+        }
         .texte{
                 padding: 0.5em;
                 @include border-radius(0.3em);
@@ -45,11 +55,13 @@ body{
         .into{
                 position: absolute;
                 cursor: pointer;
+                left: -3em;
+                top: 0.3em;
         }
-        .add{
-                background-image: url('../img/add-26.png');
-                background-repeat: no-repeat;
-        }
+        // .add{
+        //         background-image: url('../img/add-26.png');
+        //         background-repeat: no-repeat;
+        // }
         .disponibility{
                 img{
                         padding: 0.5em 0.5em 0 0.5em;
@@ -67,7 +79,11 @@ body{
             padding: 0.5em 1em;
             margin-top: 1em;
             font-size: 16px;
-            width: 100%;
+            width: 8.5em;
+            position: absolute;
+            top: 5.5em;
+            left: 5em;
+            text-align: center;
         }        
         .titreActuColor{
              padding: 0 1em;
@@ -77,6 +93,16 @@ body{
         .cache{
             visibility: hidden;
             position: absolute;
+        }     
+        .firstTitle{
+            text-align: center;
+            font-size: 22px;
+            margin: 2em 0 0.75em 0;
+        }
+        .secondTitle{
+            text-align: center;
+            font-size: 20px;
+            margin: 0.75em 0 0.25em 0;
         }
 }
 
@@ -157,6 +183,8 @@ body{
             }
             .nav-column{
                 float: left;
+                text-align: left;
+                padding-right: 0.5em;
             }
             .dropdownImg{
                 float:left;
@@ -173,24 +201,21 @@ body{
 
 /* SECTION PRINCIPALE ACCUEIL */
  .main{
-         h2{
-            //line-height: 2.25em;
-         }
         .titres, .extraInformationsProduct{
             min-height: 18em;
             &>h2{
                 font-weight: bold;
-                margin-top: 2.5em;
+                margin-top: 3.5em;
             }
         }
         .extraInformationsProduct{
-            text-align: center;
+            float: left;
+            width: 20em;
             p{
                 margin-top: 0.75em;
             }
         }
         .presentation{
-                 text-align: center;
                  padding-top: 1.5em;
                  #where{
                          font-size: 20.3px;
@@ -204,25 +229,13 @@ body{
                                  background-color: white;
                          }
                  }
-                 p{
-                         margin-top: 0.5em;
-                 }
                  .infoVentes{
                          color: $darkGray;
                  }
           }
-          #pageCategorie{
-            #TitreUn{
-                 padding: 0 1em;
-                 text-align: center;
-                 span{
-                    padding: 0 1em;
-                    background-color: white;
-                 }
-            }
-          }
          .produit{
                  margin: 1.5em 2.16em 1em 1.9em;
+                 width: 8.5em;
                  position: relative;
                  .thumbProduit{
                          border: 1px solid $borderGray;
@@ -238,11 +251,15 @@ body{
                         left: 6em;
                  }
                  .legend{
-                         width: 8.444em;
+                         width: 8.5em;
                          text-align: center;
                          border-top: 2px solid $blueClear;
                          border-bottom: 2px solid $blueClear;
                          min-height:3em;
+                         display: block;
+                 }
+                 .disponibility{
+                    display: block;
                  }
          }
 
@@ -263,6 +280,7 @@ body{
                 }
         }
         .descriptionProduit{
+            float: left;
                 .nom{
                     text-transform: uppercase;
                     border-top: 2px solid $blueClear;
@@ -362,7 +380,8 @@ body{
             border: 1px solid $redLinks;
             @include border-radius(0.25em);
             position: relative;
-            top: 3em;
+            top: 1em;
+            min-height: 9em;
         }
         .recap{
             display: block;
@@ -412,10 +431,17 @@ body{
                 border-bottom: 0.5em solid $darkGray;
             }
         }
+        .addresseUser{
+            height: 38em;
+        }
+        .finalCommand{
+            min-height: 20em;
+        }
+        .commandeDown{
+            margin-top: 2em;
+        }
         .coordonees{
             h3{
-                background-image: url('../img/h2Fond.png');
-                background-repeat: repeat-x;
                 line-height: 2.6em;
                 font-size: 20px;
             }
@@ -453,12 +479,12 @@ body{
 
          /* SECTION PRINCIPALE CATEGORIES */
         .categorie{
-                margin-top: 1em;
+                margin-top: 3em;
                 .links{
                         margin: 1em 1em 0 0;
                         float: left;
                         .sousCat{
-                                margin: 1.5em 0 0.5em 0;
+                            margin: 1.5em 0 0.5em 0;
                         }
                 }
                 .sousCat{
@@ -525,7 +551,8 @@ body{
         padding: 1em 0 3em 0;
         margin: 0 auto;
         p{
-            text-align: center;
+            //text-align: center;
+            padding: 0 3em;
             margin-top: 1em;
         }
         .questions{
@@ -533,6 +560,7 @@ body{
         }
     }
     .h-card{
+        text-align: center;
         margin-bottom: 1em;
         .adresse{
             margin: 1em 0;
@@ -579,7 +607,6 @@ body{
     }
     .content-cms{
         h3{
-            text-align: center;
             margin-top: 1em;
             &:before{
                 content: url(../img/truck.png);
@@ -614,8 +641,7 @@ body{
 
  footer{
         background-color: #2c2c2c;
-        border-top: 2px solid $redLinks;
-        position: relative;
+        //border-top: 2px solid $redLinks;
         margin-top: 3em;
          .titreFooter{
             text-transform: uppercase;
@@ -624,24 +650,26 @@ body{
          .infos{
             float: left;
             background-color: #2c2c2c;
+            padding-top: 1.5em;
+            text-align: left;
             a{
                  display: block;
             }
          }
-         .footerLogo{
-            position: relative;
-            top: -2em;
-            margin: 0 auto;
-            width: 2.3em;
-            background-color: #e23836;
-            padding: 0.5em 0.7em;
-            @include border-radius(2em);
-         }
+         // .footerLogo{
+         //    position: relative;
+         //    top: -2em;
+         //    margin: 0 auto;
+         //    width: 2.3em;
+         //    background-color: #e23836;
+         //    padding: 0.5em 0.7em;
+         //    @include border-radius(2em);
+         // }
  }
 
 
 
-#menu:after, .main:after, .titres:after, footer:after,.quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,.presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after, .infos:after, .presentationProduit:after{
+#menu:after, .main:after, .titres:after, footer:after,.quoi:after .user:after, .links:after, .contact:after, .formulaire:after, #drop-down:after,.presentation:after, .actuality:after, .procedureAchat:after, .tri:after, .slider:after, .infos:after, .presentationProduit:after, .coordonees:after{
     @include reinitFloat();
 }
 

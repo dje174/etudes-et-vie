@@ -56,7 +56,7 @@
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Emfields GigaHertz Solutions</a>
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Tension induite du corps</a>
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Prise de terre</a>
-                            <a href="html/pageCategorie.html" title="Voir la catégorie">Champs magnétostatiques/électrostatiques</a>
+                            <a href="html/pageCategorie.html" title="Voir la catégorie">Champs magnétostatiques</a>
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Lumière</a>
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Mesures environnementales</a>
                             <a href="html/pageCategorie.html" title="Voir la catégorie">Qualité de l'air</a>
@@ -102,19 +102,16 @@
                 <li class="onglets searchDiv">
                     <form action="#">
                         <input type="text" placeholder="Rechercher" class="texte" title="search">
-                            <a href="#" title="Rechercher" class="search onglet">
-                                <span class="submit into">OK</span>
-                            </a>
-                        <input type="submit" class='cache'>
+                            
                     </form>
                 </li>
             </ul>
         </nav>
         <section class="main">
-            <h2 class="cache">Bienvenue sur Études et vie</h2>
+            <h2 class="cache" role="heading" aria-level="2">Bienvenue sur Études et vie</h2>
             <article class="presentation">
-                <h3 class="cache">Qui sommes-nous</h3>
-                <p class="titreActuColor" id="titleHome"><span>Bienvenue sur Études et vie</span></p>
+                <h3 class="cache" role="heading" aria-level="3">Qui sommes-nous</h3>
+                <p class="firstTitle"><span>Bienvenue sur Études et vie</span></p>
                 <p>Vous êtes sur le magasin d'<a href="http://www.etudesetvie.be/" title="Le site d'études et vie">études et vie</a>, nous sommes un magasin spécialisé en <p>
                 <p><span class="infoVentes">biologie de l'habitat</span> -
                 <span class="infoVentes">baubiologie</span> -
@@ -124,8 +121,8 @@
                 <span class="infoVentes">protections</span></p>
                 <p>Découvrez nos produits par <span class="infoVentes">catégories</span> via l'onglet ci-dessus ou via nos sections ci-dessous sélectionnées spécialement par nos soins</p>
             </article>
-            <h2 role="heading" aria-level="2"><span class="titreActu">Les meilleures ventes</span></h2>
             <div class="titres">
+            <h2 role="heading" aria-level="2"><span class="titreActu">Les meilleures ventes</span></h2>
                 <a href="html/pageProduit.html" title="Voir le produit">
                     <article itemscope itemtype="http://schema.org/Product" class="nameProduct produit">
                         <h3 class="cache">MK30 Kit de mesure</h3>
@@ -258,34 +255,34 @@
         </section>
         <footer>
             <h2 class="cache">Plus d'informations sur Études et vie</h2>
-            <a href="index.html" title="Haut de page">
+            <!-- <a href="index.html" title="Haut de page">
                 <div class="footerLogo">
                         <img src="img/logoSmall.png" alt="Études et vie logo">
                 </div>
-            </a>
-            <div class="infos">
+            </a> -->
+            <aside class="infos">
                 <h3 class="titreFooter" role="heading" aria-level="3">À propos</h3>
                     <a href="html/contact.html" class="linksFooter" >Contactez-nous</a>
                     <a href="#" class="linksFooter" >Service Client</a>
                     <a href="#" class="linksFooter" >Support Technique</a>
                     <a href="http://www.etudesetvie.be/" class="linksFooter" title="Aller vers le site">Études et vie, le site</a>
-            </div>
-            <div class="infos">
+            </aside>
+            <aside class="infos">
                 <h3 class="titreFooter" role="heading" aria-level="3">Infos</h3>
                     <a href="html/cms.html" class="linksFooter">Livraisons et retour</a>
                     <a href="#" class="linksFooter">Réservations</a>
                     <a href="#" class="linksFooter">Conditions de ventes</a>
-            </div>
-            <div class="infos">
+            </aside>
+            <aside class="infos">
                 <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
                 <input type="text" placeholder="Avec votre e-mail" class="texte news" title="newsletter"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into" title="validateNewsletter"></span>
-            </div>
-            <div class="infos">
+            </aside>
+            <aside class="infos">
                 <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
                 <a href="#" class="linksFooter">Facebook</a>
                 <a href="#" class="linksFooter">Twitter</a>
                 <a href="#" class="linksFooter">Youtube</a>        
-            </div>
+            </aside>
         </footer>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

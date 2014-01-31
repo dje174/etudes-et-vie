@@ -92,9 +92,9 @@
             <li class="onglets searchDiv">
                 <form action="#">
                     <input type="text" placeholder="Rechercher" class="texte" title="search">
-                        <a href="#" title="Rechercher" class="search onglet">
+                        <!-- <a href="#" title="Rechercher" class="search onglet">
                             <span class="submit into">OK</span>
-                        </a>
+                        </a> -->
                     <input type="submit" class='cache'>
                 </form>
             </li>
@@ -102,22 +102,16 @@
     </nav>
     <section class="main">
         <div class="actuality">
-            <div class="commande adjust">
-                <p class="total confirm">Il y a 4 articles dans votre panier pour un total de <span class="prix">1095€</span></p>
-                <a href="commande3.html" id="confirmCommande">
-                    <span id="order">Passer commande</span>
-                </a>
-            </div>
             <div id="commandeAdjust">
-                <h2 role="heading" aria-level="2" id="TitreUn"><span>Votre commande</span></h2>
+                <h2 role="heading" aria-level="2" class="firstTitle commandeDown"><span>Votre commande <a href="commande3.html" class="continueCommand">Continuer commande</a></span></h2>
                 <ul class="procedureAchat">
                     <li class="old">Articles</li>
                     <li class="actif">Coordonéées</li>
                     <li>Paiement</li>
                     <li>Validation</li>
                 </ul>
-                <article class="coordonees">
-                    <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de livraison</span></h3>
+                <article class="coordonees addresseUser">
+                    <h3 role="heading" aria-level="3"><span class="secondTitle">Votre adresse de livraison</span></h3>
                         <aside>
                             <h4 role="heading" aria-level="4">Adresse actuelle</h4>
                             <p>Jérôme Poucet</p>
@@ -139,11 +133,11 @@
                             <input id="pays" type="text" placeholder="Votre pays">
                             <label for="telephone">Numéro de téléphone (facultatif)</label>
                             <input id="telephone" type="text" placeholder="Votre numéro de téléphone">
-                            <input type="submit" value="Valider">
+                            <input type="submit" value="Valider" class="cache">
                         </form>
                 </article>
-                <article class="coordonees">
-                    <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de facturation</span></h3>
+                <article class="coordonees addresseUser">
+                    <h3 role="heading" aria-level="3"><span class="secondTitle">Votre adresse de facturation</span></h3>
                     <p><input title="sameFacturation" type="checkbox"> Utiliser la même adresse que celle de livraison</p>
                     <h4 role="heading" aria-level="4" class="facturation">Ajouter une adresse</h4>
                         <form action="#">
@@ -159,19 +153,18 @@
                             <input id="2pays" type="text" placeholder="Votre pays">
                             <label for="2telephone">Numéro de téléphone (facultatif)</label>
                             <input id="2telephone" type="text" placeholder="Votre numéro de téléphone">
-                            <input type="submit" value="Valider">
+                            <input type="submit" value="Valider" class="cache">
                         </form>
                 </article>
             </div>
-            
         </div>
     </section>
     <footer>
         <h2 class="cache">Plus d'informations sur Études et vie</h2>
         <a href="../index.html" title="Haut de page">
-            <div class="footerLogo">
+           <!--  <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
-            </div>
+            </div> -->
         </a>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">À propos</h3>
