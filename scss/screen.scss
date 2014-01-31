@@ -74,6 +74,10 @@ body{
              color: black;
              font-size: 22px;
         }
+        .cache{
+            visibility: hidden;
+            position: absolute;
+        }
 }
 
 /* ESPACE CLIENT */
@@ -142,7 +146,6 @@ body{
                 border-top: 1px solid $redLinksHover;
                 border-bottom: 1px solid $redLinksHover;
                 font-size: 15px;
-                text-align: center;
             }
             a{
                 display: block;
@@ -314,7 +317,7 @@ body{
             margin-top: 1.5em;
         }
         #panier, .panierAchats{
-                #voir{
+                .voir{
                         display: block;
                 }
                 th{
@@ -425,7 +428,7 @@ body{
                 line-height: 1em;
                 padding-bottom: 1.5em;
             }
-            label, #crypto{
+            label, #cryptograme{
                 font-size: 15px;
             }
             form{
@@ -443,7 +446,7 @@ body{
                     margin-bottom: 1.25em;
                 }
             }
-            #facturation{
+            .facturation{
                 margin-top: 0.75em;
             }
         }
@@ -496,17 +499,17 @@ body{
         .tri{
             background-color: $veryClearGray;
             margin-bottom: 1em;
-            span,legend{
+            span,.legendSelect{
                     color: $darkGray;
                     margin-left: 1em;
             }
-            select, legend,.critere{
+            select, .legendSelect,.critere{
                     float: left;
             }
             .critere{
                     margin-right: 5em;
             }
-            #select{
+            .selectTri{
                     float: right;
                     margin: 0.165em 0.265em;
             }

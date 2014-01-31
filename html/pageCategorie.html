@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-    <title>Catégories produits | Études et vie</title>
+        <title>Catégorie produits | Études et vie</title>
 </head>
 <body>
     <header>
@@ -24,14 +24,16 @@
             </div>
         </div>
         <div class="homeLogo">
-            <a href="index.html" title="Études et vie">
+            <a href="../index.html" title="Études et vie">
                 <img src="../img/logo.png" alt="Études et vie logo">
             </a>
         </div>
     </header>
-    <nav id="menu" role="navigation">
+    <h1 class="cache">Études-et-vie: santé, vie et environnement</h1>
+        <nav id="menu" role="navigation">
+        <h2 class="cache">Navigation</h2>
         <ul>
-            <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
+            <li class="onglets"><a href="../index.html" class="onglet">Accueil</a></li>
             <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
                     <span>Catégories</span>
                     <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
@@ -87,24 +89,32 @@
                 </div>
             </li>
             <li class="onglets"><a href="contact.html" class="onglet">Contact</a></li>
-            <li class="onglets searchDiv"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search" class="onglet"><input type="submit" value="OK" class="submit into"></a></li>
+            <li class="onglets searchDiv">
+                <form action="#">
+                    <input type="text" placeholder="Rechercher" class="texte" title="search">
+                        <a href="#" title="Rechercher" class="search onglet">
+                            <span class="submit into">OK</span>
+                        </a>
+                    <input type="submit" class='cache'>
+                </form>
+            </li>
         </ul>
     </nav>
     <section class="main">
+        <h2 class="cache">Nom de la catégorie</h2>
         <div class="titres categorie">
                     <figure id="pageCategorie">
-                        <h2 role="heading" aria-level="2" id="TitreUn" class="titreActuColor"><span>Catégorie 1</span></h2>
                         <img class="thumbCategorie" src="../img/categorie1.png" alt="Categorie">
                             <h3 class="sousCat">Description de la catégorie</h3>
                             <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, unde quos magni soluta magnam omnis fugit quam dolorum sit. Reiciendis, corporis, fugiat officia facere ipsam dolorem laborum quia iure ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </figure>
                     <article class="links">
-                    <h3 class="sousCat">Articles appartenant à cette catégorie</h3>
-                        <p class="tri">
+                    <h2 class="sousCat">Articles appartenant à cette catégorie</h2>
+                        <div class="tri">
                             <span>Résultats 1 - 5 sur 5</span>
-                            <span id="select">
-                                <legend>Trier par:</legend>
-                                <select name="tri" id="tri">
+                            <div class="selectTri">
+                                <span class="legendSelect">Trier par:</span>
+                                <select name="range1" class="range" title="selectRange">
                                     <option value="Meilleures ventes">Meilleures ventes</option>
                                     <option value="Promotions">Promotions</option>
                                     <option value="Prix: ordre croissant">Prix: ordre croissant</option>
@@ -113,56 +123,56 @@
                                     <option value="ordre alphabétique de A à Z">de A à Z</option>
                                     <option value="ordre alphabétique de Z à A">de Z à A</option>
                                 </select>
-                                </span>
-                        </p>
+                            </div>
+                        </div>
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">798€</span>
-                                <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible" itemprop="availability">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                                <h3 class="cache">Pochette Isophone Large</h3>
+                                <img class="thumbProduit" src="../img/article6.png" alt="Produit" itemprop="image">
+                                <span class="prix" itemprop="price">32€</span>
+                                <span class="legend" itemprop="name">Pochette Isophone Large</span>
+                                <span class="disponibility" title="Produit indisponible" itemprop="availability"><img src="../img/disable.png" alt="Produit indisponibledisponible">
+                                <input type="submit" value="Ajouter" class="submit add"></span>
                             </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
-                                </a>
-                                <span class="disponibility"><img src="../img/available.png" alt=" itemprop="availability"Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">1289€</span>
-                                <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">Voltmètre de surface</h3>
+                                    <img class="thumbProduit" src="../img/article7.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">726€</span>
+                                    <span class="legend" itemprop="name">Voltmètre de surface</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">Pop Phone anti-onde - Black</h3>
+                                    <img class="thumbProduit" src="../img/article8.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">35€</span>
+                                    <span class="legend" itemprop="name">Pop Phone anti-onde - Black</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">HSF-54 - 5L Peinture</h3>
+                                    <img class="thumbProduit" src="../img/article9.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">254€</span>
+                                    <span class="legend" itemprop="name">HSF-54 - 5L Peinture</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
                 </article>
                 <article class="links">
-                    <h3 class="sousCat">Articles que vous pourriez aimer</h3>
-                        <p class="tri">
+                    <h2 class="sousCat">Articles que vous pourriez aimer</h2>
+                        <div class="tri">
                             <span>Résultats 1 - 5 sur 5</span>
-                            <span id="select">
-                                <legend>Trier par:</legend>
-                                <select name="tri" id="tri">
+                            <div class="selectTri">
+                                <span class="legendSelect">Trier par:</span>
+                                <select name="range1" class="range" title="selectRange">
                                     <option value="Meilleures ventes">Meilleures ventes</option>
                                     <option value="Promotions">Promotions</option>
                                     <option value="Prix: ordre croissant">Prix: ordre croissant</option>
@@ -171,53 +181,54 @@
                                     <option value="ordre alphabétique de A à Z">de A à Z</option>
                                     <option value="ordre alphabétique de Z à A">de Z à A</option>
                                 </select>
-                                </span>
-                        </p>                       
+                            </div>
+                        </div>                       
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">798€</span>
-                                <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible" itemprop="availability">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
-                                </a>
+                                <h3 class="cache">SLEEP Bracelet Philip Stein</h3>
+                                <img class="thumbProduit" src="../img/article11.png" alt="Produit" itemprop="image">
+                                <span class="prix" itemprop="price">299€</span>
+                                <span class="legend" itemprop="name">SLEEP Bracelet Philip Stein</span>
                                 <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                                <input type="submit" value="Ajouter" class="submit add"></span>
                             </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">1289€</span>
-                                <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
-                                </a>
-                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">Détecteur électromagnétique</h3>
+                                    <img class="thumbProduit" src="../img/article12.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">238€</span>
+                                    <span class="legend" itemprop="name">Détecteur électromagnétique</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">Kit PU Merkaba</h3>
+                                    <img class="thumbProduit" src="../img/article13.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">279€</span>
+                                    <span class="legend" itemprop="name">Kit PU Merkaba</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
+                            <a href="pageProduit.html" title="Voir le produit">
+                                <article class="produit" itemscope itemtype="http://schema.org/Product">
+                                    <h3 class="cache">Kit PU Merkaba électrique</h3>
+                                    <img class="thumbProduit" src="../img/article13.png" alt="Produit" itemprop="image">
+                                    <span class="prix" itemprop="price">279€</span>
+                                    <span class="legend" itemprop="name">Kit PU Merkaba électrique</span>
+                                    <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                    <input type="submit" value="Ajouter" class="submit add"></span>
+                                </article>
+                            </a>
                 </article>
         </div>
     </section>
     <footer>
-        <a href="pageCategorie.html" title="Haut de page">
+        <h2 class="cache">Plus d'informations sur Études et vie</h2>
+        <a href="../index.html" title="Haut de page">
             <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>
@@ -237,7 +248,7 @@
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
-            <input type="text" placeholder="Avec votre e-mail" class="texte news"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into"></span>
+            <input type="text" placeholder="Avec votre e-mail" class="texte news" title="newsletter"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into" title="validateNewsletter"></span>
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
@@ -249,16 +260,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>   
+    <script src="../js/main.js"></script>  
 </body>
 </html>

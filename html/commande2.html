@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,21 +17,23 @@
     <header>
         <div class="user">
             <div class="client connect">
-                <a href="#" >User01</a> | <a href="index.html" title="valider déconnection">Se déconnecter</a>
+                <a href="#" >User01</a> | <a href="../index.html" title="valider déconnection">Se déconnecter</a>
             </div>
             <div class="client panier">
                 <a href="panier.html" id="cart" title="Allez au panier">Panier</a>
             </div>
         </div>
         <div class="homeLogo">
-            <a href="index.html" title="Études et vie">
+            <a href="../index.html" title="Études et vie">
                 <img src="../img/logo.png" alt="Études et vie. Santé, vie, environnement">
             </a>
         </div>
     </header>
-    <nav id="menu" role="navigation">
+    <h1 class="cache">Études-et-vie: santé, vie et environnement</h1>
+        <nav id="menu" role="navigation">
+        <h2 class="cache">Navigation</h2>
         <ul>
-            <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
+            <li class="onglets"><a href="../index.html" class="onglet">Accueil</a></li>
             <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
                     <span>Catégories</span>
                     <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
@@ -87,14 +89,24 @@
                 </div>
             </li>
             <li class="onglets"><a href="contact.html" class="onglet">Contact</a></li>
-            <li class="onglets searchDiv"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search" class="onglet"><input type="submit" value="OK" class="submit into"></a></li>
+            <li class="onglets searchDiv">
+                <form action="#">
+                    <input type="text" placeholder="Rechercher" class="texte" title="search">
+                        <a href="#" title="Rechercher" class="search onglet">
+                            <span class="submit into">OK</span>
+                        </a>
+                    <input type="submit" class='cache'>
+                </form>
+            </li>
         </ul>
     </nav>
     <section class="main">
         <div class="actuality">
             <div class="commande adjust">
                 <p class="total confirm">Il y a 4 articles dans votre panier pour un total de <span class="prix">1095€</span></p>
-                <a href="commande3.html" id="confirmCommande"><input type="submit" value="Continuer la commande" id="order"></a>
+                <a href="commande3.html" id="confirmCommande">
+                    <span id="order">Passer commande</span>
+                </a>
             </div>
             <div id="commandeAdjust">
                 <h2 role="heading" aria-level="2" id="TitreUn"><span>Votre commande</span></h2>
@@ -106,8 +118,8 @@
                 </ul>
                 <article class="coordonees">
                     <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de livraison</span></h3>
-                        <h4 role="heading" aria-level="4">Adresse actuelle</h4>
                         <aside>
+                            <h4 role="heading" aria-level="4">Adresse actuelle</h4>
                             <p>Jérôme Poucet</p>
                             <p>Avenue Emile Digneffe, 10</p>
                             <p>4000</p>
@@ -115,37 +127,39 @@
                         </aside>
                         <h4 role="heading" aria-level="4">Ajouter une adresse (facultatif)</h4>
                         <form action="#">
-                            <label for="adresse 1">Adresse 1</label>
-                            <input type="text" placeholder="Rue, numéro de maison, nom de la société">
-                            <label for="adresse 1">Adresse 2 (facultatif)</label>
-                            <input type="text" placeholder="Bâtiment, étage, indication au livreur">
+                            <label for="adresse1">Adresse 1</label>
+                            <input id="adresse1" type="text" placeholder="Rue, numéro de maison, nom de la société">
+                            <label for="adresse2">Adresse 2 (facultatif)</label>
+                            <input id="adresse2" type="text" placeholder="Bâtiment, étage, indication au livreur">
                             <label for="ville">Ville</label>
-                            <input type="text" placeholder="Le nom de votre ville">
-                            <label for="ville">Code postal</label>
-                            <input type="text" placeholder="Votre code postal">
+                            <input id="ville" type="text" placeholder="Le nom de votre ville">
+                            <label for="codePost">Code postal</label>
+                            <input id="codePost" type="text" placeholder="Votre code postal">
                             <label for="pays">Pays</label>
-                            <input type="text" placeholder="Votre pays">
+                            <input id="pays" type="text" placeholder="Votre pays">
                             <label for="telephone">Numéro de téléphone (facultatif)</label>
-                            <input type="text" placeholder="Votre numéro de téléphone">
+                            <input id="telephone" type="text" placeholder="Votre numéro de téléphone">
+                            <input type="submit" value="Valider">
                         </form>
                 </article>
                 <article class="coordonees">
                     <h3 role="heading" aria-level="3"><span class="titreActu">Votre adresse de facturation</span></h3>
-                    <label for="facturation"><input type="checkbox"> Utiliser la même adresse que celle de livraison</label>
-                    <h4 role="heading" aria-level="4" id="facturation">Ajouter une adresse</h4>
+                    <p><input title="sameFacturation" type="checkbox"> Utiliser la même adresse que celle de livraison</p>
+                    <h4 role="heading" aria-level="4" class="facturation">Ajouter une adresse</h4>
                         <form action="#">
-                            <label for="adresse 1">Adresse 1</label>
-                            <input type="text" placeholder="Rue, numéro de maison, nom de la société">
-                            <label for="adresse 1">Adresse 2 (facultatif)</label>
-                            <input type="text" placeholder="Bâtiment, étage, indication au livreur">
-                            <label for="ville">Ville</label>
-                            <input type="text" placeholder="Le nom de votre ville">
-                            <label for="ville">Code postal</label>
-                            <input type="text" placeholder="Votre code postal">
-                            <label for="pays">Pays</label>
-                            <input type="text" placeholder="Votre pays">
-                            <label for="telephone">Numéro de téléphone (facultatif)</label>
-                            <input type="text" placeholder="Votre numéro de téléphone">
+                            <label for="2adresse1">Adresse 1</label>
+                            <input id="2adresse1" type="text" placeholder="Rue, numéro de maison, nom de la société">
+                            <label for="2adresse2">Adresse 2 (facultatif)</label>
+                            <input id="2adresse2" type="text" placeholder="Bâtiment, étage, indication au livreur">
+                            <label for="2ville">Ville</label>
+                            <input id="2ville" type="text" placeholder="Le nom de votre ville">
+                            <label for="2codePost">Code postal</label>
+                            <input id="2codePost" type="text" placeholder="Votre code postal">
+                            <label for="2pays">Pays</label>
+                            <input id="2pays" type="text" placeholder="Votre pays">
+                            <label for="2telephone">Numéro de téléphone (facultatif)</label>
+                            <input id="2telephone" type="text" placeholder="Votre numéro de téléphone">
+                            <input type="submit" value="Valider">
                         </form>
                 </article>
             </div>
@@ -153,7 +167,8 @@
         </div>
     </section>
     <footer>
-        <a href="commande2.html" title="Haut de page">
+        <h2 class="cache">Plus d'informations sur Études et vie</h2>
+        <a href="../index.html" title="Haut de page">
             <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>
@@ -173,7 +188,7 @@
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
-            <input type="text" placeholder="Avec votre e-mail" class="texte news"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into"></span>
+            <input type="text" placeholder="Avec votre e-mail" class="texte news" title="newsletter"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into" title="validateNewsletter"></span>
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
@@ -181,20 +196,11 @@
             <a href="#" class="linksFooter">Twitter</a>
             <a href="#" class="linksFooter">Youtube</a>        
         </div>
-    </footer>
+    </footer> 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>    
+    
 </body>
 </html>

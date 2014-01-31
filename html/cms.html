@@ -2,36 +2,39 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="../css/screen.css">
-        <link rel="shortcut icon" href="../favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-    <title>Contact | Études et vie</title>
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/screen.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    <title>Retour et livraison | Études et vie</title>
 </head>
 <body>
     <header>
         <div class="user">
             <div class="client connect">
-                <a href="connect.html" title="Aller vers la collection">Se connecter</a> | <a href="signUp.html" title="Aller vers l'inscription">S'inscrire</a>
+                <a href="connect.html" title="Aller vers la collection">Se connecter</a> | 
+                <a href="signUp.html" title="Aller vers l'inscription">S'inscrire</a>
             </div>
             <div class="client panier">
                 <a href="panier.html" id="cart" title="Allez au panier">Panier</a>
             </div>
         </div>
         <div class="homeLogo">
-            <a href="index.html" title="Études et vie">
+            <a href="../index.html" title="Études et vie">
                 <img src="../img/logo.png" alt="Études et vie logo">
             </a>
         </div>
     </header>
-    <nav id="menu" role="navigation">
+   <h1 class="cache">Études-et-vie: santé, vie et environnement</h1>
+        <nav id="menu" role="navigation">
+        <h2 class="cache">Navigation</h2>
         <ul>
-            <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
+            <li class="onglets"><a href="../index.html" class="onglet">Accueil</a></li>
             <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
                     <span>Catégories</span>
                     <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
@@ -87,21 +90,32 @@
                 </div>
             </li>
             <li class="onglets"><a href="contact.html" class="onglet">Contact</a></li>
-            <li class="onglets searchDiv"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search" class="onglet"><input type="submit" value="OK" class="submit into"></a></li>
+            <li class="onglets searchDiv">
+                <form action="#">
+                    <input type="text" placeholder="Rechercher" class="texte" title="search">
+                        <a href="#" title="Rechercher" class="search onglet">
+                            <span class="submit into">OK</span>
+                        </a>
+                    <input type="submit" class='cache'>
+                </form>
+            </li>
         </ul>
     </nav>
     <section class="contact">
+        <h2 class="cache">Livraisons et retour</h2>
         <article class="questions deux">
+            <h3 role="heading" aria-level="3"><span class="titreActuColor">Informations sur livraisons/retour</span></h3>
             <div class="content-cms">
-                <h2 role="heading" aria-level="2"><span class="titreActuColor">Livraisons et retour</span></h2>
                 <h3 role="heading" aria-level="3">Le transport de votre colis</h3>
+                <div>
                 <p>
-                Les colis sont généralement expédiés en 48h après réception de votre paiement. Le mode d'expédidition standard est:
+                    Les colis sont généralement expédiés en 48h après réception de votre paiement. Le mode d'expédidition standard est:
+                </p>
                     <ul>
                         <li><span>Pour des colis inférieurs à 2Kg</span>, le recommandé postal pour la France et pour l'étranger ou le Kilpost sécure pour la Belgique</li>
                         <li><span>Pour des colis supérieurs à 2Kg</span>, en général, nous choisissons le Kilopost Secure en Belgique et un transporteur pour la France, la Suisse, le Luxembourg et pour l'étranger.</li>
                     </ul>
-                </p>
+                </div>
                 <p>
                 Les frais d'expédition comprennent l'emballage, la manutention et les frais postaux. Ils peuvent contenir une partie fixe et une partie variable en fonction du prix ou du poids de votre commande. 
                 </p>
@@ -112,7 +126,8 @@
         </article>
     </section>
     <footer>
-        <a href="contact.html" title="Haut de page">
+        <h2 class="cache">Plus d'informations sur Études et vie</h2>
+        <a href="../index.html" title="Haut de page">
             <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>
@@ -132,7 +147,7 @@
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
-            <input type="text" placeholder="Avec votre e-mail" class="texte news"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into"></span>
+            <input type="text" placeholder="Avec votre e-mail" class="texte news" title="newsletter"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into" title="validateNewsletter"></span>
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
@@ -144,16 +159,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="../js/plugins.js"></script>
-    <script src="../js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>     
+    <script src="../js/main.js"></script>   
 </body>
 </html>

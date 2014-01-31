@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-    <title>Accueil | Études et vie</title>
+        <title>Panier | Études et vie</title>
 </head>
 <body>
     <header>
@@ -24,14 +24,16 @@
             </div>
         </div>
         <div class="homeLogo">
-            <a href="index.html" title="Études et vie">
+            <a href="../index.html" title="Études et vie">
                 <img src="../img/logo.png" alt="Études et vie. Santé, vie, environnement">
             </a>
         </div>
     </header>
-    <nav id="menu" role="navigation">
+    <h1 class="cache">Études-et-vie: santé, vie et environnement</h1>
+        <nav id="menu" role="navigation">
+        <h2 class="cache">Navigation</h2>
         <ul>
-            <li class="onglets"><a href="index.html" class="onglet">Accueil</a></li>
+            <li class="onglets"><a href="../index.html" class="onglet">Accueil</a></li>
             <li class="onglets" id="categorie" tabindex="0" aria-haspopup="true">
                     <span>Catégories</span>
                     <div id="drop-down" aria-hidden="true" aria-expanded="false" role="group">
@@ -87,7 +89,15 @@
                 </div>
             </li>
             <li class="onglets"><a href="contact.html" class="onglet">Contact</a></li>
-            <li class="onglets searchDiv"><input type="text" placeholder="Rechercher" class="texte"><a href="search.html" title="Rechercher" class="search" class="onglet"><input type="submit" value="OK" class="submit into"></a></li>
+            <li class="onglets searchDiv">
+                <form action="#">
+                    <input type="text" placeholder="Rechercher" class="texte" title="search">
+                        <a href="#" title="Rechercher" class="search onglet">
+                            <span class="submit into">OK</span>
+                        </a>
+                    <input type="submit" class='cache'>
+                </form>
+            </li>
         </ul>
     </nav>
     <section class="main">
@@ -96,11 +106,13 @@
                 <p class="total confirm">Total des articles TTC (3 articles): <span class="prix">996€</span></p>
                 <p class="sign"><a href="signUp.html">S'inscrire</a> ou <a href="connect.html">se connecter</a> pour avoir plus d'avantages sur les livraisons et plus</p>
                 <p class="sign">Vous avez terminé vos achats? Commandez sans plus attendre</p>
-                <a href="commande.html" id="confirmCommande"><input type="submit" value="Passer commande" id="order"></a>
+                <a href="commande.html" id="confirmCommande">
+                    <span id="order">Passer commande</span>
+                </a>
             </div>
             <div class="presentation">
                 <h2 role="heading" aria-level="2" class="titreActuColor"><span>Votre panier</span></h2>
-                <table class="panierAchats">
+                <table class="panierAchats" title="Table des achats">
                     <tr>
                         <th>Articles sélectionnés pour achat</th>
                         <th>Modifier</th>
@@ -109,75 +121,75 @@
                     </tr>
                     <tr class="articles">
                         <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">PRISMA P1 Lite - Protection</a>
+                            <a href="pageProduit.html" title="Voir le produit" class="voir">PRISMA P1 Lite - Protection</a>
                             <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
                         </td>
                         <td><span><a href="" class="delete">Supprimer</a></span></td>
                         <td class="prix">99€</td>
-                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity" title="quantity"></td>
                     </tr>
                     <tr class="articles">
                         <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">Voile écran 40db - Blanc</a>
+                            <a href="pageProduit.html" title="Voir le produit" class="voir">Voile écran 40db - Blanc</a>
                             <span class="disponibility"><img src="../img/available.png" alt="Produit indisponible"> <span class="tf">Produit disponible</span></span>
                         </td>
                         <td><span><a href="" class="delete">Supprimer</a></span></td>
                         <td class="prix">99€</td>
-                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity" title="quantity"></td>
                     </tr>
                     <tr class="articles">
                         <td>
-                            <a href="pageProduit.html" title="Voir le produit" id="voir">MRK30 Kit de Mesure</a>
+                            <a href="pageProduit.html" title="Voir le produit" class="voir">MRK30 Kit de Mesure</a>
                             <span class="disponibility"><img src="../img/available.png" alt="Produit disponible"> <span class="tf">Produit disponible</span></span>
                         </td>
                         <td><span><a href="" class="delete">Supprimer</a></span></td>
                         <td class="prix">798€</td>
-                        <td><input type="text" maxlength="10" value="1" class="quantity"></td>
+                        <td><input type="text" maxlength="10" value="1" class="quantity" title="quantity"></td>
                     </tr>
                 </table>
                 <p class="totalPanier">Total des articles TTC: <span class="prix">996€</span></p>
             </div>
             <div class="titres">
-                <h2 role="heading" aria-level="2"><span class="titreActu">Suggestions d'articles</span></h2>
                     <article class="titres">
+                        <h2 role="heading" aria-level="2"><span class="titreActu">Suggestions d'articles</span></h2>
+                        <a href="pageProduit.html" title="Voir le produit">
+                        <article class="produit" itemscope itemtype="http://schema.org/Product">
+                            <h3 class="cache">Pochette Isophone Large</h3>
+                            <img class="thumbProduit" src="../img/article6.png" alt="Produit" itemprop="image">
+                            <span class="prix" itemprop="price">32€</span>
+                            <span class="legend" itemprop="name">Pochette Isophone Large</span>
+                            <span class="disponibility" title="Produit indisponible" itemprop="availability"><img src="../img/disable.png" alt="Produit indisponibledisponible">
+                            <input type="submit" value="Ajouter" class="submit add"></span>
+                        </article>
+                        </a>
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article1.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">798€</span>
-                                <figcaption class="legend" itemprop="name">MK30 Kit de mesure</figcaption>
-                                </a>
-                                <span class="disponibility" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                                <h3 class="cache">Voltmètre de surface</h3>
+                                <img class="thumbProduit" src="../img/article7.png" alt="Produit" itemprop="image">
+                                <span class="prix" itemprop="price">726€</span>
+                                <span class="legend" itemprop="name">Voltmètre de surface</span>
+                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                <input type="submit" value="Ajouter" class="submit add"></span>
                             </article>
                         </a>
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article2.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">PRISMA P1 Lite - Protection</figcaption>
-                                </a>
-                                <span class="disponibility" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                                <h3 class="cache">Pop Phone anti-onde - Black</h3>
+                                <img class="thumbProduit" src="../img/article8.png" alt="Produit" itemprop="image">
+                                <span class="prix" itemprop="price">35€</span>
+                                <span class="legend" itemprop="name">Pop Phone anti-onde - Black</span>
+                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                <input type="submit" value="Ajouter" class="submit add"></span>
                             </article>
                         </a>
                         <a href="pageProduit.html" title="Voir le produit">
                             <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article3.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">99€</span>
-                                <figcaption class="legend" itemprop="name">Voile écran 40db Pro Blanc</figcaption>
-                                </a>
-                                <span class="disponibility" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
-                            </article>
-                        </a>
-                        <a href="pageProduit.html" title="Voir le produit">
-                            <article class="produit" itemscope itemtype="http://schema.org/Product">
-                                <img class="thumbProduit" src="../img/article4.png" alt="Produit" itemprop="image">
-                                <span class="prix" itemprop="price">1289€</span>
-                                <figcaption class="legend" itemprop="name">Baldaquin Écran Magellan</figcaption>
-                                </a>
-                                <span class="disponibility" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
-                                <a href="" title="Ajouter au panier"><input type="submit" value="Ajouter" class="submit add"></a></span>
+                                <h3 class="cache">HSF-54 - 5L Peinture</h3>
+                                <img class="thumbProduit" src="../img/article9.png" alt="Produit" itemprop="image">
+                                <span class="prix" itemprop="price">254€</span>
+                                <span class="legend" itemprop="name">HSF-54 - 5L Peinture</span>
+                                <span class="disponibility" title="Encore 3 produits disponibles" itemprop="availability"><img src="../img/available.png" alt="Produit disponible">
+                                <input type="submit" value="Ajouter" class="submit add"></span>
                             </article>
                         </a>
                     </article>
@@ -185,7 +197,8 @@
         </div>
     </section>
     <footer>
-        <a href="panier.html" title="Haut de page">
+        <h2 class="cache">Plus d'informations sur Études et vie</h2>
+        <a href="../index.html" title="Haut de page">
             <div class="footerLogo">
                     <img src="../img/logoSmall.png" alt="Études et vie logo">
             </div>
@@ -205,7 +218,7 @@
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Newsletter</h3>
-            <input type="text" placeholder="Avec votre e-mail" class="texte news"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into"></span>
+            <input type="text" placeholder="Avec votre e-mail" class="texte news" title="newsletter"><span href="#" title="Envoyer" class="search"><input type="submit" value="OK" class="submit into" title="validateNewsletter"></span>
         </div>
         <div class="infos">
             <h3 class="titreFooter" role="heading" aria-level="3">Suivez-nous</h3>
@@ -219,14 +232,6 @@
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>   
+ 
 </body>
 </html>
